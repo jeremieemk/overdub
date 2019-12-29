@@ -1,36 +1,44 @@
+import { useEffect } from "react";
 import Layout from "./components/MyLayout";
 import Head from "next/head";
 import GlobalStyles from "./style/GlobalStyles";
 
-const Index = () => (
-  <div>
-    <Head>
-      <style>{`
-        body {
-          margin: 0;
-        }
-      `}</style>
-    </Head>
-    <Layout>
-      <div className="landing-logo-container">
-        <div>
-          <img className="avatar" src="/img/avatar1.png" alt="avatar" />
-          <h1 className="over">over-</h1>
-          <h1 className="dub">duB</h1>
-          <hr></hr>
-          <h2 className="web">WEB DEV.</h2>
+function Index() {
+  const handleScroll = () => console.log("scrolled");
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  return (
+    <div>
+      <Head>
+        <style>{`
+              body {
+                margin: 0;
+              }
+            `}</style>
+      </Head>
+      <Layout>
+        <div className="landing-logo-container">
+          <div>
+            <img className="avatar" src="/img/avatar1.png" alt="avatar" />
+            <h1 className="over">over-</h1>
+            <h1 className="dub">duB</h1>
+            <hr></hr>
+            <h2 className="web">WEB DEV.</h2>
+          </div>
         </div>
-      </div>
-    </Layout>
-    {GlobalStyles}
-    {style}
-  </div>
-);
+      </Layout>
+      {GlobalStyles}
+      {style}
+    </div>
+  );
+}
 
 const style = (
   <style jsx>{`
     .landing-logo-container {
-      height: 100vh;
+      height: 101vh;
       display: flex;
       flex-direction: column;
       justify-content: center;

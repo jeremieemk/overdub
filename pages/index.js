@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Layout from "./components/MyLayout";
 import Head from "next/head";
 import GlobalStyles from "./style/GlobalStyles";
+import Hello from "./components/Hello";
 
 function Index() {
   const handleScroll = () => console.log("scrolled");
@@ -28,6 +29,7 @@ function Index() {
             <h2 className="web">WEB DEV.</h2>
           </div>
         </div>
+        <Hello />
       </Layout>
       {GlobalStyles}
       {style}
@@ -38,7 +40,7 @@ function Index() {
 const style = (
   <style jsx>{`
     .landing-logo-container {
-      height: 101vh;
+      height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;

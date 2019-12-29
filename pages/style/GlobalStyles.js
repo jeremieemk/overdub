@@ -23,6 +23,9 @@ const GlobalStyles = (
       --font2: "PxGroteskBold";
       --font3: "WorkSans-Bold";
     }
+    body {
+      background-color: var(--color1);
+    }
   `}</style>
 );
 

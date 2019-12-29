@@ -8,8 +8,9 @@ const Logo = () => (
 const style = (
   <style jsx>{`
     .logo {
+      font-family: "Sectra";
       font-size: 3rem;
-      color: #fff55a;
+      color: var(--color2);
       margin-left: var(--global-margin);
       margin-top: 1rem;
     }

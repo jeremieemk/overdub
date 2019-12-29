@@ -14,12 +14,8 @@ const Layout = props => (
           font-style: normal;
         }
         .container {
-          background-color: #f85e3c;
+          background-color: var(--color1);
           height: 100vh;
-        }
-
-        * {
-          font-family: "Sectra";
         }
       `}
     </style>

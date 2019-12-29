@@ -2014,6 +2014,7 @@ const style = __jsx("style", {
   __self: undefined
 }, `
     .header-container {
+      height: 5rem;
       display: flex;
       justify-content: space-between;
     }
@@ -2173,68 +2174,91 @@ const Index = () => __jsx("div", {
     lineNumber: 14
   },
   __self: undefined
+}, __jsx("div", {
+  className: "landing-logo-container",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 15
+  },
+  __self: undefined
+}, __jsx("div", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 16
+  },
+  __self: undefined
 }, __jsx("img", {
   className: "avatar",
   src: "/img/avatar1.png",
   alt: "avatar",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 15
+    lineNumber: 17
   },
   __self: undefined
 }), __jsx("h1", {
   className: "over",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 16
+    lineNumber: 18
   },
   __self: undefined
 }, "over-"), __jsx("h1", {
   className: "dub",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 17
+    lineNumber: 19
   },
   __self: undefined
 }, "duB"), __jsx("hr", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 18
+    lineNumber: 20
   },
   __self: undefined
 }), __jsx("h2", {
   className: "web",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 19
+    lineNumber: 21
   },
   __self: undefined
-}, "WEB DEV.")), _style_GlobalStyles__WEBPACK_IMPORTED_MODULE_3__["default"], style);
+}, "WEB DEV.")))), _style_GlobalStyles__WEBPACK_IMPORTED_MODULE_3__["default"], style);
 
 const style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 27
+    lineNumber: 31
   },
   __self: undefined
 }, `
+    .landing-logo-container {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: -5rem;
+    }
     .avatar {
-      width: 5rem;
+      width: 5.5rem;
       height: auto;
+      margin-left: -0.5rem;
     }
 
     .over {
       color: var(--color2);
       font-family: var(--font2);
       font-size: 3.5rem;
-      margin-left: 0.7rem;
+
+      margin-top: -1rem;
     }
     .dub {
       color: var(--color2);
       font-family: var(--font2);
       font-size: 6rem;
-      margin-top: -1.4rem;
+      margin-top: -1.6rem;
     }
     h1,
     h2 {
@@ -2245,15 +2269,18 @@ const style = __jsx("style", {
       margin-block-start: 0;
       margin-block-end: 0;
       border-color: white;
-      width: 5rem;
+      width: 5.5rem;
       border-top: 1px solid white;
       margin-inline-start: 5rem;
-      margin-top: -1rem;
+      margin-top: -1.3rem;
       margin-inline-end: 0;
     }
     .web {
       font-family: var(--font3);
       color: white;
+      font-size: 1.15rem;
+      margin-left: 5.2rem;
+      margin-top: 0.1rem;
     }
   `);
 

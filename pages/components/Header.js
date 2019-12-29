@@ -15,6 +15,7 @@ const Header = () => (
 const style = (
   <style jsx>{`
     .header-container {
+      height: 5rem;
       display: flex;
       justify-content: space-between;
     }

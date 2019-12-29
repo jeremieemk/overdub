@@ -2173,31 +2173,40 @@ const Index = () => __jsx("div", {
     lineNumber: 14
   },
   __self: undefined
-}, __jsx("h1", {
-  className: "over",
+}, __jsx("img", {
+  className: "avatar",
+  src: "/img/avatar1.png",
+  alt: "avatar",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 15
+  },
+  __self: undefined
+}), __jsx("h1", {
+  className: "over",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 16
   },
   __self: undefined
 }, "over-"), __jsx("h1", {
   className: "dub",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 16
+    lineNumber: 17
   },
   __self: undefined
 }, "duB"), __jsx("hr", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 17
+    lineNumber: 18
   },
   __self: undefined
 }), __jsx("h2", {
   className: "web",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 18
+    lineNumber: 19
   },
   __self: undefined
 }, "WEB DEV.")), _style_GlobalStyles__WEBPACK_IMPORTED_MODULE_3__["default"], style);
@@ -2206,10 +2215,15 @@ const style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 26
+    lineNumber: 27
   },
   __self: undefined
 }, `
+    .avatar {
+      width: 5rem;
+      height: auto;
+    }
+
     .over {
       color: var(--color2);
       font-family: var(--font2);

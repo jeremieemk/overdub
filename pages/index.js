@@ -12,6 +12,7 @@ const Index = () => (
       `}</style>
     </Head>
     <Layout>
+      <img className="avatar" src="/img/avatar1.png" alt="avatar" />
       <h1 className="over">over-</h1>
       <h1 className="dub">duB</h1>
       <hr></hr>
@@ -24,6 +25,11 @@ const Index = () => (
 
 const style = (
   <style jsx>{`
+    .avatar {
+      width: 5rem;
+      height: auto;
+    }
+
     .over {
       color: var(--color2);
       font-family: var(--font2);

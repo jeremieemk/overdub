@@ -1,8 +1,10 @@
 import PageTitle from "./PageTitle";
+import HelloText from "./text/HelloText";
 
 const Hello = () => (
   <div className="hello-container">
     <PageTitle title="Hey, Hi" />
+    <HelloText />
     {style}
   </div>
 );

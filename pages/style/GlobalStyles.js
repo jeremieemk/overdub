@@ -22,6 +22,7 @@ const GlobalStyles = (
       --font1: "Sectra";
       --font2: "PxGroteskBold";
       --font3: "WorkSans-Bold";
+      --line-width: 0.1rem;
     }
     body {
       background-color: var(--color1);

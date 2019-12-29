@@ -2017,6 +2017,9 @@ const style = __jsx("style", {
       height: 5rem;
       display: flex;
       justify-content: space-between;
+      position: fixed;
+      top: 0;
+      width: 100%;
     }
   `);
 
@@ -2037,9 +2040,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _PageTitle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PageTitle */ "./pages/components/PageTitle.js");
 /* harmony import */ var _text_HelloText__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./text/HelloText */ "./pages/components/text/HelloText.js");
+/* harmony import */ var _LinkBox__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./LinkBox */ "./pages/components/LinkBox.js");
 var _jsxFileName = "/Users/jeremie/web/28_portfolio/pages/components/Hello.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -2047,38 +2052,185 @@ const Hello = () => __jsx("div", {
   className: "hello-container",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 5
+    lineNumber: 6
   },
   __self: undefined
 }, __jsx(_PageTitle__WEBPACK_IMPORTED_MODULE_1__["default"], {
   title: "Hey, Hi",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 6
-  },
-  __self: undefined
-}), __jsx(_text_HelloText__WEBPACK_IMPORTED_MODULE_2__["default"], {
-  __source: {
-    fileName: _jsxFileName,
     lineNumber: 7
   },
   __self: undefined
-}), style);
+}), __jsx("div", {
+  className: "under-the-title",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 8
+  },
+  __self: undefined
+}, __jsx(_text_HelloText__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 9
+  },
+  __self: undefined
+}), __jsx(_LinkBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  name: "about me",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 10
+  },
+  __self: undefined
+}), __jsx(_LinkBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  name: "portfolio",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 11
+  },
+  __self: undefined
+}), __jsx(_LinkBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  name: "skills",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 12
+  },
+  __self: undefined
+}), __jsx(_LinkBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  name: "cv",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 13
+  },
+  __self: undefined
+})), style);
 
 const style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 13
+    lineNumber: 20
   },
   __self: undefined
 }, `
     .hello-container {
       height: 100vh;
     }
+    .under-the-title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   `);
 
 /* harmony default export */ __webpack_exports__["default"] = (Hello);
+
+/***/ }),
+
+/***/ "./pages/components/LinkBox.js":
+/*!*************************************!*\
+  !*** ./pages/components/LinkBox.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/jeremie/web/28_portfolio/pages/components/LinkBox.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function LinkBox(props) {
+  return __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 3
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "text-box-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "text-box",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }, __jsx("a", {
+    className: "text",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, props.name)), __jsx("div", {
+    className: "arrow-box",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, __jsx("img", {
+    className: "arrow",
+    src: "/img/whitearrow3.png",
+    alt: "arrow",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }))), style);
+}
+
+const style = __jsx("style", {
+  jsx: true,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 18
+  },
+  __self: undefined
+}, `
+    .text-box-container {
+      margin-top: 1rem;
+      display: flex;
+    }
+    .text-box {
+      color: white;
+      font-family: var(--font3);
+      border: var(--line-width) solid white;
+      font-size: 1.3rem;
+      width: 11rem;
+      height: 3rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .arrow-box {
+      border-width: var(--line-width) var(--line-width) var(--line-width) 0;
+      width: 5rem;
+      border-style: solid;
+      border-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .text {
+      padding-left: 2rem;
+    }
+    .arrow {
+      width: 2rem;
+      height: auto;
+    }
+  `);
+
+/* harmony default export */ __webpack_exports__["default"] = (LinkBox);
 
 /***/ }),
 
@@ -2189,13 +2341,13 @@ const style = __jsx("style", {
       color: var(--color2);
       font-family: var(--font3);
       text-align: center;
-      font-size: 2rem;
+      font-size: 1.3rem;
     }
     .title-line {
       margin-bottom: 0.5rem;
-      width: 2rem;
+      width: 1.2rem;
       border-bottom: 0.2rem solid white;
-      margin-left: 4.5rem;
+      margin-left: 3.3rem;
     }
   `);
 
@@ -2270,33 +2422,51 @@ var _jsxFileName = "/Users/jeremie/web/28_portfolio/pages/components/text/HelloT
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 const HelloText = () => __jsx("div", {
+  className: "hello-text",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 2
   },
   __self: undefined
 }, __jsx("p", {
+  className: "upper-text",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 3
   },
   __self: undefined
-}, "I\u2019m J\xE9r\xE9mie. I am a coder and a music producer based in Lisbon, Portugal."), __jsx("p", {
+}, "I\u2019m J\xE9r\xE9mie. I am a ", __jsx("span", {
+  className: "yellow",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 6
+    lineNumber: 4
   },
   __self: undefined
-}, "I hold the 2001 world record for number of music gigabytes downloaded on Napster"), style);
+}, "coder"), " and a music producer based in Lisbon, Portugal."), style);
 
 const style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 15
+    lineNumber: 16
   },
   __self: undefined
 }, `
+  .hello-text {
+    color: white;
+    font-family: var(--font2);
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-align: center;
+  }
+  .upper-text {
+    font-size: 1.6rem;
+  }
+  .yellow {
+    color: var(--color2);
+    font-size: 2rem;
+    font-family: var(--font3);
+  }
     }
   `);
 
@@ -2436,7 +2606,6 @@ const style = __jsx("style", {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-top: -5rem;
     }
     .avatar {
       width: 5.5rem;
@@ -2503,9 +2672,9 @@ __webpack_require__.r(__webpack_exports__);
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 const GlobalStyles = __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-  id: "3649073",
+  id: "3229267373",
   __self: undefined
-}, "@font-face{font-family:\"PxGroteskBold\";src:url(\"fonts/PxGrotesk-Bold.woff2\") format(\"woff2\");}@font-face{font-family:\"Sectra\";src:url(\"fonts/Sectra.woff2\") format(\"woff2\");}@font-face{font-family:\"WorkSans-Bold\";src:url(\"fonts/WorkSans-Bold.woff2\") format(\"woff2\");src:url(\"fonts/WorkSans-Bold.woff\") format(\"woff\");src:url(\"fonts/WorkSans-Bold.ttf\") format(\"truetype\");}:root{--global-margin:2rem;--color1:#f85e3c;--color2:#fff55a;--font1:\"Sectra\";--font2:\"PxGroteskBold\";--font3:\"WorkSans-Bold\";}body{background-color:var(--color1);}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9qZXJlbWllL3dlYi8yOF9wb3J0Zm9saW8vcGFnZXMvc3R5bGUvR2xvYmFsU3R5bGVzLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNxQixBQUdtQyxBQUlQLEFBSU8sQUFPUCxBQVFVLHFCQWxCZSxBQVc3QixPQWZxQyxBQVFELEdBZXZELE9BUG1CLGlCQUNBLFlBWm5CLEtBYTBCLFNBVDJCLENBUnJELGNBa0IwQix3QkFDMUIsWUFWd0Qsc0RBQ3hEIiwiZmlsZSI6Ii9Vc2Vycy9qZXJlbWllL3dlYi8yOF9wb3J0Zm9saW8vcGFnZXMvc3R5bGUvR2xvYmFsU3R5bGVzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiY29uc3QgR2xvYmFsU3R5bGVzID0gKFxuICA8c3R5bGUganN4IGdsb2JhbD57YFxuICAgIEBmb250LWZhY2Uge1xuICAgICAgZm9udC1mYW1pbHk6IFwiUHhHcm90ZXNrQm9sZFwiO1xuICAgICAgc3JjOiB1cmwoXCJmb250cy9QeEdyb3Rlc2stQm9sZC53b2ZmMlwiKSBmb3JtYXQoXCJ3b2ZmMlwiKTtcbiAgICB9XG4gICAgQGZvbnQtZmFjZSB7XG4gICAgICBmb250LWZhbWlseTogXCJTZWN0cmFcIjtcbiAgICAgIHNyYzogdXJsKFwiZm9udHMvU2VjdHJhLndvZmYyXCIpIGZvcm1hdChcIndvZmYyXCIpO1xuICAgIH1cbiAgICBAZm9udC1mYWNlIHtcbiAgICAgIGZvbnQtZmFtaWx5OiBcIldvcmtTYW5zLUJvbGRcIjtcbiAgICAgIHNyYzogdXJsKFwiZm9udHMvV29ya1NhbnMtQm9sZC53b2ZmMlwiKSBmb3JtYXQoXCJ3b2ZmMlwiKTtcbiAgICAgIHNyYzogdXJsKFwiZm9udHMvV29ya1NhbnMtQm9sZC53b2ZmXCIpIGZvcm1hdChcIndvZmZcIik7XG4gICAgICBzcmM6IHVybChcImZvbnRzL1dvcmtTYW5zLUJvbGQudHRmXCIpIGZvcm1hdChcInRydWV0eXBlXCIpO1xuICAgIH1cblxuICAgIDpyb290IHtcbiAgICAgIC0tZ2xvYmFsLW1hcmdpbjogMnJlbTtcbiAgICAgIC0tY29sb3IxOiAjZjg1ZTNjO1xuICAgICAgLS1jb2xvcjI6ICNmZmY1NWE7XG4gICAgICAtLWZvbnQxOiBcIlNlY3RyYVwiO1xuICAgICAgLS1mb250MjogXCJQeEdyb3Rlc2tCb2xkXCI7XG4gICAgICAtLWZvbnQzOiBcIldvcmtTYW5zLUJvbGRcIjtcbiAgICB9XG4gICAgYm9keSB7XG4gICAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1jb2xvcjEpO1xuICAgIH1cbiAgYH08L3N0eWxlPlxuKTtcblxuZXhwb3J0IGRlZmF1bHQgR2xvYmFsU3R5bGVzO1xuIl19 */\n/*@ sourceURL=/Users/jeremie/web/28_portfolio/pages/style/GlobalStyles.js */");
+}, "@font-face{font-family:\"PxGroteskBold\";src:url(\"fonts/PxGrotesk-Bold.woff2\") format(\"woff2\");}@font-face{font-family:\"Sectra\";src:url(\"fonts/Sectra.woff2\") format(\"woff2\");}@font-face{font-family:\"WorkSans-Bold\";src:url(\"fonts/WorkSans-Bold.woff2\") format(\"woff2\");src:url(\"fonts/WorkSans-Bold.woff\") format(\"woff\");src:url(\"fonts/WorkSans-Bold.ttf\") format(\"truetype\");}:root{--global-margin:2rem;--color1:#f85e3c;--color2:#fff55a;--font1:\"Sectra\";--font2:\"PxGroteskBold\";--font3:\"WorkSans-Bold\";--line-width:0.1rem;}body{background-color:var(--color1);}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9qZXJlbWllL3dlYi8yOF9wb3J0Zm9saW8vcGFnZXMvc3R5bGUvR2xvYmFsU3R5bGVzLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNxQixBQUdtQyxBQUlQLEFBSU8sQUFPUCxBQVNVLHFCQW5CZSxBQVc3QixPQWZxQyxBQVFELEdBZ0J2RCxPQVJtQixpQkFDQSxZQVpuQixLQWEwQixTQVQyQixDQVJyRCxjQWtCMEIsd0JBQ0osWUFWa0MsUUFXeEQsOENBVkEiLCJmaWxlIjoiL1VzZXJzL2plcmVtaWUvd2ViLzI4X3BvcnRmb2xpby9wYWdlcy9zdHlsZS9HbG9iYWxTdHlsZXMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBHbG9iYWxTdHlsZXMgPSAoXG4gIDxzdHlsZSBqc3ggZ2xvYmFsPntgXG4gICAgQGZvbnQtZmFjZSB7XG4gICAgICBmb250LWZhbWlseTogXCJQeEdyb3Rlc2tCb2xkXCI7XG4gICAgICBzcmM6IHVybChcImZvbnRzL1B4R3JvdGVzay1Cb2xkLndvZmYyXCIpIGZvcm1hdChcIndvZmYyXCIpO1xuICAgIH1cbiAgICBAZm9udC1mYWNlIHtcbiAgICAgIGZvbnQtZmFtaWx5OiBcIlNlY3RyYVwiO1xuICAgICAgc3JjOiB1cmwoXCJmb250cy9TZWN0cmEud29mZjJcIikgZm9ybWF0KFwid29mZjJcIik7XG4gICAgfVxuICAgIEBmb250LWZhY2Uge1xuICAgICAgZm9udC1mYW1pbHk6IFwiV29ya1NhbnMtQm9sZFwiO1xuICAgICAgc3JjOiB1cmwoXCJmb250cy9Xb3JrU2Fucy1Cb2xkLndvZmYyXCIpIGZvcm1hdChcIndvZmYyXCIpO1xuICAgICAgc3JjOiB1cmwoXCJmb250cy9Xb3JrU2Fucy1Cb2xkLndvZmZcIikgZm9ybWF0KFwid29mZlwiKTtcbiAgICAgIHNyYzogdXJsKFwiZm9udHMvV29ya1NhbnMtQm9sZC50dGZcIikgZm9ybWF0KFwidHJ1ZXR5cGVcIik7XG4gICAgfVxuXG4gICAgOnJvb3Qge1xuICAgICAgLS1nbG9iYWwtbWFyZ2luOiAycmVtO1xuICAgICAgLS1jb2xvcjE6ICNmODVlM2M7XG4gICAgICAtLWNvbG9yMjogI2ZmZjU1YTtcbiAgICAgIC0tZm9udDE6IFwiU2VjdHJhXCI7XG4gICAgICAtLWZvbnQyOiBcIlB4R3JvdGVza0JvbGRcIjtcbiAgICAgIC0tZm9udDM6IFwiV29ya1NhbnMtQm9sZFwiO1xuICAgICAgLS1saW5lLXdpZHRoOiAwLjFyZW07XG4gICAgfVxuICAgIGJvZHkge1xuICAgICAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tY29sb3IxKTtcbiAgICB9XG4gIGB9PC9zdHlsZT5cbik7XG5cbmV4cG9ydCBkZWZhdWx0IEdsb2JhbFN0eWxlcztcbiJdfQ== */\n/*@ sourceURL=/Users/jeremie/web/28_portfolio/pages/style/GlobalStyles.js */");
 
 /* harmony default export */ __webpack_exports__["default"] = (GlobalStyles);
 

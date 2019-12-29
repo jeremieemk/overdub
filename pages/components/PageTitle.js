@@ -20,13 +20,13 @@ const style = (
       color: var(--color2);
       font-family: var(--font3);
       text-align: center;
-      font-size: 2rem;
+      font-size: 1.3rem;
     }
     .title-line {
       margin-bottom: 0.5rem;
-      width: 2rem;
+      width: 1.2rem;
       border-bottom: 0.2rem solid white;
-      margin-left: 4.5rem;
+      margin-left: 3.3rem;
     }
   `}</style>
 );

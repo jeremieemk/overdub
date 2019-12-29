@@ -18,6 +18,9 @@ const style = (
       height: 5rem;
       display: flex;
       justify-content: space-between;
+      position: fixed;
+      top: 0;
+      width: 100%;
     }
   `}</style>
 );

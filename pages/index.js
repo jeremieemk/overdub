@@ -45,7 +45,6 @@ const style = (
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-top: -5rem;
     }
     .avatar {
       width: 5.5rem;

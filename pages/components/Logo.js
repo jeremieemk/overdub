@@ -1,6 +1,8 @@
 const Logo = () => (
   <div>
-    <div className="logo">O</div>
+    <div className="logo" style={{ fontFamily: "Sectra" }}>
+      O
+    </div>
     {style}
   </div>
 );
@@ -8,7 +10,6 @@ const Logo = () => (
 const style = (
   <style jsx>{`
     .logo {
-      font-family: "Sectra";
       font-size: 3rem;
       color: var(--color2);
       margin-left: var(--global-margin);

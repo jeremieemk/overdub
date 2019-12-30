@@ -3,10 +3,14 @@ const GlobalStyles = (
     @font-face {
       font-family: "PxGroteskBold";
       src: url("fonts/PxGrotesk-Bold.woff2") format("woff2");
+      src: url("fonts/PxGrotesk-Bold.woff") format("woff");
+      src: url("fonts/PxGroteskBold.ttf") format("truetype");
     }
     @font-face {
       font-family: "Sectra";
       src: url("fonts/Sectra.woff2") format("woff2");
+      src: url("fonts/Sectra.woff") format("woff");
+      src: url("fonts/Sectra.ttf") format("truetype");
     }
     @font-face {
       font-family: "WorkSans-Bold";

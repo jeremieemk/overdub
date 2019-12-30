@@ -7,7 +7,7 @@ const Hello = () => (
     <PageTitle title="Hey, Hi" />
     <div className="under-the-title">
       <HelloText />
-      <LinkBox name="about me" />
+      <LinkBox link={"/about"} name="about me" />
       <LinkBox name="portfolio" />
       <LinkBox name="skills" />
       <LinkBox name="cv" />

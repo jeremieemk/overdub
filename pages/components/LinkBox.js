@@ -1,14 +1,20 @@
+import Link from "next/link";
+
 function LinkBox(props) {
   return (
     <div>
-      <div className="text-box-container">
-        <div className="text-box">
-          <a className="text">{props.name}</a>
-        </div>
-        <div className="arrow-box">
-          <img className="arrow" src="/img/whitearrow3.png" alt="arrow" />
-        </div>
-      </div>
+      <Link href={props.link}>
+        <a>
+          <div className="text-box-container">
+            <div className="text-box">
+              <a className="text">{props.name}</a>
+            </div>
+            <div className="arrow-box">
+              <img className="arrow" src="/img/whitearrow3.png" alt="arrow" />
+            </div>
+          </div>
+        </a>
+      </Link>
       {style}
     </div>
   );
@@ -16,9 +22,13 @@ function LinkBox(props) {
 
 const style = (
   <style jsx>{`
+    a {
+      text-decoration: none;
+    }
     .text-box-container {
       margin-top: 1rem;
       display: flex;
+      cursor: "pointer";
     }
     .text-box {
       color: white;

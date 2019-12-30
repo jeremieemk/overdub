@@ -1,5 +1,6 @@
 import Layout from "./components/Layout";
 import PageTitle from "./components/PageTitle";
+import AboutText from "./components/text/AboutText";
 
 const About = () => (
   <Layout>
@@ -10,6 +11,7 @@ const About = () => (
         src="/img/shower.png"
         alt="dancing-avatar"
       />
+      <AboutText />
     </div>
     {style}
   </Layout>
@@ -19,6 +21,7 @@ const style = (
   <style jsx>{`
     .under-the-title {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
     }

@@ -26,6 +26,7 @@ const GlobalStyles = (
     }
     body {
       background-color: var(--color1);
+      margin: 0;
     }
   `}</style>
 );

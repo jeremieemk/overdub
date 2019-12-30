@@ -20,6 +20,7 @@ const style = (
   <style jsx>{`
     .hello-container {
       height: 100vh;
+      margin-bottom: 5rem;
     }
     .under-the-title {
       display: flex;

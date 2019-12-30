@@ -1,7 +1,7 @@
 const Hamburger = () => (
-  <div class="hamburger-container">
-    <div class="line"></div>
-    <div class="line"></div>
+  <div className="hamburger-container">
+    <div className="line"></div>
+    <div className="line"></div>
     {style}
   </div>
 );

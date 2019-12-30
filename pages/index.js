@@ -1,7 +1,5 @@
 import { useEffect } from "react";
-import Layout from "./components/MyLayout";
-import Head from "next/head";
-import GlobalStyles from "./style/GlobalStyles";
+import Layout from "./components/Layout";
 import Hello from "./components/Hello";
 
 function Index() {
@@ -12,13 +10,6 @@ function Index() {
   }, []);
   return (
     <div>
-      <Head>
-        <style>{`
-              body {
-                margin: 0;
-              }
-            `}</style>
-      </Head>
       <Layout>
         <div className="landing-logo-container">
           <div>
@@ -31,7 +22,7 @@ function Index() {
         </div>
         <Hello />
       </Layout>
-      {GlobalStyles}
+
       {style}
     </div>
   );

@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1894,6 +1894,41 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
+/***/ "./pages/about.js":
+/*!************************!*\
+  !*** ./pages/about.js ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Layout */ "./pages/components/Layout.js");
+var _jsxFileName = "/Users/jeremie/web/28_portfolio/pages/about.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+const About = () => __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 4
+  },
+  __self: undefined
+}, __jsx("div", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 5
+  },
+  __self: undefined
+}, "About"));
+
+/* harmony default export */ __webpack_exports__["default"] = (About);
+
+/***/ }),
+
 /***/ "./pages/components/Hamburger.js":
 /*!***************************************!*\
   !*** ./pages/components/Hamburger.js ***!
@@ -2027,107 +2062,6 @@ const style = __jsx("style", {
 
 /***/ }),
 
-/***/ "./pages/components/Hello.js":
-/*!***********************************!*\
-  !*** ./pages/components/Hello.js ***!
-  \***********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _PageTitle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PageTitle */ "./pages/components/PageTitle.js");
-/* harmony import */ var _text_HelloText__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./text/HelloText */ "./pages/components/text/HelloText.js");
-/* harmony import */ var _LinkBox__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./LinkBox */ "./pages/components/LinkBox.js");
-var _jsxFileName = "/Users/jeremie/web/28_portfolio/pages/components/Hello.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-const Hello = () => __jsx("div", {
-  className: "hello-container",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6
-  },
-  __self: undefined
-}, __jsx(_PageTitle__WEBPACK_IMPORTED_MODULE_1__["default"], {
-  title: "Hey, Hi",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 7
-  },
-  __self: undefined
-}), __jsx("div", {
-  className: "under-the-title",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 8
-  },
-  __self: undefined
-}, __jsx(_text_HelloText__WEBPACK_IMPORTED_MODULE_2__["default"], {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 9
-  },
-  __self: undefined
-}), __jsx(_LinkBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
-  name: "about me",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 10
-  },
-  __self: undefined
-}), __jsx(_LinkBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
-  name: "portfolio",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 11
-  },
-  __self: undefined
-}), __jsx(_LinkBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
-  name: "skills",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 12
-  },
-  __self: undefined
-}), __jsx(_LinkBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
-  name: "cv",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 13
-  },
-  __self: undefined
-})), style);
-
-const style = __jsx("style", {
-  jsx: true,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 20
-  },
-  __self: undefined
-}, `
-    .hello-container {
-      height: 100vh;
-      margin-bottom: 5rem;
-    }
-    .under-the-title {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  `);
-
-/* harmony default export */ __webpack_exports__["default"] = (Hello);
-
-/***/ }),
-
 /***/ "./pages/components/Layout.js":
 /*!************************************!*\
   !*** ./pages/components/Layout.js ***!
@@ -2169,185 +2103,6 @@ const Layout = props => __jsx("div", {
 }), props.children), _style_GlobalStyles__WEBPACK_IMPORTED_MODULE_2__["default"]);
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
-
-/***/ }),
-
-/***/ "./pages/components/LinkBox.js":
-/*!*************************************!*\
-  !*** ./pages/components/LinkBox.js ***!
-  \*************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/jeremie/web/28_portfolio/pages/components/LinkBox.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-function LinkBox(props) {
-  return __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 3
-    },
-    __self: this
-  }, __jsx("div", {
-    className: "text-box-container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }, __jsx("div", {
-    className: "text-box",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }, __jsx("a", {
-    className: "text",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, props.name)), __jsx("div", {
-    className: "arrow-box",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, __jsx("img", {
-    className: "arrow",
-    src: "/img/whitearrow3.png",
-    alt: "arrow",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }))), style);
-}
-
-const style = __jsx("style", {
-  jsx: true,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 18
-  },
-  __self: undefined
-}, `
-    .text-box-container {
-      margin-top: 1rem;
-      display: flex;
-    }
-    .text-box {
-      color: white;
-      font-family: var(--font3);
-      border: var(--line-width) solid white;
-      font-size: 1.3rem;
-      width: 11rem;
-      height: 3rem;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-    }
-    .arrow-box {
-      border-width: var(--line-width) var(--line-width) var(--line-width) 0;
-      width: 5rem;
-      border-style: solid;
-      border-color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .text {
-      padding-left: 2rem;
-    }
-    .arrow {
-      width: 2rem;
-      height: auto;
-    }
-  `);
-
-/* harmony default export */ __webpack_exports__["default"] = (LinkBox);
-
-/***/ }),
-
-/***/ "./pages/components/PageTitle.js":
-/*!***************************************!*\
-  !*** ./pages/components/PageTitle.js ***!
-  \***************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/jeremie/web/28_portfolio/pages/components/PageTitle.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-function PageTitle(props) {
-  return __jsx("div", {
-    className: "page-title-container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 3
-    },
-    __self: this
-  }, __jsx("div", {
-    className: "page-title",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }, props.title), __jsx("div", {
-    class: "title-line",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }), style);
-}
-
-const style = __jsx("style", {
-  jsx: true,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 12
-  },
-  __self: undefined
-}, `
-    .page-title-container {
-      padding-top: 30%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .page-title {
-      color: var(--color2);
-      font-family: var(--font3);
-      text-align: center;
-      font-size: 1.3rem;
-    }
-    .title-line {
-      margin-bottom: 0.5rem;
-      width: 1.2rem;
-      border-bottom: 0.2rem solid white;
-      margin-left: 3.3rem;
-    }
-  `);
-
-/* harmony default export */ __webpack_exports__["default"] = (PageTitle);
 
 /***/ }),
 
@@ -2402,233 +2157,6 @@ const style = __jsx("style", {
 
 /***/ }),
 
-/***/ "./pages/components/text/HelloText.js":
-/*!********************************************!*\
-  !*** ./pages/components/text/HelloText.js ***!
-  \********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/jeremie/web/28_portfolio/pages/components/text/HelloText.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-const HelloText = () => __jsx("div", {
-  className: "hello-text",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 2
-  },
-  __self: undefined
-}, __jsx("p", {
-  className: "upper-text",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 3
-  },
-  __self: undefined
-}, "I\u2019m J\xE9r\xE9mie. I am a ", __jsx("span", {
-  className: "yellow",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 4
-  },
-  __self: undefined
-}, "coder"), " and a music producer based in Lisbon, Portugal."), style);
-
-const style = __jsx("style", {
-  jsx: true,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 16
-  },
-  __self: undefined
-}, `
-  .hello-text {
-    color: white;
-    font-family: var(--font2);
-    padding-left: 3rem;
-    padding-right: 3rem;
-    text-align: center;
-  }
-  .upper-text {
-    font-size: 1.6rem;
-  }
-  .yellow {
-    color: var(--color2);
-    font-size: 2rem;
-    font-family: var(--font3);
-  }
-    }
-  `);
-
-/* harmony default export */ __webpack_exports__["default"] = (HelloText);
-
-/***/ }),
-
-/***/ "./pages/index.js":
-/*!************************!*\
-  !*** ./pages/index.js ***!
-  \************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Layout */ "./pages/components/Layout.js");
-/* harmony import */ var _components_Hello__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Hello */ "./pages/components/Hello.js");
-var _jsxFileName = "/Users/jeremie/web/28_portfolio/pages/index.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-function Index() {
-  const handleScroll = () => console.log("scrolled");
-
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-  return __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }, __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, __jsx("div", {
-    className: "landing-logo-container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }, __jsx("img", {
-    className: "avatar",
-    src: "/img/avatar1.png",
-    alt: "avatar",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
-  }), __jsx("h1", {
-    className: "over",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }, "over-"), __jsx("h1", {
-    className: "dub",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }, "duB"), __jsx("hr", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }), __jsx("h2", {
-    className: "web",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
-  }, "WEB DEV."))), __jsx(_components_Hello__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    },
-    __self: this
-  })), style);
-}
-
-const style = __jsx("style", {
-  jsx: true,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 32
-  },
-  __self: undefined
-}, `
-    .landing-logo-container {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .avatar {
-      width: 5.5rem;
-      height: auto;
-      margin-left: -0.5rem;
-    }
-
-    .over {
-      color: var(--color2);
-      font-family: var(--font2);
-      font-size: 3.5rem;
-
-      margin-top: -1rem;
-    }
-    .dub {
-      color: var(--color2);
-      font-family: var(--font2);
-      font-size: 6rem;
-      margin-top: -1.6rem;
-    }
-    h1,
-    h2 {
-      margin-block-start: 0;
-      margin-block-end: 0;
-    }
-    hr {
-      margin-block-start: 0;
-      margin-block-end: 0;
-      border-color: white;
-      width: 5.5rem;
-      border-top: 1px solid white;
-      margin-inline-start: 5rem;
-      margin-top: -1.3rem;
-      margin-inline-end: 0;
-    }
-    .web {
-      font-family: var(--font3);
-      color: white;
-      font-size: 1.15rem;
-      margin-left: 5.2rem;
-      margin-top: 0.1rem;
-    }
-  `);
-
-/* harmony default export */ __webpack_exports__["default"] = (Index);
-
-/***/ }),
-
 /***/ "./pages/style/GlobalStyles.js":
 /*!*************************************!*\
   !*** ./pages/style/GlobalStyles.js ***!
@@ -2655,14 +2183,14 @@ const GlobalStyles = __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default
 
 /***/ }),
 
-/***/ 3:
+/***/ 5:
 /*!******************************!*\
-  !*** multi ./pages/index.js ***!
+  !*** multi ./pages/about.js ***!
   \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/jeremie/web/28_portfolio/pages/index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! /Users/jeremie/web/28_portfolio/pages/about.js */"./pages/about.js");
 
 
 /***/ }),
@@ -2844,4 +2372,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=about.js.map

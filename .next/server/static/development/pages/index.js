@@ -2079,30 +2079,35 @@ const Hello = () => __jsx("div", {
 }), __jsx(_LinkBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
   link: "/about",
   name: "about me",
+  showArrow: "true",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 10
+  },
+  __self: undefined
+}), __jsx(_LinkBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  link: "/portfolio",
+  name: "portfolio",
+  showArrow: "true",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 11
   },
   __self: undefined
 }), __jsx(_LinkBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
-  name: "portfolio",
+  name: "skills",
+  showArrow: "true",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 12
   },
   __self: undefined
 }), __jsx(_LinkBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
-  name: "skills",
+  name: "cv",
+  showArrow: "true",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 13
-  },
-  __self: undefined
-}), __jsx(_LinkBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
-  name: "cv",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 14
   },
   __self: undefined
 })), style);
@@ -2111,7 +2116,7 @@ const style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 21
+    lineNumber: 20
   },
   __self: undefined
 }, `
@@ -2235,11 +2240,11 @@ function LinkBox(props) {
       lineNumber: 10
     },
     __self: this
-  }, props.name)), __jsx("div", {
+  }, props.name)), props.showArrow ? __jsx("div", {
     className: "arrow-box",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 13
     },
     __self: this
   }, __jsx("img", {
@@ -2248,17 +2253,17 @@ function LinkBox(props) {
     alt: "arrow",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 14
     },
     __self: this
-  }))))), style);
+  })) : null))), style, !props.showArrow ? centeredTitle : null);
 }
 
 const style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 24
+    lineNumber: 27
   },
   __self: undefined
 }, `
@@ -2275,7 +2280,6 @@ const style = __jsx("style", {
       width: 11rem;
       height: 3rem;
       display: flex;
-      justify-content: flex-start;
       align-items: center;
     }
     .arrow-box {
@@ -2293,6 +2297,22 @@ const style = __jsx("style", {
     .arrow {
       width: 2rem;
       height: auto;
+    }
+  `);
+
+const centeredTitle = __jsx("style", {
+  jsx: true,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 63
+  },
+  __self: undefined
+}, `
+    .text-box {
+      justify-content: center;
+    }
+    .text {
+      padding-left: 0;
     }
   `);
 

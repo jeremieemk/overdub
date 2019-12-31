@@ -9396,30 +9396,35 @@ var Hello = function Hello() {
   }), __jsx(_LinkBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
     link: "/about",
     name: "about me",
+    showArrow: "true",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }), __jsx(_LinkBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    link: "/portfolio",
+    name: "portfolio",
+    showArrow: "true",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
     },
     __self: this
   }), __jsx(_LinkBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    name: "portfolio",
+    name: "skills",
+    showArrow: "true",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
     },
     __self: this
   }), __jsx(_LinkBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    name: "skills",
+    name: "cv",
+    showArrow: "true",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 13
-    },
-    __self: this
-  }), __jsx(_LinkBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    name: "cv",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
     },
     __self: this
   })), style);
@@ -9429,7 +9434,7 @@ var style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 21
+    lineNumber: 20
   },
   __self: undefined
 }, "\n    .hello-container {\n      height: 100vh;\n      margin-bottom: 5rem;\n    }\n\n    .under-the-title {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      margin-bottom: 5rem;\n    }\n  ");
@@ -9543,11 +9548,11 @@ function LinkBox(props) {
       lineNumber: 10
     },
     __self: this
-  }, props.name)), __jsx("div", {
+  }, props.name)), props.showArrow ? __jsx("div", {
     className: "arrow-box",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 13
     },
     __self: this
   }, __jsx("img", {
@@ -9556,20 +9561,29 @@ function LinkBox(props) {
     alt: "arrow",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 14
     },
     __self: this
-  }))))), style);
+  })) : null))), style, !props.showArrow ? centeredTitle : null);
 }
 
 var style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 24
+    lineNumber: 27
   },
   __self: undefined
-}, "\n    .text-box-container {\n      margin-top: 1rem;\n      display: flex;\n      cursor: \"pointer\";\n    }\n    .text-box {\n      color: white;\n      font-family: var(--font3);\n      border: var(--line-width) solid white;\n      font-size: 1.3rem;\n      width: 11rem;\n      height: 3rem;\n      display: flex;\n      justify-content: flex-start;\n      align-items: center;\n    }\n    .arrow-box {\n      border-width: var(--line-width) var(--line-width) var(--line-width) 0;\n      width: 5rem;\n      border-style: solid;\n      border-color: white;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n    }\n    .text {\n      padding-left: 2rem;\n    }\n    .arrow {\n      width: 2rem;\n      height: auto;\n    }\n  ");
+}, "\n    .text-box-container {\n      margin-top: 1rem;\n      display: flex;\n      cursor: \"pointer\";\n    }\n    .text-box {\n      color: white;\n      font-family: var(--font3);\n      border: var(--line-width) solid white;\n      font-size: 1.3rem;\n      width: 11rem;\n      height: 3rem;\n      display: flex;\n      align-items: center;\n    }\n    .arrow-box {\n      border-width: var(--line-width) var(--line-width) var(--line-width) 0;\n      width: 5rem;\n      border-style: solid;\n      border-color: white;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n    }\n    .text {\n      padding-left: 2rem;\n    }\n    .arrow {\n      width: 2rem;\n      height: auto;\n    }\n  ");
+
+var centeredTitle = __jsx("style", {
+  jsx: true,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 63
+  },
+  __self: undefined
+}, "\n    .text-box {\n      justify-content: center;\n    }\n    .text {\n      padding-left: 0;\n    }\n  ");
 
 /* harmony default export */ __webpack_exports__["default"] = (LinkBox);
 

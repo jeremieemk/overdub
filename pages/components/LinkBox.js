@@ -9,13 +9,16 @@ function LinkBox(props) {
             <div className="text-box">
               <a className="text">{props.name}</a>
             </div>
-            <div className="arrow-box">
-              <img className="arrow" src="/img/whitearrow3.png" alt="arrow" />
-            </div>
+            {props.showArrow ? (
+              <div className="arrow-box">
+                <img className="arrow" src="/img/whitearrow3.png" alt="arrow" />
+              </div>
+            ) : null}
           </div>
         </a>
       </Link>
       {style}
+      {!props.showArrow ? centeredTitle : null}
     </div>
   );
 }
@@ -35,7 +38,6 @@ const style = (
       width: 11rem;
       height: 3rem;
       display: flex;
-      justify-content: flex-start;
       align-items: center;
     }
     .arrow-box {
@@ -53,6 +55,17 @@ const style = (
     .arrow {
       width: 2rem;
       height: auto;
+    }
+  `}</style>
+);
+
+const centeredTitle = (
+  <style jsx>{`
+    .text-box {
+      justify-content: center;
+    }
+    .text {
+      padding-left: 0;
     }
   `}</style>
 );

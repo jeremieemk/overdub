@@ -22,9 +22,6 @@ function LinkBox(props) {
 
 const style = (
   <style jsx>{`
-    a {
-      text-decoration: none;
-    }
     .text-box-container {
       margin-top: 1rem;
       display: flex;

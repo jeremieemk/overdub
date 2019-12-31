@@ -18,6 +18,10 @@ const GlobalStyles = (
       src: url("fonts/WorkSans-Bold.woff") format("woff");
       src: url("fonts/WorkSans-Bold.ttf") format("truetype");
     }
+    @font-face {
+      font-family: "WorkSans-Regular";
+      src: url("fonts/WorkSans-Regular.ttf") format("truetype");
+    }
 
     :root {
       --global-margin: 2rem;
@@ -26,11 +30,15 @@ const GlobalStyles = (
       --font1: "Sectra";
       --font2: "PxGroteskBold";
       --font3: "WorkSans-Bold";
+      --font4: "WorkSans-Regular";
       --line-width: 0.1rem;
     }
     body {
       background-color: var(--color1);
       margin: 0;
+    }
+    a {
+      text-decoration: none;
     }
   `}</style>
 );

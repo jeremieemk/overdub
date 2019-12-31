@@ -20,6 +20,7 @@ const About = () => (
 const style = (
   <style jsx>{`
     .under-the-title {
+      margin-top: 1.5rem;
       display: flex;
       flex-direction: column;
       justify-content: center;

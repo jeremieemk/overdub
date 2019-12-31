@@ -1,7 +1,11 @@
+import Link from "next/link";
+
 const Logo = () => (
   <div>
     <div className="logo" style={{ fontFamily: "Sectra" }}>
-      O
+      <Link href="/">
+        <a className="logo-letter">O</a>
+      </Link>
     </div>
     {style}
   </div>
@@ -9,6 +13,9 @@ const Logo = () => (
 
 const style = (
   <style jsx>{`
+    .logo-letter {
+      color: var(--color2);
+    }
     .logo {
       font-size: 3rem;
       color: var(--color2);

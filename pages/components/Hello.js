@@ -7,6 +7,7 @@ const Hello = () => (
     <PageTitle title="Hey, Hi" />
     <div className="under-the-title">
       <HelloText />
+
       <LinkBox link={"/about"} name="about me" />
       <LinkBox name="portfolio" />
       <LinkBox name="skills" />
@@ -22,10 +23,12 @@ const style = (
       height: 100vh;
       margin-bottom: 5rem;
     }
+
     .under-the-title {
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-bottom: 5rem;
     }
   `}</style>
 );

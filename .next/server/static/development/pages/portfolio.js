@@ -2414,28 +2414,23 @@ function ProjectItem(props) {
       lineNumber: 6
     },
     __self: this
-  }, __jsx(_LinkBox__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    name: props.name,
+  }, __jsx("a", {
+    href: props.link,
+    target: "_blank",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     },
     __self: this
-  }), __jsx(_ProjectDescriptionTitle__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    title: "COMPANY",
+  }, __jsx(_LinkBox__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    name: props.name,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     },
     __self: this
-  }), __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, props.company), __jsx(_ProjectDescriptionTitle__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    title: "ROLE",
+  })), __jsx(_ProjectDescriptionTitle__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: "COMPANY",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
@@ -2447,8 +2442,8 @@ function ProjectItem(props) {
       lineNumber: 11
     },
     __self: this
-  }, props.role), __jsx(_ProjectDescriptionTitle__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    title: "TOOLS",
+  }, props.company), __jsx(_ProjectDescriptionTitle__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: "ROLE",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
@@ -2460,23 +2455,44 @@ function ProjectItem(props) {
       lineNumber: 13
     },
     __self: this
-  }, props.tools), __jsx("img", {
-    className: "screenshot",
-    src: props.img,
-    alt: "screenshot",
+  }, props.role), __jsx(_ProjectDescriptionTitle__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: "TOOLS",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 14
     },
     __self: this
-  }), style);
+  }), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, props.tools), __jsx("a", {
+    href: props.link,
+    target: "_blank",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }, __jsx("img", {
+    className: "screenshot",
+    src: props.img,
+    alt: "screenshot",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  })), style);
 }
 
 const style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 21
+    lineNumber: 26
   },
   __self: undefined
 }, `
@@ -2592,21 +2608,24 @@ const ProjectDetails = {
     company: "Largo Residencias (Lisbon, Portugal)",
     role: "Front End developer. Project manager.",
     tools: "React, React-router, Google-map-react, React-switch-lang, Strapi, Material UI",
-    img: "/img/escutaScreen.png"
+    img: "/img/escutaScreen.png",
+    link: "http://www.escuta.pt/radio"
   },
   raum404: {
     name: "raum404",
     company: "Raum404 (Zurich, Switzerland)",
     role: "FullStack Developer",
     tools: "CSS, jQuery, Vapid",
-    img: "/img/raum404Screen.png"
+    img: "/img/raum404Screen.png",
+    link: "https://www.raum404.ch/"
   },
   izem: {
     name: "iZem",
     company: "iZem (Lisbon, Portugal)",
     role: "FullStack Developer, Designer",
     tools: "Python Flask, Javascript, CSS",
-    img: "/img/izemScreen.png"
+    img: "/img/izemScreen.png",
+    link: "http://www.izem.me/"
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = (ProjectDetails);

@@ -4,14 +4,19 @@ import ProjectDescriptionTitle from "./ProjectDescriptionTitle";
 function ProjectItem(props) {
   return (
     <div className="project-item-container">
-      <LinkBox name={props.name} />
+      <a href={props.link} target="_blank">
+        <LinkBox name={props.name} />
+      </a>
       <ProjectDescriptionTitle title="COMPANY" />
       <p>{props.company}</p>
       <ProjectDescriptionTitle title="ROLE" />
       <p>{props.role}</p>
       <ProjectDescriptionTitle title="TOOLS" />
       <p>{props.tools}</p>
-      <img className="screenshot" src={props.img} alt="screenshot" />
+      <a href={props.link} target="_blank">
+        <img className="screenshot" src={props.img} alt="screenshot" />
+      </a>
+
       {style}
     </div>
   );

@@ -7,6 +7,8 @@ const Portfolio = () => (
   <Layout>
     <PageTitle title="my Portfolio" />
     <ProjectItem {...ProjectDetails.escuta} />
+    <ProjectItem {...ProjectDetails.raum404} />
+    <ProjectItem {...ProjectDetails.izem} />
     {style}
   </Layout>
 );

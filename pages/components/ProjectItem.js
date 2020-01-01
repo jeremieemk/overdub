@@ -22,22 +22,18 @@ const style = (
     .project-item-container {
       padding-right: var(--global-margin);
       padding-left: var(--global-margin);
-      margin-top: var(--global-margin);
-    }
-    h1 {
-      color: var(--color2);
-      font-family: var(--font3);
-      font-size: 1.3rem;
+      margin-top: 1.5rem;
     }
     p {
       font-size: 1rem;
       color: white;
       font-family: var(--font4);
-      margin-block-start: 0.5rem;
+      margin-block-start: 0.2rem;
       margin-block-end: 0;
     }
     .screenshot {
-      margin-top: var(--global-margin);
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
       width: 100%;
       height: auto;
     }

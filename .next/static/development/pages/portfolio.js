@@ -9623,7 +9623,7 @@ var style = __jsx("style", {
     lineNumber: 12
   },
   __self: undefined
-}, "\n    .project-title-container {\n      padding-top: 1rem;\n      display: flex;\n      flex-direction: column;\n      align-items: flex-start;\n    }\n    .project-title {\n      color: var(--color2);\n      font-family: var(--font3);\n      text-align: center;\n      font-size: 1.2rem;\n    }\n    .project-title-line {\n      margin-bottom: 0.5rem;\n      width: 1.2rem;\n      border-bottom: 0.2rem solid white;\n    }\n  ");
+}, "\n    .project-title-container {\n      padding-top: 1rem;\n      display: flex;\n      flex-direction: column;\n      align-items: flex-start;\n    }\n    .project-title {\n      color: var(--color2);\n      font-family: var(--font3);\n      text-align: center;\n      font-size: 1.1rem;\n    }\n    .project-title-line {\n      margin-bottom: 0.5rem;\n      width: 1.2rem;\n      border-bottom: 0.2rem solid white;\n    }\n  ");
 
 /* harmony default export */ __webpack_exports__["default"] = (ProjectDescriptionTitle);
 
@@ -9721,7 +9721,7 @@ var style = __jsx("style", {
     lineNumber: 21
   },
   __self: undefined
-}, "\n    .project-item-container {\n      padding-right: var(--global-margin);\n      padding-left: var(--global-margin);\n      margin-top: var(--global-margin);\n    }\n    h1 {\n      color: var(--color2);\n      font-family: var(--font3);\n      font-size: 1.3rem;\n    }\n    p {\n      font-size: 1rem;\n      color: white;\n      font-family: var(--font4);\n      margin-block-start: 0.5rem;\n      margin-block-end: 0;\n    }\n    .screenshot {\n      margin-top: var(--global-margin);\n      width: 100%;\n      height: auto;\n    }\n  ");
+}, "\n    .project-item-container {\n      padding-right: var(--global-margin);\n      padding-left: var(--global-margin);\n      margin-top: 1.5rem;\n    }\n    p {\n      font-size: 1rem;\n      color: white;\n      font-family: var(--font4);\n      margin-block-start: 0.2rem;\n      margin-block-end: 0;\n    }\n    .screenshot {\n      margin-top: 1.5rem;\n      margin-bottom: 1rem;\n      width: 100%;\n      height: auto;\n    }\n  ");
 
 /* harmony default export */ __webpack_exports__["default"] = (ProjectItem);
 
@@ -9806,8 +9806,22 @@ var ProjectDetails = {
     name: "escuta",
     company: "Largo Residencias (Lisbon, Portugal)",
     role: "Front End developer. Project manager.",
-    tools: "React, React-router, Google-map-react, React-switch-lang, Strapi.",
+    tools: "React, React-router, Google-map-react, React-switch-lang, Strapi, Material UI",
     img: "/img/escutaScreen.png"
+  },
+  raum404: {
+    name: "raum404",
+    company: "Raum404 (Zurich, Switzerland)",
+    role: "FullStack Developer",
+    tools: "CSS, jQuery, Vapid",
+    img: "/img/raum404Screen.png"
+  },
+  izem: {
+    name: "iZem",
+    company: "iZem (Lisbon, Portugal)",
+    role: "FullStack Developer, Designer",
+    tools: "Python Flask, Javascript, CSS",
+    img: "/img/izemScreen.png"
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = (ProjectDetails);
@@ -9859,6 +9873,18 @@ var Portfolio = function Portfolio() {
       lineNumber: 9
     },
     __self: this
+  })), __jsx(_components_ProjectItem__WEBPACK_IMPORTED_MODULE_4__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _components_text_ProjectDetails__WEBPACK_IMPORTED_MODULE_5__["default"].raum404, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  })), __jsx(_components_ProjectItem__WEBPACK_IMPORTED_MODULE_4__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _components_text_ProjectDetails__WEBPACK_IMPORTED_MODULE_5__["default"].izem, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
   })), style);
 };
 
@@ -9866,7 +9892,7 @@ var style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 15
+    lineNumber: 17
   },
   __self: undefined
 }, "\n   \n    }\n  ");

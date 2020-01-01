@@ -1,12 +1,12 @@
 import Layout from "./components/Layout";
 import PageTitle from "./components/PageTitle";
-import LinkBox from "./components/LinkBox";
+import ProjectItem from "./components/ProjectItem";
+import ProjectDetails from "./components/text/ProjectDetails";
 
 const Portfolio = () => (
   <Layout>
     <PageTitle title="my Portfolio" />
-    <LinkBox name="escuta" />
-
+    <ProjectItem {...ProjectDetails.escuta} />
     {style}
   </Layout>
 );

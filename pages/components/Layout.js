@@ -8,7 +8,16 @@ const Layout = props => (
       {props.children}
     </div>
     {GlobalStyles}
+    {style}
   </div>
+);
+
+const style = (
+  <style jsx>{`
+    .container {
+      position: relative;
+    }
+  `}</style>
 );
 
 export default Layout;

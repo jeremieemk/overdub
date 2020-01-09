@@ -1,6 +1,6 @@
 const ProjectDetails = {
   escuta: {
-    name: "escuta",
+    name: "escuta.pt",
     company: "Largo Residencias (Lisbon, Portugal)",
     role: "Front End developer. Project manager.",
     tools:
@@ -9,7 +9,7 @@ const ProjectDetails = {
     link: "http://www.escuta.pt/radio"
   },
   raum404: {
-    name: "raum404",
+    name: "raum404.ch",
     company: "Raum404 (Zurich, Switzerland)",
     role: "FullStack Developer",
     tools: "CSS, jQuery, Vapid",
@@ -17,7 +17,7 @@ const ProjectDetails = {
     link: "https://www.raum404.ch/"
   },
   izem: {
-    name: "iZem",
+    name: "izem.me",
     company: "iZem (Lisbon, Portugal)",
     role: "FullStack Developer, Designer",
     tools: "Python Flask, Javascript, CSS",

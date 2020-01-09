@@ -21,7 +21,6 @@ const style = (
       position: fixed;
       top: 0;
       width: 100%;
-      // background-color: var(--color1);
     }
   `}</style>
 );

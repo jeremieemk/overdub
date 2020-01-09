@@ -20,7 +20,8 @@ const style = (
       color: var(--color2);
       font-family: var(--font3);
       text-align: center;
-      font-size: 1.1rem;
+      font-size: 1rem;
+      margin-bottom: 0.2rem;
     }
     .project-title-line {
       margin-bottom: 0.5rem;

@@ -9269,14 +9269,14 @@ function Hamburger() {
     },
     __self: this
   }, __jsx("div", {
-    className: "line",
+    className: "line upper-line",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
     },
     __self: this
   }), __jsx("div", {
-    className: "line",
+    className: "line lower-line",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
@@ -9307,7 +9307,7 @@ var openStyle = __jsx("style", {
     lineNumber: 37
   },
   __self: undefined
-}, "\n    .line {\n      border-bottom: 0.2rem solid black;\n      z-index: 100;\n    }\n  ");
+}, "\n    .line {\n      border-bottom: 0.2rem solid black;\n      z-index: 100;\n      margin-bottom: 0;\n    }\n    .lower-line {\n      transform: rotate(-45deg) translateY(-0.3rem);\n    }\n    .upper-line {\n      transform: rotate(45deg);\n    }\n  ");
 
 /* harmony default export */ __webpack_exports__["default"] = (Hamburger);
 
@@ -9774,7 +9774,7 @@ var centeredTitle = __jsx("style", {
     lineNumber: 63
   },
   __self: undefined
-}, "\n    .text-box {\n      justify-content: center;\n    }\n    .text {\n      padding-left: 0;\n    }\n  ");
+}, "\n    .text-box {\n      justify-content: center;\n      width: 80vw;\n    }\n    .text {\n      padding-left: 0;\n      font-size: 1.2rem;\n    }\n  ");
 
 /* harmony default export */ __webpack_exports__["default"] = (LinkBox);
 

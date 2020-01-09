@@ -7,8 +7,8 @@ function Hamburger() {
   return (
     <div className="hamburger-container">
       <div className="lines" onClick={handleHamburgerClick}>
-        <div className="line"></div>
-        <div className="line"></div>
+        <div className="line upper-line"></div>
+        <div className="line lower-line"></div>
       </div>
 
       {isOpen ? <HamburgerOpenMenu /> : null}
@@ -38,6 +38,13 @@ const openStyle = (
     .line {
       border-bottom: 0.2rem solid black;
       z-index: 100;
+      margin-bottom: 0;
+    }
+    .lower-line {
+      transform: rotate(-45deg) translateY(-0.3rem);
+    }
+    .upper-line {
+      transform: rotate(45deg);
     }
   `}</style>
 );

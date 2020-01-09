@@ -1936,14 +1936,14 @@ function Hamburger() {
     },
     __self: this
   }, __jsx("div", {
-    className: "line",
+    className: "line upper-line",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
     },
     __self: this
   }), __jsx("div", {
-    className: "line",
+    className: "line lower-line",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
@@ -1990,6 +1990,13 @@ const openStyle = __jsx("style", {
     .line {
       border-bottom: 0.2rem solid black;
       z-index: 100;
+      margin-bottom: 0;
+    }
+    .lower-line {
+      transform: rotate(-45deg) translateY(-0.3rem);
+    }
+    .upper-line {
+      transform: rotate(45deg);
     }
   `);
 
@@ -2555,9 +2562,11 @@ const centeredTitle = __jsx("style", {
 }, `
     .text-box {
       justify-content: center;
+      width: 80vw;
     }
     .text {
       padding-left: 0;
+      font-size: 1.2rem;
     }
   `);
 

@@ -28,13 +28,12 @@ const style = (
     .project-item-container {
       padding-right: var(--global-margin);
       padding-left: var(--global-margin);
-      margin-top: 3rem;
+      margin-top: 2rem;
     }
     .item-title-container {
       width: 100%;
       display: flex;
       justify-content: center;
-      margin-bottom: 1rem;
     }
     p {
       font-size: 1rem;

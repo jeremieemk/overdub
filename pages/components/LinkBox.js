@@ -63,9 +63,11 @@ const centeredTitle = (
   <style jsx>{`
     .text-box {
       justify-content: center;
+      width: 80vw;
     }
     .text {
       padding-left: 0;
+      font-size: 1.2rem;
     }
   `}</style>
 );

@@ -11,7 +11,9 @@ function Hamburger() {
         <div className="line lower-line"></div>
       </div>
 
-      {isOpen ? <HamburgerOpenMenu /> : null}
+      {isOpen ? (
+        <HamburgerOpenMenu handleHamburgerClick={handleHamburgerClick} />
+      ) : null}
       {style}
       {isOpen ? openStyle : null}
     </div>
@@ -30,6 +32,7 @@ const style = (
       width: 2rem;
       border-bottom: 0.2rem solid white;
       position: relative;
+      transition: transform 0.3s;
     }
   `}</style>
 );
@@ -39,12 +42,15 @@ const openStyle = (
       border-bottom: 0.2rem solid black;
       z-index: 100;
       margin-bottom: 0;
+      transition: transform 0.3s;
     }
     .lower-line {
-      transform: rotate(-45deg) translateY(-0.3rem);
+      transform: rotate(-45deg) translateY(-0.15rem);
+      transform-origin: center;
     }
     .upper-line {
-      transform: rotate(45deg);
+      transform: rotate(45deg) translateY(0.15rem);
+      transform-origin: center;
     }
   `}</style>
 );

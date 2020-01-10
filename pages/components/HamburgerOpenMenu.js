@@ -1,38 +1,51 @@
 import Link from "next/link";
 
-const HamburgerOpenMenu = () => (
-  <div className="hamburger-menu-container">
-    <div className="nested-menu-container">
-      <Link href="/about">ABOUT ME</Link>
-      <Link href="/portfolio">PORTFOLIO</Link>
-      <Link href="/skills">SKILLS</Link>
-      <Link href="/cv">CV</Link>
-      <div className="get-in-touch">
-        <p>GET IN TOUCH</p>
-        <div className="social-icons">
-          <a href="https://www.facebook.com/jeremieemk" target="_blank">
-            <img className="social-icon-pic" src="/img/fb.png" alt="fb" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/jeremiemoussaidkerouanton/"
-            target="_blank"
-          >
-            <img
-              className="social-icon-pic"
-              src="/img/linkedin.png"
-              alt="linkedin"
-            />
-          </a>
-          <a href="mailto:jeremieemk@gmail.com" target="_blank">
-            <img className="social-icon-pic" src="/img/mail.png" alt="mail" />
-          </a>
+function HamburgerOpenMenu(props) {
+  const test = () => console.log("ça marche");
+  return (
+    <div className="hamburger-menu-container">
+      <div className="nested-menu-container">
+        <Link href="/about">
+          <a onClick={props.handleHamburgerClick}>ABOUT ME</a>
+        </Link>
+        <Link href="/portfolio">
+          <a onClick={props.handleHamburgerClick}>PORTFOLIO</a>
+        </Link>
+
+        <Link href="/skills">
+          <a onClick={props.handleHamburgerClick}>SKILLS</a>
+        </Link>
+
+        <Link href="/cv">
+          <a onClick={props.handleHamburgerClick}>CV</a>
+        </Link>
+        <div className="get-in-touch">
+          <p>GET IN TOUCH</p>
+          <div className="social-icons">
+            <a href="https://www.facebook.com/jeremieemk" target="_blank">
+              <img className="social-icon-pic" src="/img/fb.png" alt="fb" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/jeremiemoussaidkerouanton/"
+              target="_blank"
+            >
+              <img
+                className="social-icon-pic"
+                src="/img/linkedin.png"
+                alt="linkedin"
+              />
+            </a>
+            <a href="mailto:jeremieemk@gmail.com" target="_blank">
+              <img className="social-icon-pic" src="/img/mail.png" alt="mail" />
+            </a>
+          </div>
         </div>
       </div>
-    </div>
 
-    {style}
-  </div>
-);
+      {style}
+    </div>
+  );
+}
 
 const style = (
   <style jsx>{`

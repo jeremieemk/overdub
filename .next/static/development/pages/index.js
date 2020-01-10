@@ -9283,9 +9283,10 @@ function Hamburger() {
     },
     __self: this
   })), isOpen ? __jsx(_HamburgerOpenMenu__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    handleHamburgerClick: handleHamburgerClick,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 15
     },
     __self: this
   }) : null, style, isOpen ? openStyle : null);
@@ -9295,19 +9296,19 @@ var style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 22
+    lineNumber: 24
   },
   __self: undefined
-}, "\n    .lines {\n      margin-top: var(--global-margin);\n      margin-right: var(--global-margin);\n    }\n\n    .line {\n      margin-bottom: 0.5rem;\n      width: 2rem;\n      border-bottom: 0.2rem solid white;\n      position: relative;\n    }\n  ");
+}, "\n    .lines {\n      margin-top: var(--global-margin);\n      margin-right: var(--global-margin);\n    }\n\n    .line {\n      margin-bottom: 0.5rem;\n      width: 2rem;\n      border-bottom: 0.2rem solid white;\n      position: relative;\n      transition: transform 0.3s;\n    }\n  ");
 
 var openStyle = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 37
+    lineNumber: 40
   },
   __self: undefined
-}, "\n    .line {\n      border-bottom: 0.2rem solid black;\n      z-index: 100;\n      margin-bottom: 0;\n    }\n    .lower-line {\n      transform: rotate(-45deg) translateY(-0.3rem);\n    }\n    .upper-line {\n      transform: rotate(45deg);\n    }\n  ");
+}, "\n    .line {\n      border-bottom: 0.2rem solid black;\n      z-index: 100;\n      margin-bottom: 0;\n      transition: transform 0.3s;\n    }\n    .lower-line {\n      transform: rotate(-45deg) translateY(-0.15rem);\n      transform-origin: center;\n    }\n    .upper-line {\n      transform: rotate(45deg) translateY(0.15rem);\n      transform-origin: center;\n    }\n  ");
 
 /* harmony default export */ __webpack_exports__["default"] = (Hamburger);
 
@@ -9331,67 +9332,99 @@ var _jsxFileName = "/Users/jeremie/web/28_portfolio/pages/components/HamburgerOp
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-var HamburgerOpenMenu = function HamburgerOpenMenu() {
+function HamburgerOpenMenu(props) {
+  var test = function test() {
+    return console.log("ça marche");
+  };
+
   return __jsx("div", {
     className: "hamburger-menu-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
+      lineNumber: 6
     },
     __self: this
   }, __jsx("div", {
     className: "nested-menu-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 7
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/about",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, "ABOUT ME"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/portfolio",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }, "PORTFOLIO"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/skills",
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 8
     },
     __self: this
-  }, "SKILLS"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/cv",
+  }, __jsx("a", {
+    onClick: props.handleHamburgerClick,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     },
     __self: this
-  }, "CV"), __jsx("div", {
+  }, "ABOUT ME")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/portfolio",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, __jsx("a", {
+    onClick: props.handleHamburgerClick,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, "PORTFOLIO")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/skills",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, __jsx("a", {
+    onClick: props.handleHamburgerClick,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }, "SKILLS")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/cv",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, __jsx("a", {
+    onClick: props.handleHamburgerClick,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }, "CV")), __jsx("div", {
     className: "get-in-touch",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 22
     },
     __self: this
   }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 23
     },
     __self: this
   }, "GET IN TOUCH"), __jsx("div", {
     className: "social-icons",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 24
     },
     __self: this
   }, __jsx("a", {
@@ -9399,7 +9432,7 @@ var HamburgerOpenMenu = function HamburgerOpenMenu() {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 25
     },
     __self: this
   }, __jsx("img", {
@@ -9408,7 +9441,7 @@ var HamburgerOpenMenu = function HamburgerOpenMenu() {
     alt: "fb",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 26
     },
     __self: this
   })), __jsx("a", {
@@ -9416,7 +9449,7 @@ var HamburgerOpenMenu = function HamburgerOpenMenu() {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 28
     },
     __self: this
   }, __jsx("img", {
@@ -9425,7 +9458,7 @@ var HamburgerOpenMenu = function HamburgerOpenMenu() {
     alt: "linkedin",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 32
     },
     __self: this
   })), __jsx("a", {
@@ -9433,7 +9466,7 @@ var HamburgerOpenMenu = function HamburgerOpenMenu() {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 38
     },
     __self: this
   }, __jsx("img", {
@@ -9442,17 +9475,17 @@ var HamburgerOpenMenu = function HamburgerOpenMenu() {
     alt: "mail",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 39
     },
     __self: this
   }))))), style);
-};
+}
 
 var style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 38
+    lineNumber: 51
   },
   __self: undefined
 }, "\n    .hamburger-menu-container {\n      height: 100vh;\n      width: 100vw;\n      left: 0;\n      top: 0;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      position: absolute;\n    }\n    .nested-menu-container {\n      background: -webkit-linear-gradient(165deg, white 65%, #f6f6f6 65%);\n      background: -o-linear-gradient(165deg, white 65%, #f6f6f6 65%);\n      background: -moz-linear-gradient(165deg, white 65%, #f6f6f6 65%);\n      background: linear-gradient(165deg, white 65%, #f6f6f6 65%);\n      height: 100%;\n      width: 100%;\n      padding: 2rem;\n      font-size: 1.05rem;\n      font-family: var(--font3);\n      letter-spacing: 0.1rem;\n      display: flex;\n      flex-direction: column;\n      justify-content: center;\n      align-items: center;\n      position: absolute;\n    }\n    .nested-menu-container > a {\n      padding: 1rem;\n    }\n    .social-icon-pic {\n      width: 1.5rem;\n      padding: 1rem;\n      height: auto;\n    }\n    .get-in-touch {\n      text-align: center;\n      transform: translateY(8rem);\n    }\n    .get-in-touch > p {\n      color: black;\n\n      font-size: 0.8rem;\n    }\n  ");
@@ -10121,7 +10154,7 @@ var GlobalStyles = __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a
 
 /***/ }),
 
-/***/ 0:
+/***/ 3:
 /*!***************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fjeremie%2Fweb%2F28_portfolio%2Fpages%2Findex.js ***!
   \***************************************************************************************************************************/
@@ -10144,5 +10177,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

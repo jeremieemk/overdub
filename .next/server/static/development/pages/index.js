@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1950,9 +1950,10 @@ function Hamburger() {
     },
     __self: this
   })), isOpen ? __jsx(_HamburgerOpenMenu__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    handleHamburgerClick: handleHamburgerClick,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 15
     },
     __self: this
   }) : null, style, isOpen ? openStyle : null);
@@ -1962,7 +1963,7 @@ const style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 22
+    lineNumber: 24
   },
   __self: undefined
 }, `
@@ -1976,6 +1977,7 @@ const style = __jsx("style", {
       width: 2rem;
       border-bottom: 0.2rem solid white;
       position: relative;
+      transition: transform 0.3s;
     }
   `);
 
@@ -1983,7 +1985,7 @@ const openStyle = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 37
+    lineNumber: 40
   },
   __self: undefined
 }, `
@@ -1991,12 +1993,15 @@ const openStyle = __jsx("style", {
       border-bottom: 0.2rem solid black;
       z-index: 100;
       margin-bottom: 0;
+      transition: transform 0.3s;
     }
     .lower-line {
-      transform: rotate(-45deg) translateY(-0.3rem);
+      transform: rotate(-45deg) translateY(-0.15rem);
+      transform-origin: center;
     }
     .upper-line {
-      transform: rotate(45deg);
+      transform: rotate(45deg) translateY(0.15rem);
+      transform-origin: center;
     }
   `);
 
@@ -2022,126 +2027,158 @@ var _jsxFileName = "/Users/jeremie/web/28_portfolio/pages/components/HamburgerOp
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-const HamburgerOpenMenu = () => __jsx("div", {
-  className: "hamburger-menu-container",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 4
-  },
-  __self: undefined
-}, __jsx("div", {
-  className: "nested-menu-container",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5
-  },
-  __self: undefined
-}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  href: "/about",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6
-  },
-  __self: undefined
-}, "ABOUT ME"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  href: "/portfolio",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 7
-  },
-  __self: undefined
-}, "PORTFOLIO"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  href: "/skills",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 8
-  },
-  __self: undefined
-}, "SKILLS"), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  href: "/cv",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 9
-  },
-  __self: undefined
-}, "CV"), __jsx("div", {
-  className: "get-in-touch",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 10
-  },
-  __self: undefined
-}, __jsx("p", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 11
-  },
-  __self: undefined
-}, "GET IN TOUCH"), __jsx("div", {
-  className: "social-icons",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 12
-  },
-  __self: undefined
-}, __jsx("a", {
-  href: "https://www.facebook.com/jeremieemk",
-  target: "_blank",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 13
-  },
-  __self: undefined
-}, __jsx("img", {
-  className: "social-icon-pic",
-  src: "/img/fb.png",
-  alt: "fb",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 14
-  },
-  __self: undefined
-})), __jsx("a", {
-  href: "https://www.linkedin.com/in/jeremiemoussaidkerouanton/",
-  target: "_blank",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 16
-  },
-  __self: undefined
-}, __jsx("img", {
-  className: "social-icon-pic",
-  src: "/img/linkedin.png",
-  alt: "linkedin",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 20
-  },
-  __self: undefined
-})), __jsx("a", {
-  href: "mailto:jeremieemk@gmail.com",
-  target: "_blank",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 26
-  },
-  __self: undefined
-}, __jsx("img", {
-  className: "social-icon-pic",
-  src: "/img/mail.png",
-  alt: "mail",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 27
-  },
-  __self: undefined
-}))))), style);
+function HamburgerOpenMenu(props) {
+  const test = () => console.log("ça marche");
+
+  return __jsx("div", {
+    className: "hamburger-menu-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "nested-menu-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/about",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, __jsx("a", {
+    onClick: props.handleHamburgerClick,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, "ABOUT ME")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/portfolio",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, __jsx("a", {
+    onClick: props.handleHamburgerClick,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, "PORTFOLIO")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/skills",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, __jsx("a", {
+    onClick: props.handleHamburgerClick,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }, "SKILLS")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/cv",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, __jsx("a", {
+    onClick: props.handleHamburgerClick,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }, "CV")), __jsx("div", {
+    className: "get-in-touch",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }, __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: this
+  }, "GET IN TOUCH"), __jsx("div", {
+    className: "social-icons",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "https://www.facebook.com/jeremieemk",
+    target: "_blank",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }, __jsx("img", {
+    className: "social-icon-pic",
+    src: "/img/fb.png",
+    alt: "fb",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  })), __jsx("a", {
+    href: "https://www.linkedin.com/in/jeremiemoussaidkerouanton/",
+    target: "_blank",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: this
+  }, __jsx("img", {
+    className: "social-icon-pic",
+    src: "/img/linkedin.png",
+    alt: "linkedin",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  })), __jsx("a", {
+    href: "mailto:jeremieemk@gmail.com",
+    target: "_blank",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38
+    },
+    __self: this
+  }, __jsx("img", {
+    className: "social-icon-pic",
+    src: "/img/mail.png",
+    alt: "mail",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: this
+  }))))), style);
+}
 
 const style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 38
+    lineNumber: 51
   },
   __self: undefined
 }, `
@@ -3020,7 +3057,7 @@ const GlobalStyles = __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default
 
 /***/ }),
 
-/***/ 3:
+/***/ 6:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2086,38 +2086,32 @@ function HamburgerOpenMenu(props) {
       lineNumber: 16
     },
     __self: this
-  }, "SKILLS")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/cv",
+  }, "SKILLS")), __jsx("a", {
+    href: "https://res.cloudinary.com/dbslwolfi/image/upload/v1578760331/rss/CV2020_gsc1gi.pdf",
+    onClick: props.handleHamburgerClick,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 19
     },
     __self: this
-  }, __jsx("a", {
-    onClick: props.handleHamburgerClick,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
-  }, "CV")), __jsx("div", {
+  }, "CV"), __jsx("div", {
     className: "get-in-touch",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 26
     },
     __self: this
   }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 27
     },
     __self: this
   }, "GET IN TOUCH"), __jsx("div", {
     className: "social-icons",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 28
     },
     __self: this
   }, __jsx("a", {
@@ -2125,7 +2119,7 @@ function HamburgerOpenMenu(props) {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 29
     },
     __self: this
   }, __jsx("img", {
@@ -2134,7 +2128,7 @@ function HamburgerOpenMenu(props) {
     alt: "fb",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 30
     },
     __self: this
   })), __jsx("a", {
@@ -2142,7 +2136,7 @@ function HamburgerOpenMenu(props) {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 32
     },
     __self: this
   }, __jsx("img", {
@@ -2151,7 +2145,7 @@ function HamburgerOpenMenu(props) {
     alt: "linkedin",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 36
     },
     __self: this
   })), __jsx("a", {
@@ -2159,7 +2153,7 @@ function HamburgerOpenMenu(props) {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 42
     },
     __self: this
   }, __jsx("img", {
@@ -2168,7 +2162,7 @@ function HamburgerOpenMenu(props) {
     alt: "mail",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 43
     },
     __self: this
   }))))), style);
@@ -2178,7 +2172,7 @@ const style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 51
+    lineNumber: 55
   },
   __self: undefined
 }, `
@@ -2642,7 +2636,7 @@ function PageTitle(props) {
     },
     __self: this
   }, props.title), __jsx("div", {
-    class: "title-line",
+    className: "title-line",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 5
@@ -2793,20 +2787,26 @@ const HelloText = () => __jsx("div", {
   },
   __self: undefined
 }, "coder"), " , a music producer ", __jsx("span", {
-  className: "smaller",
+  className: "",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 5
   },
   __self: undefined
-}, "and an akward dancer."), __jsx("span", {
-  className: "smaller2",
+}, "and a goofy polyglot. "), __jsx("br", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 6
   },
   __self: undefined
-}, " ", "I was born in France and I live in Lisbon, Portugal."), __jsx("div", {
+}), __jsx("p", {
+  className: "smaller2",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 7
+  },
+  __self: undefined
+}, "I was born in France and I live in Lisbon, Portugal."), __jsx("div", {
   className: "img-container",
   __source: {
     fileName: _jsxFileName,
@@ -2858,7 +2858,9 @@ const style = __jsx("style", {
     font-size: 1.1rem;
   }
   .smaller2{
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    font-family: var(--font5);
   }
   .yellow {
     color: var(--color2);
@@ -3057,7 +3059,7 @@ const GlobalStyles = __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default
 
 /***/ }),
 
-/***/ 6:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

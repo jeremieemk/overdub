@@ -2,7 +2,7 @@ function PageTitle(props) {
   return (
     <div className="page-title-container">
       <div className="page-title">{props.title}</div>
-      <div class="title-line"></div>
+      <div className="title-line"></div>
       {style}
     </div>
   );

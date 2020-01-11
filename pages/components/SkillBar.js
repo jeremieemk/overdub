@@ -2,7 +2,9 @@ function SkillBar(props) {
   return (
     <div className="skill-bar-container">
       <div className="skill-name-container">
-        <p>{props.skillName}-</p>
+        <p>
+          | <span className="skill">{props.skillName}</span> |
+        </p>
       </div>
       <div className="skill-measure-bar-container">
         <div className="skill-bar-outline">
@@ -28,6 +30,8 @@ const style = (
       justify-content: flex-start;
       align-items: center;
       font-family: var(--font4);
+    }
+    .skill {
       color: white;
     }
     .skill-name-container > p {

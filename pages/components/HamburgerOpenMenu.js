@@ -16,9 +16,13 @@ function HamburgerOpenMenu(props) {
           <a onClick={props.handleHamburgerClick}>SKILLS</a>
         </Link>
 
-        <Link href="/cv">
-          <a onClick={props.handleHamburgerClick}>CV</a>
-        </Link>
+        <a
+          href="https://res.cloudinary.com/dbslwolfi/image/upload/v1578760331/rss/CV2020_gsc1gi.pdf"
+          onClick={props.handleHamburgerClick}
+        >
+          CV
+        </a>
+
         <div className="get-in-touch">
           <p>GET IN TOUCH</p>
           <div className="social-icons">

@@ -2,11 +2,11 @@ const HelloText = () => (
   <div className="hello-text">
     <p className="upper-text">
       I’m Jérémie. I am a <span className="yellow">coder</span> , a music
-      producer <span className="smaller">and an akward dancer.</span>
-      <span className="smaller2">
-        {" "}
+      producer <span className="">and a goofy polyglot. </span>
+      <br />
+      <p className="smaller2">
         I was born in France and I live in Lisbon, Portugal.
-      </span>
+      </p>
       <div className="img-container">
         <img className="sardine" src="/img/toilet.png" alt="sardine" />
       </div>
@@ -43,7 +43,9 @@ const style = (
     font-size: 1.1rem;
   }
   .smaller2{
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    font-family: var(--font5);
   }
   .yellow {
     color: var(--color2);

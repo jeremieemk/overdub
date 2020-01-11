@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Logo from "./logo.js";
+import Logo from "./Logo.js";
 import Hamburger from "./Hamburger.js";
 
 const Header = () => (

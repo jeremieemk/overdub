@@ -9,8 +9,14 @@ const Hello = () => (
       <HelloText />
       <LinkBox link={"/about"} name="about me" showArrow="true" />
       <LinkBox link={"/portfolio"} name="portfolio" showArrow="true" />
-      <LinkBox name="skills" showArrow="true" />
-      <LinkBox name="cv" showArrow="true" />
+      <LinkBox link={"/skills"} name="skills" showArrow="true" />
+      <LinkBox
+        link={
+          "https://res.cloudinary.com/dbslwolfi/image/upload/v1578760331/rss/CV2020_gsc1gi.pdf"
+        }
+        name="cv"
+        showArrow="true"
+      />
     </div>
     {style}
   </div>

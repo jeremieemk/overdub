@@ -38,6 +38,9 @@ const style = (
 );
 const openStyle = (
   <style jsx>{`
+    body {
+      overflow: hidden;
+    }
     .line {
       border-bottom: 0.2rem solid black;
       z-index: 100;

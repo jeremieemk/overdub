@@ -82,7 +82,7 @@ var openStyle = __jsx("style", {
     lineNumber: 40
   },
   __self: undefined
-}, "\n    .line {\n      border-bottom: 0.2rem solid black;\n      z-index: 100;\n      margin-bottom: 0;\n      transition: transform 0.3s;\n    }\n    .lower-line {\n      transform: rotate(-45deg) translateY(-0.15rem);\n      transform-origin: center;\n    }\n    .upper-line {\n      transform: rotate(45deg) translateY(0.15rem);\n      transform-origin: center;\n    }\n  ");
+}, "\n    body {\n      overflow: hidden;\n    }\n    .line {\n      border-bottom: 0.2rem solid black;\n      z-index: 100;\n      margin-bottom: 0;\n      transition: transform 0.3s;\n    }\n    .lower-line {\n      transform: rotate(-45deg) translateY(-0.15rem);\n      transform-origin: center;\n    }\n    .upper-line {\n      transform: rotate(45deg) translateY(0.15rem);\n      transform-origin: center;\n    }\n  ");
 
 /* harmony default export */ __webpack_exports__["default"] = (Hamburger);
 

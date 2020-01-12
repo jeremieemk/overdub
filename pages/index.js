@@ -1,13 +1,8 @@
-import { useEffect } from "react";
+import { useRef } from "react";
 import Layout from "../components/Layout";
 import Hello from "../components/Hello";
 
 function Index() {
-  const handleScroll = () => console.log("scrolled");
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
   return (
     <div>
       <Layout>
@@ -19,6 +14,9 @@ function Index() {
             <hr></hr>
             <h2 className="web">WEB DEV.</h2>
           </div>
+        </div>
+        <div className="arrow-container">
+          <img className="arrow" src="/img/arrow.png" alt="arrow" />
         </div>
         <Hello />
       </Layout>
@@ -77,6 +75,13 @@ const style = (
       font-size: 1.15rem;
       margin-left: 5.2rem;
       margin-top: 0.1rem;
+    }
+    .arrow-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-bottom: 10rem;
+      transform: translateY(-4rem);
     }
   `}</style>
 );

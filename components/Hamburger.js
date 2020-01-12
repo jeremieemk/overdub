@@ -23,8 +23,10 @@ function Hamburger() {
 const style = (
   <style jsx>{`
     .lines {
-      margin-top: var(--global-margin);
+      padding-top: var(--global-margin);
       margin-right: var(--global-margin);
+      width: 100%;
+      height: 40%;
     }
 
     .line {

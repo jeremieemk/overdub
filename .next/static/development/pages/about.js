@@ -73,13 +73,13 @@ var style = __jsx("style", {
     lineNumber: 24
   },
   __self: undefined
-}, "\n    .lines {\n      margin-top: var(--global-margin);\n      margin-right: var(--global-margin);\n    }\n\n    .line {\n      margin-bottom: 0.5rem;\n      width: 2rem;\n      border-bottom: 0.2rem solid white;\n      position: relative;\n      transition: transform 0.3s;\n    }\n  ");
+}, "\n    .lines {\n      padding-top: var(--global-margin);\n      margin-right: var(--global-margin);\n      width: 100%;\n      height: 40%;\n    }\n\n    .line {\n      margin-bottom: 0.5rem;\n      width: 2rem;\n      border-bottom: 0.2rem solid white;\n      position: relative;\n      transition: transform 0.3s;\n    }\n  ");
 
 var openStyle = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 40
+    lineNumber: 42
   },
   __self: undefined
 }, "\n    body {\n      overflow: hidden;\n    }\n    .line {\n      border-bottom: 0.2rem solid black;\n      z-index: 100;\n      margin-bottom: 0;\n      transition: transform 0.3s;\n    }\n    .lower-line {\n      transform: rotate(-45deg) translateY(-0.15rem);\n      transform-origin: center;\n    }\n    .upper-line {\n      transform: rotate(45deg) translateY(0.15rem);\n      transform-origin: center;\n    }\n  ");

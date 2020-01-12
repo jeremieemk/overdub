@@ -167,8 +167,10 @@ const style = __jsx("style", {
   __self: undefined
 }, `
     .lines {
-      margin-top: var(--global-margin);
+      padding-top: var(--global-margin);
       margin-right: var(--global-margin);
+      width: 100%;
+      height: 40%;
     }
 
     .line {
@@ -184,7 +186,7 @@ const openStyle = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 40
+    lineNumber: 42
   },
   __self: undefined
 }, `

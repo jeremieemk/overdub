@@ -1,6 +1,6 @@
-import Layout from "./components/Layout";
-import PageTitle from "./components/PageTitle";
-import SkillBar from "./components/SkillBar";
+import Layout from "../components/Layout";
+import PageTitle from "../components/PageTitle";
+import SkillBar from "../components/SkillBar";
 
 const Skills = () => (
   <Layout>

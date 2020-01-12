@@ -1,7 +1,7 @@
-import Layout from "./components/Layout";
-import PageTitle from "./components/PageTitle";
-import ProjectItem from "./components/ProjectItem";
-import ProjectDetails from "./components/text/ProjectDetails";
+import Layout from "../components/Layout";
+import PageTitle from "../components/PageTitle";
+import ProjectItem from "../components/ProjectItem";
+import ProjectDetails from "../components/text/ProjectDetails";
 
 const Portfolio = () => (
   <Layout>

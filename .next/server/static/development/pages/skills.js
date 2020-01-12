@@ -88,10 +88,733 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ({
+
+/***/ "./components/Hamburger.js":
+/*!*********************************!*\
+  !*** ./components/Hamburger.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _HamburgerOpenMenu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HamburgerOpenMenu */ "./components/HamburgerOpenMenu.js");
+var _jsxFileName = "/Users/jeremie/web/28_portfolio/components/Hamburger.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+function Hamburger() {
+  const {
+    0: isOpen,
+    1: setOpen
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+
+  const handleHamburgerClick = () => setOpen(!isOpen);
+
+  return __jsx("div", {
+    className: "hamburger-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "lines",
+    onClick: handleHamburgerClick,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "line upper-line",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "line lower-line",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  })), isOpen ? __jsx(_HamburgerOpenMenu__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    handleHamburgerClick: handleHamburgerClick,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }) : null, style, isOpen ? openStyle : null);
+}
+
+const style = __jsx("style", {
+  jsx: true,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 24
+  },
+  __self: undefined
+}, `
+    .lines {
+      margin-top: var(--global-margin);
+      margin-right: var(--global-margin);
+    }
+
+    .line {
+      margin-bottom: 0.5rem;
+      width: 2rem;
+      border-bottom: 0.2rem solid white;
+      position: relative;
+      transition: transform 0.3s;
+    }
+  `);
+
+const openStyle = __jsx("style", {
+  jsx: true,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 40
+  },
+  __self: undefined
+}, `
+    .line {
+      border-bottom: 0.2rem solid black;
+      z-index: 100;
+      margin-bottom: 0;
+      transition: transform 0.3s;
+    }
+    .lower-line {
+      transform: rotate(-45deg) translateY(-0.15rem);
+      transform-origin: center;
+    }
+    .upper-line {
+      transform: rotate(45deg) translateY(0.15rem);
+      transform-origin: center;
+    }
+  `);
+
+/* harmony default export */ __webpack_exports__["default"] = (Hamburger);
+
+/***/ }),
+
+/***/ "./components/HamburgerOpenMenu.js":
+/*!*****************************************!*\
+  !*** ./components/HamburgerOpenMenu.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/jeremie/web/28_portfolio/components/HamburgerOpenMenu.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+function HamburgerOpenMenu(props) {
+  const test = () => console.log("ça marche");
+
+  return __jsx("div", {
+    className: "hamburger-menu-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "nested-menu-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/about",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, __jsx("a", {
+    onClick: props.handleHamburgerClick,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, "ABOUT ME")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/portfolio",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, __jsx("a", {
+    onClick: props.handleHamburgerClick,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, "PORTFOLIO")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/skills",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, __jsx("a", {
+    onClick: props.handleHamburgerClick,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }, "SKILLS")), __jsx("a", {
+    href: "https://res.cloudinary.com/dbslwolfi/image/upload/v1578760331/rss/CV2020_gsc1gi.pdf",
+    onClick: props.handleHamburgerClick,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, "CV"), __jsx("div", {
+    className: "get-in-touch",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }, __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: this
+  }, "GET IN TOUCH"), __jsx("div", {
+    className: "social-icons",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "https://www.facebook.com/jeremieemk",
+    target: "_blank",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }, __jsx("img", {
+    className: "social-icon-pic",
+    src: "/img/fb.png",
+    alt: "fb",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  })), __jsx("a", {
+    href: "https://www.linkedin.com/in/jeremiemoussaidkerouanton/",
+    target: "_blank",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  }, __jsx("img", {
+    className: "social-icon-pic",
+    src: "/img/linkedin.png",
+    alt: "linkedin",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
+    },
+    __self: this
+  })), __jsx("a", {
+    href: "mailto:jeremieemk@gmail.com",
+    target: "_blank",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42
+    },
+    __self: this
+  }, __jsx("img", {
+    className: "social-icon-pic",
+    src: "/img/mail.png",
+    alt: "mail",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: this
+  }))))), style);
+}
+
+const style = __jsx("style", {
+  jsx: true,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 55
+  },
+  __self: undefined
+}, `
+    .hamburger-menu-container {
+      height: 100vh;
+      width: 100vw;
+      left: 0;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+    }
+    .nested-menu-container {
+      background: -webkit-linear-gradient(165deg, white 65%, #f6f6f6 65%);
+      background: -o-linear-gradient(165deg, white 65%, #f6f6f6 65%);
+      background: -moz-linear-gradient(165deg, white 65%, #f6f6f6 65%);
+      background: linear-gradient(165deg, white 65%, #f6f6f6 65%);
+      height: 100%;
+      width: 100%;
+      padding: 2rem;
+      font-size: 1.05rem;
+      font-family: var(--font3);
+      letter-spacing: 0.1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+    }
+    .nested-menu-container > a {
+      padding: 1rem;
+    }
+    .social-icon-pic {
+      width: 1.5rem;
+      padding: 1rem;
+      height: auto;
+    }
+    .get-in-touch {
+      text-align: center;
+      transform: translateY(8rem);
+    }
+    .get-in-touch > p {
+      color: black;
+
+      font-size: 0.8rem;
+    }
+  `);
+
+/* harmony default export */ __webpack_exports__["default"] = (HamburgerOpenMenu);
+
+/***/ }),
+
+/***/ "./components/Header.js":
+/*!******************************!*\
+  !*** ./components/Header.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Logo_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Logo.js */ "./components/Logo.js");
+/* harmony import */ var _Hamburger_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Hamburger.js */ "./components/Hamburger.js");
+var _jsxFileName = "/Users/jeremie/web/28_portfolio/components/Header.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+const Header = () => __jsx("div", {
+  className: "header-container",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 6
+  },
+  __self: undefined
+}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  href: "/",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 7
+  },
+  __self: undefined
+}, __jsx(_Logo_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 8
+  },
+  __self: undefined
+})), __jsx(_Hamburger_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 10
+  },
+  __self: undefined
+}), style);
+
+const style = __jsx("style", {
+  jsx: true,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 16
+  },
+  __self: undefined
+}, `
+    .header-container {
+      height: 5rem;
+      display: flex;
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+  `);
+
+/* harmony default export */ __webpack_exports__["default"] = (Header);
+
+/***/ }),
+
+/***/ "./components/Layout.js":
+/*!******************************!*\
+  !*** ./components/Layout.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
+/* harmony import */ var _style_GlobalStyles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../style/GlobalStyles */ "./style/GlobalStyles.js");
+var _jsxFileName = "/Users/jeremie/web/28_portfolio/components/Layout.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+const Layout = props => __jsx("div", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 5
+  },
+  __self: undefined
+}, __jsx("div", {
+  className: "container",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 6
+  },
+  __self: undefined
+}, __jsx(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 7
+  },
+  __self: undefined
+}), props.children), _style_GlobalStyles__WEBPACK_IMPORTED_MODULE_3__["default"], style);
+
+const style = __jsx("style", {
+  jsx: true,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 16
+  },
+  __self: undefined
+}, `
+    .container {
+      position: relative;
+    }
+  `);
+
+/* harmony default export */ __webpack_exports__["default"] = (Layout);
+
+/***/ }),
+
+/***/ "./components/Logo.js":
+/*!****************************!*\
+  !*** ./components/Logo.js ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/jeremie/web/28_portfolio/components/Logo.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+const Logo = () => __jsx("div", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 4
+  },
+  __self: undefined
+}, __jsx("div", {
+  className: "logo",
+  style: {
+    fontFamily: "Sectra"
+  },
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 5
+  },
+  __self: undefined
+}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  href: "/",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 6
+  },
+  __self: undefined
+}, __jsx("a", {
+  className: "logo-letter",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 7
+  },
+  __self: undefined
+}, "O"))), style);
+
+const style = __jsx("style", {
+  jsx: true,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 15
+  },
+  __self: undefined
+}, `
+    .logo-letter {
+      color: var(--color2);
+    }
+    .logo {
+      font-size: 3rem;
+      color: var(--color2);
+      margin-left: var(--global-margin);
+      margin-top: 1rem;
+    }
+  `);
+
+/* harmony default export */ __webpack_exports__["default"] = (Logo);
+
+/***/ }),
+
+/***/ "./components/PageTitle.js":
+/*!*********************************!*\
+  !*** ./components/PageTitle.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/jeremie/web/28_portfolio/components/PageTitle.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function PageTitle(props) {
+  return __jsx("div", {
+    className: "page-title-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 3
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "page-title",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, props.title), __jsx("div", {
+    className: "title-line",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }), style);
+}
+
+const style = __jsx("style", {
+  jsx: true,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 12
+  },
+  __self: undefined
+}, `
+    .page-title-container {
+      padding-top: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .page-title {
+      color: var(--color2);
+      font-family: var(--font3);
+      text-align: center;
+      font-size: 1.3rem;
+    }
+    .title-line {
+      margin-bottom: 0.5rem;
+      width: 1.2rem;
+      border-bottom: 0.2rem solid white;
+      margin-left: 3.3rem;
+    }
+  `);
+
+/* harmony default export */ __webpack_exports__["default"] = (PageTitle);
+
+/***/ }),
+
+/***/ "./components/SkillBar.js":
+/*!********************************!*\
+  !*** ./components/SkillBar.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/jeremie/web/28_portfolio/components/SkillBar.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function SkillBar(props) {
+  return __jsx("div", {
+    className: "skill-bar-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 3
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "skill-name-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }, "| ", __jsx("span", {
+    className: "skill",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, props.skillName), " |")), __jsx("div", {
+    className: "skill-measure-bar-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "skill-bar-outline",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "skill-bar",
+    style: {
+      width: props.percentage
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }))), style);
+}
+
+const style = __jsx("style", {
+  jsx: true,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 21
+  },
+  __self: undefined
+}, `
+    .skill-bar-container {
+      margin-left: var(--global-margin);
+
+      width: 100%;
+    }
+    .skill-name-container,
+    .skill-measure-bar-container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-family: var(--font4);
+    }
+    .skill {
+      color: white;
+    }
+    .skill-name-container > p {
+      margin-block-start: 0.5rem;
+      margin-block-end: 0.5rem;
+    }
+
+    .skill-measure-bar-container {
+      padding-right: 4rem;
+    }
+    .skill-bar-outline {
+      width: 100%;
+      height: 1rem;
+      border: 1px solid white;
+    }
+    .skill-bar {
+      border-bottom: 1rem solid white;
+    }
+    .yellow {
+    }
+  `);
+
+/* harmony default export */ __webpack_exports__["default"] = (SkillBar);
+
+/***/ }),
 
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/map.js":
 /*!************************************************************!*\
@@ -1894,729 +2617,6 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/components/Hamburger.js":
-/*!***************************************!*\
-  !*** ./pages/components/Hamburger.js ***!
-  \***************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _HamburgerOpenMenu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HamburgerOpenMenu */ "./pages/components/HamburgerOpenMenu.js");
-var _jsxFileName = "/Users/jeremie/web/28_portfolio/pages/components/Hamburger.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-function Hamburger() {
-  const {
-    0: isOpen,
-    1: setOpen
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
-
-  const handleHamburgerClick = () => setOpen(!isOpen);
-
-  return __jsx("div", {
-    className: "hamburger-container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, __jsx("div", {
-    className: "lines",
-    onClick: handleHamburgerClick,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, __jsx("div", {
-    className: "line upper-line",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }), __jsx("div", {
-    className: "line lower-line",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  })), isOpen ? __jsx(_HamburgerOpenMenu__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    handleHamburgerClick: handleHamburgerClick,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }) : null, style, isOpen ? openStyle : null);
-}
-
-const style = __jsx("style", {
-  jsx: true,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 24
-  },
-  __self: undefined
-}, `
-    .lines {
-      margin-top: var(--global-margin);
-      margin-right: var(--global-margin);
-    }
-
-    .line {
-      margin-bottom: 0.5rem;
-      width: 2rem;
-      border-bottom: 0.2rem solid white;
-      position: relative;
-      transition: transform 0.3s;
-    }
-  `);
-
-const openStyle = __jsx("style", {
-  jsx: true,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 40
-  },
-  __self: undefined
-}, `
-    .line {
-      border-bottom: 0.2rem solid black;
-      z-index: 100;
-      margin-bottom: 0;
-      transition: transform 0.3s;
-    }
-    .lower-line {
-      transform: rotate(-45deg) translateY(-0.15rem);
-      transform-origin: center;
-    }
-    .upper-line {
-      transform: rotate(45deg) translateY(0.15rem);
-      transform-origin: center;
-    }
-  `);
-
-/* harmony default export */ __webpack_exports__["default"] = (Hamburger);
-
-/***/ }),
-
-/***/ "./pages/components/HamburgerOpenMenu.js":
-/*!***********************************************!*\
-  !*** ./pages/components/HamburgerOpenMenu.js ***!
-  \***********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/jeremie/web/28_portfolio/pages/components/HamburgerOpenMenu.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-function HamburgerOpenMenu(props) {
-  const test = () => console.log("ça marche");
-
-  return __jsx("div", {
-    className: "hamburger-menu-container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, __jsx("div", {
-    className: "nested-menu-container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/about",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, __jsx("a", {
-    onClick: props.handleHamburgerClick,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, "ABOUT ME")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/portfolio",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }, __jsx("a", {
-    onClick: props.handleHamburgerClick,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }, "PORTFOLIO")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/skills",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }, __jsx("a", {
-    onClick: props.handleHamburgerClick,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
-  }, "SKILLS")), __jsx("a", {
-    href: "https://res.cloudinary.com/dbslwolfi/image/upload/v1578760331/rss/CV2020_gsc1gi.pdf",
-    onClick: props.handleHamburgerClick,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }, "CV"), __jsx("div", {
-    className: "get-in-touch",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26
-    },
-    __self: this
-  }, __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27
-    },
-    __self: this
-  }, "GET IN TOUCH"), __jsx("div", {
-    className: "social-icons",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    },
-    __self: this
-  }, __jsx("a", {
-    href: "https://www.facebook.com/jeremieemk",
-    target: "_blank",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29
-    },
-    __self: this
-  }, __jsx("img", {
-    className: "social-icon-pic",
-    src: "/img/fb.png",
-    alt: "fb",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30
-    },
-    __self: this
-  })), __jsx("a", {
-    href: "https://www.linkedin.com/in/jeremiemoussaidkerouanton/",
-    target: "_blank",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32
-    },
-    __self: this
-  }, __jsx("img", {
-    className: "social-icon-pic",
-    src: "/img/linkedin.png",
-    alt: "linkedin",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36
-    },
-    __self: this
-  })), __jsx("a", {
-    href: "mailto:jeremieemk@gmail.com",
-    target: "_blank",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 42
-    },
-    __self: this
-  }, __jsx("img", {
-    className: "social-icon-pic",
-    src: "/img/mail.png",
-    alt: "mail",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 43
-    },
-    __self: this
-  }))))), style);
-}
-
-const style = __jsx("style", {
-  jsx: true,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 55
-  },
-  __self: undefined
-}, `
-    .hamburger-menu-container {
-      height: 100vh;
-      width: 100vw;
-      left: 0;
-      top: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-    }
-    .nested-menu-container {
-      background: -webkit-linear-gradient(165deg, white 65%, #f6f6f6 65%);
-      background: -o-linear-gradient(165deg, white 65%, #f6f6f6 65%);
-      background: -moz-linear-gradient(165deg, white 65%, #f6f6f6 65%);
-      background: linear-gradient(165deg, white 65%, #f6f6f6 65%);
-      height: 100%;
-      width: 100%;
-      padding: 2rem;
-      font-size: 1.05rem;
-      font-family: var(--font3);
-      letter-spacing: 0.1rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-    }
-    .nested-menu-container > a {
-      padding: 1rem;
-    }
-    .social-icon-pic {
-      width: 1.5rem;
-      padding: 1rem;
-      height: auto;
-    }
-    .get-in-touch {
-      text-align: center;
-      transform: translateY(8rem);
-    }
-    .get-in-touch > p {
-      color: black;
-
-      font-size: 0.8rem;
-    }
-  `);
-
-/* harmony default export */ __webpack_exports__["default"] = (HamburgerOpenMenu);
-
-/***/ }),
-
-/***/ "./pages/components/Header.js":
-/*!************************************!*\
-  !*** ./pages/components/Header.js ***!
-  \************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _Logo_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Logo.js */ "./pages/components/Logo.js");
-/* harmony import */ var _Hamburger_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Hamburger.js */ "./pages/components/Hamburger.js");
-var _jsxFileName = "/Users/jeremie/web/28_portfolio/pages/components/Header.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-const Header = () => __jsx("div", {
-  className: "header-container",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6
-  },
-  __self: undefined
-}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  href: "/",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 7
-  },
-  __self: undefined
-}, __jsx(_Logo_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 8
-  },
-  __self: undefined
-})), __jsx(_Hamburger_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 10
-  },
-  __self: undefined
-}), style);
-
-const style = __jsx("style", {
-  jsx: true,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 16
-  },
-  __self: undefined
-}, `
-    .header-container {
-      height: 5rem;
-      display: flex;
-      justify-content: space-between;
-      position: fixed;
-      top: 0;
-      width: 100%;
-    }
-  `);
-
-/* harmony default export */ __webpack_exports__["default"] = (Header);
-
-/***/ }),
-
-/***/ "./pages/components/Layout.js":
-/*!************************************!*\
-  !*** ./pages/components/Layout.js ***!
-  \************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ "./pages/components/Header.js");
-/* harmony import */ var _style_GlobalStyles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../style/GlobalStyles */ "./pages/style/GlobalStyles.js");
-var _jsxFileName = "/Users/jeremie/web/28_portfolio/pages/components/Layout.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-const Layout = props => __jsx("div", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5
-  },
-  __self: undefined
-}, __jsx("div", {
-  className: "container",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6
-  },
-  __self: undefined
-}, __jsx(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 7
-  },
-  __self: undefined
-}), props.children), _style_GlobalStyles__WEBPACK_IMPORTED_MODULE_2__["default"], style);
-
-const style = __jsx("style", {
-  jsx: true,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 16
-  },
-  __self: undefined
-}, `
-    .container {
-      position: relative;
-    }
-  `);
-
-/* harmony default export */ __webpack_exports__["default"] = (Layout);
-
-/***/ }),
-
-/***/ "./pages/components/Logo.js":
-/*!**********************************!*\
-  !*** ./pages/components/Logo.js ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/jeremie/web/28_portfolio/pages/components/Logo.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-const Logo = () => __jsx("div", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 4
-  },
-  __self: undefined
-}, __jsx("div", {
-  className: "logo",
-  style: {
-    fontFamily: "Sectra"
-  },
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5
-  },
-  __self: undefined
-}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  href: "/",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6
-  },
-  __self: undefined
-}, __jsx("a", {
-  className: "logo-letter",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 7
-  },
-  __self: undefined
-}, "O"))), style);
-
-const style = __jsx("style", {
-  jsx: true,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 15
-  },
-  __self: undefined
-}, `
-    .logo-letter {
-      color: var(--color2);
-    }
-    .logo {
-      font-size: 3rem;
-      color: var(--color2);
-      margin-left: var(--global-margin);
-      margin-top: 1rem;
-    }
-  `);
-
-/* harmony default export */ __webpack_exports__["default"] = (Logo);
-
-/***/ }),
-
-/***/ "./pages/components/PageTitle.js":
-/*!***************************************!*\
-  !*** ./pages/components/PageTitle.js ***!
-  \***************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/jeremie/web/28_portfolio/pages/components/PageTitle.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-function PageTitle(props) {
-  return __jsx("div", {
-    className: "page-title-container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 3
-    },
-    __self: this
-  }, __jsx("div", {
-    className: "page-title",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }, props.title), __jsx("div", {
-    className: "title-line",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }), style);
-}
-
-const style = __jsx("style", {
-  jsx: true,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 12
-  },
-  __self: undefined
-}, `
-    .page-title-container {
-      padding-top: 30%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .page-title {
-      color: var(--color2);
-      font-family: var(--font3);
-      text-align: center;
-      font-size: 1.3rem;
-    }
-    .title-line {
-      margin-bottom: 0.5rem;
-      width: 1.2rem;
-      border-bottom: 0.2rem solid white;
-      margin-left: 3.3rem;
-    }
-  `);
-
-/* harmony default export */ __webpack_exports__["default"] = (PageTitle);
-
-/***/ }),
-
-/***/ "./pages/components/SkillBar.js":
-/*!**************************************!*\
-  !*** ./pages/components/SkillBar.js ***!
-  \**************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/jeremie/web/28_portfolio/pages/components/SkillBar.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-function SkillBar(props) {
-  return __jsx("div", {
-    className: "skill-bar-container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 3
-    },
-    __self: this
-  }, __jsx("div", {
-    className: "skill-name-container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }, __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }, "| ", __jsx("span", {
-    className: "skill",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, props.skillName), " |")), __jsx("div", {
-    className: "skill-measure-bar-container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, __jsx("div", {
-    className: "skill-bar-outline",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }, __jsx("div", {
-    className: "skill-bar",
-    style: {
-      width: props.percentage
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }))), style);
-}
-
-const style = __jsx("style", {
-  jsx: true,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 21
-  },
-  __self: undefined
-}, `
-    .skill-bar-container {
-      margin-left: var(--global-margin);
-
-      width: 100%;
-    }
-    .skill-name-container,
-    .skill-measure-bar-container {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      font-family: var(--font4);
-    }
-    .skill {
-      color: white;
-    }
-    .skill-name-container > p {
-      margin-block-start: 0.5rem;
-      margin-block-end: 0.5rem;
-    }
-
-    .skill-measure-bar-container {
-      padding-right: 4rem;
-    }
-    .skill-bar-outline {
-      width: 100%;
-      height: 1rem;
-      border: 1px solid white;
-    }
-    .skill-bar {
-      border-bottom: 1rem solid white;
-    }
-    .yellow {
-    }
-  `);
-
-/* harmony default export */ __webpack_exports__["default"] = (SkillBar);
-
-/***/ }),
-
 /***/ "./pages/skills.js":
 /*!*************************!*\
   !*** ./pages/skills.js ***!
@@ -2628,9 +2628,9 @@ const style = __jsx("style", {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Layout */ "./pages/components/Layout.js");
-/* harmony import */ var _components_PageTitle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/PageTitle */ "./pages/components/PageTitle.js");
-/* harmony import */ var _components_SkillBar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/SkillBar */ "./pages/components/SkillBar.js");
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _components_PageTitle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/PageTitle */ "./components/PageTitle.js");
+/* harmony import */ var _components_SkillBar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/SkillBar */ "./components/SkillBar.js");
 var _jsxFileName = "/Users/jeremie/web/28_portfolio/pages/skills.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -2790,10 +2790,10 @@ const style = __jsx("style", {
 
 /***/ }),
 
-/***/ "./pages/style/GlobalStyles.js":
-/*!*************************************!*\
-  !*** ./pages/style/GlobalStyles.js ***!
-  \*************************************/
+/***/ "./style/GlobalStyles.js":
+/*!*******************************!*\
+  !*** ./style/GlobalStyles.js ***!
+  \*******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2810,13 +2810,13 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 const GlobalStyles = __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
   id: "2126316238",
   __self: undefined
-}, "@font-face{font-family:\"PxGroteskBold\";src:url(\"fonts/PxGrotesk-Bold.woff2\") format(\"woff2\");src:url(\"fonts/PxGrotesk-Bold.woff\") format(\"woff\");src:url(\"fonts/PxGroteskBold.ttf\") format(\"truetype\");}@font-face{font-family:\"Sectra\";src:url(\"fonts/Sectra.woff2\") format(\"woff2\");src:url(\"fonts/Sectra.woff\") format(\"woff\");src:url(\"fonts/Sectra.ttf\") format(\"truetype\");}@font-face{font-family:\"WorkSans-Bold\";src:url(\"fonts/WorkSans-Bold.woff2\") format(\"woff2\");src:url(\"fonts/WorkSans-Bold.woff\") format(\"woff\");src:url(\"fonts/WorkSans-Bold.ttf\") format(\"truetype\");}@font-face{font-family:\"WorkSans-Regular\";src:url(\"fonts/WorkSans-Regular.ttf\") format(\"truetype\");}:root{--global-margin:2rem;--color1:#f85e3c;--color2:#fff55a;--font1:\"Sectra\";--font2:\"PxGroteskBold\";--font3:\"WorkSans-Bold\";--font4:\"WorkSans-Regular\";--line-width:0.1rem;}body{background-color:var(--color1);margin:0;}a{-webkit-text-decoration:none;text-decoration:none;color:inherit;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9qZXJlbWllL3dlYi8yOF9wb3J0Zm9saW8vcGFnZXMvc3R5bGUvR2xvYmFsU3R5bGVzLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNxQixBQUdtQyxBQU1QLEFBTU8sQUFNRyxBQUtWLEFBVVUsQUFJVixxQkE5QnlCLEFBaUI3QixPQXZCcUMsQUFZRCxHQU1JLEFBZWhELE9BVFEsRUFVbkIsVUFHZ0IsS0FaRyxTQWFuQixHQS9COEMsS0FtQnBCLFNBYjJCLENBWkMsTUFrQnRELFFBUTBCLGVBbkJ1QixTQW9CcEIsWUFkMkIsRUFaQSxhQTJCbEMsV0FwQnRCLFNBcUJBLG1CQWZBLEVBWkEiLCJmaWxlIjoiL1VzZXJzL2plcmVtaWUvd2ViLzI4X3BvcnRmb2xpby9wYWdlcy9zdHlsZS9HbG9iYWxTdHlsZXMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBHbG9iYWxTdHlsZXMgPSAoXG4gIDxzdHlsZSBqc3ggZ2xvYmFsPntgXG4gICAgQGZvbnQtZmFjZSB7XG4gICAgICBmb250LWZhbWlseTogXCJQeEdyb3Rlc2tCb2xkXCI7XG4gICAgICBzcmM6IHVybChcImZvbnRzL1B4R3JvdGVzay1Cb2xkLndvZmYyXCIpIGZvcm1hdChcIndvZmYyXCIpO1xuICAgICAgc3JjOiB1cmwoXCJmb250cy9QeEdyb3Rlc2stQm9sZC53b2ZmXCIpIGZvcm1hdChcIndvZmZcIik7XG4gICAgICBzcmM6IHVybChcImZvbnRzL1B4R3JvdGVza0JvbGQudHRmXCIpIGZvcm1hdChcInRydWV0eXBlXCIpO1xuICAgIH1cbiAgICBAZm9udC1mYWNlIHtcbiAgICAgIGZvbnQtZmFtaWx5OiBcIlNlY3RyYVwiO1xuICAgICAgc3JjOiB1cmwoXCJmb250cy9TZWN0cmEud29mZjJcIikgZm9ybWF0KFwid29mZjJcIik7XG4gICAgICBzcmM6IHVybChcImZvbnRzL1NlY3RyYS53b2ZmXCIpIGZvcm1hdChcIndvZmZcIik7XG4gICAgICBzcmM6IHVybChcImZvbnRzL1NlY3RyYS50dGZcIikgZm9ybWF0KFwidHJ1ZXR5cGVcIik7XG4gICAgfVxuICAgIEBmb250LWZhY2Uge1xuICAgICAgZm9udC1mYW1pbHk6IFwiV29ya1NhbnMtQm9sZFwiO1xuICAgICAgc3JjOiB1cmwoXCJmb250cy9Xb3JrU2Fucy1Cb2xkLndvZmYyXCIpIGZvcm1hdChcIndvZmYyXCIpO1xuICAgICAgc3JjOiB1cmwoXCJmb250cy9Xb3JrU2Fucy1Cb2xkLndvZmZcIikgZm9ybWF0KFwid29mZlwiKTtcbiAgICAgIHNyYzogdXJsKFwiZm9udHMvV29ya1NhbnMtQm9sZC50dGZcIikgZm9ybWF0KFwidHJ1ZXR5cGVcIik7XG4gICAgfVxuICAgIEBmb250LWZhY2Uge1xuICAgICAgZm9udC1mYW1pbHk6IFwiV29ya1NhbnMtUmVndWxhclwiO1xuICAgICAgc3JjOiB1cmwoXCJmb250cy9Xb3JrU2Fucy1SZWd1bGFyLnR0ZlwiKSBmb3JtYXQoXCJ0cnVldHlwZVwiKTtcbiAgICB9XG5cbiAgICA6cm9vdCB7XG4gICAgICAtLWdsb2JhbC1tYXJnaW46IDJyZW07XG4gICAgICAtLWNvbG9yMTogI2Y4NWUzYztcbiAgICAgIC0tY29sb3IyOiAjZmZmNTVhO1xuICAgICAgLS1mb250MTogXCJTZWN0cmFcIjtcbiAgICAgIC0tZm9udDI6IFwiUHhHcm90ZXNrQm9sZFwiO1xuICAgICAgLS1mb250MzogXCJXb3JrU2Fucy1Cb2xkXCI7XG4gICAgICAtLWZvbnQ0OiBcIldvcmtTYW5zLVJlZ3VsYXJcIjtcbiAgICAgIC0tbGluZS13aWR0aDogMC4xcmVtO1xuICAgIH1cbiAgICBib2R5IHtcbiAgICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWNvbG9yMSk7XG4gICAgICBtYXJnaW46IDA7XG4gICAgfVxuICAgIGEge1xuICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICAgICAgY29sb3I6IGluaGVyaXQ7XG4gICAgfVxuICBgfTwvc3R5bGU+XG4pO1xuXG5leHBvcnQgZGVmYXVsdCBHbG9iYWxTdHlsZXM7XG4iXX0= */\n/*@ sourceURL=/Users/jeremie/web/28_portfolio/pages/style/GlobalStyles.js */");
+}, "@font-face{font-family:\"PxGroteskBold\";src:url(\"fonts/PxGrotesk-Bold.woff2\") format(\"woff2\");src:url(\"fonts/PxGrotesk-Bold.woff\") format(\"woff\");src:url(\"fonts/PxGroteskBold.ttf\") format(\"truetype\");}@font-face{font-family:\"Sectra\";src:url(\"fonts/Sectra.woff2\") format(\"woff2\");src:url(\"fonts/Sectra.woff\") format(\"woff\");src:url(\"fonts/Sectra.ttf\") format(\"truetype\");}@font-face{font-family:\"WorkSans-Bold\";src:url(\"fonts/WorkSans-Bold.woff2\") format(\"woff2\");src:url(\"fonts/WorkSans-Bold.woff\") format(\"woff\");src:url(\"fonts/WorkSans-Bold.ttf\") format(\"truetype\");}@font-face{font-family:\"WorkSans-Regular\";src:url(\"fonts/WorkSans-Regular.ttf\") format(\"truetype\");}:root{--global-margin:2rem;--color1:#f85e3c;--color2:#fff55a;--font1:\"Sectra\";--font2:\"PxGroteskBold\";--font3:\"WorkSans-Bold\";--font4:\"WorkSans-Regular\";--line-width:0.1rem;}body{background-color:var(--color1);margin:0;}a{-webkit-text-decoration:none;text-decoration:none;color:inherit;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9qZXJlbWllL3dlYi8yOF9wb3J0Zm9saW8vc3R5bGUvR2xvYmFsU3R5bGVzLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNxQixBQUdtQyxBQU1QLEFBTU8sQUFNRyxBQUtWLEFBVVUsQUFJVixxQkE5QnlCLEFBaUI3QixPQXZCcUMsQUFZRCxHQU1JLEFBZWhELE9BVFEsRUFVbkIsVUFHZ0IsS0FaRyxTQWFuQixHQS9COEMsS0FtQnBCLFNBYjJCLENBWkMsTUFrQnRELFFBUTBCLGVBbkJ1QixTQW9CcEIsWUFkMkIsRUFaQSxhQTJCbEMsV0FwQnRCLFNBcUJBLG1CQWZBLEVBWkEiLCJmaWxlIjoiL1VzZXJzL2plcmVtaWUvd2ViLzI4X3BvcnRmb2xpby9zdHlsZS9HbG9iYWxTdHlsZXMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBHbG9iYWxTdHlsZXMgPSAoXG4gIDxzdHlsZSBqc3ggZ2xvYmFsPntgXG4gICAgQGZvbnQtZmFjZSB7XG4gICAgICBmb250LWZhbWlseTogXCJQeEdyb3Rlc2tCb2xkXCI7XG4gICAgICBzcmM6IHVybChcImZvbnRzL1B4R3JvdGVzay1Cb2xkLndvZmYyXCIpIGZvcm1hdChcIndvZmYyXCIpO1xuICAgICAgc3JjOiB1cmwoXCJmb250cy9QeEdyb3Rlc2stQm9sZC53b2ZmXCIpIGZvcm1hdChcIndvZmZcIik7XG4gICAgICBzcmM6IHVybChcImZvbnRzL1B4R3JvdGVza0JvbGQudHRmXCIpIGZvcm1hdChcInRydWV0eXBlXCIpO1xuICAgIH1cbiAgICBAZm9udC1mYWNlIHtcbiAgICAgIGZvbnQtZmFtaWx5OiBcIlNlY3RyYVwiO1xuICAgICAgc3JjOiB1cmwoXCJmb250cy9TZWN0cmEud29mZjJcIikgZm9ybWF0KFwid29mZjJcIik7XG4gICAgICBzcmM6IHVybChcImZvbnRzL1NlY3RyYS53b2ZmXCIpIGZvcm1hdChcIndvZmZcIik7XG4gICAgICBzcmM6IHVybChcImZvbnRzL1NlY3RyYS50dGZcIikgZm9ybWF0KFwidHJ1ZXR5cGVcIik7XG4gICAgfVxuICAgIEBmb250LWZhY2Uge1xuICAgICAgZm9udC1mYW1pbHk6IFwiV29ya1NhbnMtQm9sZFwiO1xuICAgICAgc3JjOiB1cmwoXCJmb250cy9Xb3JrU2Fucy1Cb2xkLndvZmYyXCIpIGZvcm1hdChcIndvZmYyXCIpO1xuICAgICAgc3JjOiB1cmwoXCJmb250cy9Xb3JrU2Fucy1Cb2xkLndvZmZcIikgZm9ybWF0KFwid29mZlwiKTtcbiAgICAgIHNyYzogdXJsKFwiZm9udHMvV29ya1NhbnMtQm9sZC50dGZcIikgZm9ybWF0KFwidHJ1ZXR5cGVcIik7XG4gICAgfVxuICAgIEBmb250LWZhY2Uge1xuICAgICAgZm9udC1mYW1pbHk6IFwiV29ya1NhbnMtUmVndWxhclwiO1xuICAgICAgc3JjOiB1cmwoXCJmb250cy9Xb3JrU2Fucy1SZWd1bGFyLnR0ZlwiKSBmb3JtYXQoXCJ0cnVldHlwZVwiKTtcbiAgICB9XG5cbiAgICA6cm9vdCB7XG4gICAgICAtLWdsb2JhbC1tYXJnaW46IDJyZW07XG4gICAgICAtLWNvbG9yMTogI2Y4NWUzYztcbiAgICAgIC0tY29sb3IyOiAjZmZmNTVhO1xuICAgICAgLS1mb250MTogXCJTZWN0cmFcIjtcbiAgICAgIC0tZm9udDI6IFwiUHhHcm90ZXNrQm9sZFwiO1xuICAgICAgLS1mb250MzogXCJXb3JrU2Fucy1Cb2xkXCI7XG4gICAgICAtLWZvbnQ0OiBcIldvcmtTYW5zLVJlZ3VsYXJcIjtcbiAgICAgIC0tbGluZS13aWR0aDogMC4xcmVtO1xuICAgIH1cbiAgICBib2R5IHtcbiAgICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWNvbG9yMSk7XG4gICAgICBtYXJnaW46IDA7XG4gICAgfVxuICAgIGEge1xuICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICAgICAgY29sb3I6IGluaGVyaXQ7XG4gICAgfVxuICBgfTwvc3R5bGU+XG4pO1xuXG5leHBvcnQgZGVmYXVsdCBHbG9iYWxTdHlsZXM7XG4iXX0= */\n/*@ sourceURL=/Users/jeremie/web/28_portfolio/style/GlobalStyles.js */");
 
 /* harmony default export */ __webpack_exports__["default"] = (GlobalStyles);
 
 /***/ }),
 
-/***/ 6:
+/***/ 7:
 /*!*******************************!*\
   !*** multi ./pages/skills.js ***!
   \*******************************/

@@ -1,6 +1,6 @@
-import Layout from "./components/Layout";
-import PageTitle from "./components/PageTitle";
-import AboutText from "./components/text/AboutText";
+import Layout from "../components/Layout";
+import PageTitle from "../components/PageTitle";
+import AboutText from "../components/text/AboutText";
 
 const About = () => (
   <Layout>

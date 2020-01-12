@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import Layout from "./components/Layout";
-import Hello from "./components/Hello";
+import Layout from "../components/Layout";
+import Hello from "../components/Hello";
 
 function Index() {
   const handleScroll = () => console.log("scrolled");

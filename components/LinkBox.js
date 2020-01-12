@@ -7,7 +7,13 @@ function LinkBox(props) {
         <a>
           <div className="text-box-container">
             <div className="text-box">
-              <a className="text">{props.name}</a>
+              <a
+                href={props.externalLink}
+                target={props.target}
+                className="text"
+              >
+                {props.name}
+              </a>
             </div>
             {props.showArrow ? (
               <div className="arrow-box">

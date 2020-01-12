@@ -17,6 +17,7 @@ function HamburgerOpenMenu(props) {
 
         <a
           href="https://res.cloudinary.com/dbslwolfi/image/upload/v1578760331/rss/CV2020_gsc1gi.pdf"
+          target="_blank"
           onClick={props.handleHamburgerClick}
         >
           CV

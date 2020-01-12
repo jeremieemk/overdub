@@ -290,6 +290,7 @@ function HamburgerOpenMenu(props) {
     __self: this
   }, "SKILLS")), __jsx("a", {
     href: "https://res.cloudinary.com/dbslwolfi/image/upload/v1578760331/rss/CV2020_gsc1gi.pdf",
+    target: "_blank",
     onClick: props.handleHamburgerClick,
     __source: {
       fileName: _jsxFileName,
@@ -300,20 +301,20 @@ function HamburgerOpenMenu(props) {
     className: "get-in-touch",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 26
     },
     __self: this
   }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 27
     },
     __self: this
   }, "GET IN TOUCH"), __jsx("div", {
     className: "social-icons",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 28
     },
     __self: this
   }, __jsx("a", {
@@ -321,7 +322,7 @@ function HamburgerOpenMenu(props) {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 29
     },
     __self: this
   }, __jsx("img", {
@@ -330,7 +331,7 @@ function HamburgerOpenMenu(props) {
     alt: "fb",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 30
     },
     __self: this
   })), __jsx("a", {
@@ -338,7 +339,7 @@ function HamburgerOpenMenu(props) {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 32
     },
     __self: this
   }, __jsx("img", {
@@ -347,7 +348,7 @@ function HamburgerOpenMenu(props) {
     alt: "linkedin",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 36
     },
     __self: this
   })), __jsx("a", {
@@ -355,7 +356,7 @@ function HamburgerOpenMenu(props) {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 42
     },
     __self: this
   }, __jsx("img", {
@@ -364,7 +365,7 @@ function HamburgerOpenMenu(props) {
     alt: "mail",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 43
     },
     __self: this
   }))))), style);
@@ -374,7 +375,7 @@ const style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 54
+    lineNumber: 55
   },
   __self: undefined
 }, `
@@ -576,7 +577,8 @@ const Hello = () => __jsx("div", {
   },
   __self: undefined
 }), __jsx(_LinkBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
-  link: "https://res.cloudinary.com/dbslwolfi/image/upload/v1578760331/rss/CV2020_gsc1gi.pdf",
+  externalLink: "https://res.cloudinary.com/dbslwolfi/image/upload/v1578760331/rss/CV2020_gsc1gi.pdf",
+  target: "_blank",
   name: "cv",
   showArrow: "true",
   __source: {
@@ -590,7 +592,7 @@ const style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 26
+    lineNumber: 27
   },
   __self: undefined
 }, `
@@ -623,7 +625,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
-/* harmony import */ var _style_GlobalStyles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../style/GlobalStyles */ "./style/GlobalStyles.js");
+/* harmony import */ var _style_GlobalStyles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../style/GlobalStyles */ "./style/GlobalStyles.js");
 var _jsxFileName = "/Users/jeremie/web/28_portfolio/components/Layout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -649,7 +651,7 @@ const Layout = props => __jsx("div", {
     lineNumber: 7
   },
   __self: undefined
-}), props.children), _style_GlobalStyles__WEBPACK_IMPORTED_MODULE_3__["default"], style);
+}), props.children), _style_GlobalStyles__WEBPACK_IMPORTED_MODULE_2__["default"], style);
 
 const style = __jsx("style", {
   jsx: true,
@@ -721,6 +723,8 @@ function LinkBox(props) {
     },
     __self: this
   }, __jsx("a", {
+    href: props.externalLink,
+    target: props.target,
     className: "text",
     __source: {
       fileName: _jsxFileName,
@@ -731,7 +735,7 @@ function LinkBox(props) {
     className: "arrow-box",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 19
     },
     __self: this
   }, __jsx("img", {
@@ -740,7 +744,7 @@ function LinkBox(props) {
     alt: "arrow",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 20
     },
     __self: this
   })) : null))), style, !props.showArrow ? centeredTitle : null);
@@ -750,7 +754,7 @@ const style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 27
+    lineNumber: 33
   },
   __self: undefined
 }, `
@@ -791,7 +795,7 @@ const centeredTitle = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 63
+    lineNumber: 69
   },
   __self: undefined
 }, `

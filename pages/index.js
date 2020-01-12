@@ -83,6 +83,11 @@ const style = (
       margin-bottom: 10rem;
       transform: translateY(-4rem);
     }
+    @media (min-width: 801px) {
+      .landing-logo-container {
+        transform: scale(2);
+      }
+    }
   `}</style>
 );
 

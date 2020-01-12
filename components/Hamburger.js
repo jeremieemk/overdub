@@ -36,6 +36,11 @@ const style = (
       position: relative;
       transition: transform 0.3s;
     }
+    @media (min-width: 801px) {
+      .hamburger-container {
+        display: none;
+      }
+    }
   `}</style>
 );
 const openStyle = (

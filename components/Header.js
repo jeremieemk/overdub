@@ -1,12 +1,14 @@
 import Link from "next/link";
 import Logo from "./Logo.js";
 import Hamburger from "./Hamburger.js";
+import DesktopNav from "./DesktopNav.js";
 
 const Header = () => (
   <div className="header-container">
     <Link href="/">
       <Logo />
     </Link>
+    <DesktopNav className="desktop-nav" />
     <Hamburger />
     {style}
   </div>

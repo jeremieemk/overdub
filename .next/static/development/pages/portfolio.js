@@ -1,5 +1,107 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/portfolio.js"],{
 
+/***/ "./components/DesktopNav.js":
+/*!**********************************!*\
+  !*** ./components/DesktopNav.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/jeremie/web/28_portfolio/components/DesktopNav.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+var DesktopNav = function DesktopNav() {
+  return __jsx("div", {
+    className: "desktop-nav-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/index",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }, __jsx("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, "HELLO")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/about",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, __jsx("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, "ABOUT ME")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/portfolio",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, __jsx("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, "PORTFOLIO")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/skills",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, __jsx("a", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }, "SKILLS")), __jsx("a", {
+    href: "https://res.cloudinary.com/dbslwolfi/image/upload/v1578760331/rss/CV2020_gsc1gi.pdf",
+    target: "_blank",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, "CV"), style);
+};
+
+var style = __jsx("style", {
+  jsx: true,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 30
+  },
+  __self: undefined
+}, "\n    .desktop-nav-container {\n      width: 100%;\n      position: absolute;\n      padding-top: 2rem;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      font-family: var(--font4);\n      font-size: 1.2rem;\n      background-color: var(--color1);\n    }\n    .desktop-nav-container > * {\n      padding: 2rem;\n    }\n    @media (max-width: 801px) {\n      .desktop-nav-container {\n        display: none;\n      }\n    }\n  ");
+
+/* harmony default export */ __webpack_exports__["default"] = (DesktopNav);
+
+/***/ }),
+
 /***/ "./components/Hamburger.js":
 /*!*********************************!*\
   !*** ./components/Hamburger.js ***!
@@ -73,13 +175,13 @@ var style = __jsx("style", {
     lineNumber: 24
   },
   __self: undefined
-}, "\n    .lines {\n      padding-top: var(--global-margin);\n      margin-right: var(--global-margin);\n      width: 100%;\n      height: 40%;\n    }\n\n    .line {\n      margin-bottom: 0.5rem;\n      width: 2rem;\n      border-bottom: 0.2rem solid white;\n      position: relative;\n      transition: transform 0.3s;\n    }\n  ");
+}, "\n    .lines {\n      padding-top: var(--global-margin);\n      margin-right: var(--global-margin);\n      width: 100%;\n      height: 40%;\n    }\n\n    .line {\n      margin-bottom: 0.5rem;\n      width: 2rem;\n      border-bottom: 0.2rem solid white;\n      position: relative;\n      transition: transform 0.3s;\n    }\n    @media (min-width: 801px) {\n      .hamburger-container {\n        display: none;\n      }\n    }\n  ");
 
 var openStyle = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 42
+    lineNumber: 47
   },
   __self: undefined
 }, "\n    body {\n      overflow: hidden;\n    }\n    .line {\n      border-bottom: 0.2rem solid black;\n      z-index: 100;\n      margin-bottom: 0;\n      transition: transform 0.3s;\n    }\n    .lower-line {\n      transform: rotate(-45deg) translateY(-0.15rem);\n      transform-origin: center;\n    }\n    .upper-line {\n      transform: rotate(45deg) translateY(0.15rem);\n      transform-origin: center;\n    }\n  ");
@@ -288,9 +390,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _Logo_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Logo.js */ "./components/Logo.js");
 /* harmony import */ var _Hamburger_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Hamburger.js */ "./components/Hamburger.js");
+/* harmony import */ var _DesktopNav_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./DesktopNav.js */ "./components/DesktopNav.js");
 var _jsxFileName = "/Users/jeremie/web/28_portfolio/components/Header.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -300,26 +404,33 @@ var Header = function Header() {
     className: "header-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 7
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 8
     },
     __self: this
   }, __jsx(_Logo_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 9
     },
     __self: this
-  })), __jsx(_Hamburger_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  })), __jsx(_DesktopNav_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    className: "desktop-nav",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 11
+    },
+    __self: this
+  }), __jsx(_Hamburger_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
     },
     __self: this
   }), style);
@@ -329,7 +440,7 @@ var style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 16
+    lineNumber: 18
   },
   __self: undefined
 }, "\n    .header-container {\n      height: 5rem;\n      display: flex;\n      justify-content: space-between;\n      position: fixed;\n      top: 0;\n      width: 100%;\n    }\n  ");
@@ -554,7 +665,7 @@ var style = __jsx("style", {
     lineNumber: 15
   },
   __self: undefined
-}, "\n    .logo-letter {\n      color: var(--color2);\n    }\n    .logo {\n      font-size: 3rem;\n      color: var(--color2);\n      margin-left: var(--global-margin);\n      margin-top: 1rem;\n    }\n  ");
+}, "\n    .logo-letter {\n      color: var(--color2);\n    }\n    .logo {\n      z-index: 100;\n      font-size: 3rem;\n      color: var(--color2);\n      margin-left: var(--global-margin);\n      margin-top: 1rem;\n      position: relative;\n    }\n    @media (min-width: 801px) {\n      .logo {\n        font-size: 4rem;\n        margin-top: 2rem;\n      }\n    }\n  ");
 
 /* harmony default export */ __webpack_exports__["default"] = (Logo);
 

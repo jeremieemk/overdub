@@ -93,6 +93,126 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "./components/DesktopNav.js":
+/*!**********************************!*\
+  !*** ./components/DesktopNav.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "/Users/jeremie/web/28_portfolio/components/DesktopNav.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+const DesktopNav = () => __jsx("div", {
+  className: "desktop-nav-container",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 4
+  },
+  __self: undefined
+}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  href: "/index",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 5
+  },
+  __self: undefined
+}, __jsx("a", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 6
+  },
+  __self: undefined
+}, "HELLO")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  href: "/about",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 8
+  },
+  __self: undefined
+}, __jsx("a", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 9
+  },
+  __self: undefined
+}, "ABOUT ME")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  href: "/portfolio",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 11
+  },
+  __self: undefined
+}, __jsx("a", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 12
+  },
+  __self: undefined
+}, "PORTFOLIO")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  href: "/skills",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 15
+  },
+  __self: undefined
+}, __jsx("a", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 16
+  },
+  __self: undefined
+}, "SKILLS")), __jsx("a", {
+  href: "https://res.cloudinary.com/dbslwolfi/image/upload/v1578760331/rss/CV2020_gsc1gi.pdf",
+  target: "_blank",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 19
+  },
+  __self: undefined
+}, "CV"), style);
+
+const style = __jsx("style", {
+  jsx: true,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 30
+  },
+  __self: undefined
+}, `
+    .desktop-nav-container {
+      width: 100%;
+      position: absolute;
+      padding-top: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: var(--font4);
+      font-size: 1.2rem;
+      background-color: var(--color1);
+    }
+    .desktop-nav-container > * {
+      padding: 2rem;
+    }
+    @media (max-width: 801px) {
+      .desktop-nav-container {
+        display: none;
+      }
+    }
+  `);
+
+/* harmony default export */ __webpack_exports__["default"] = (DesktopNav);
+
+/***/ }),
+
 /***/ "./components/Hamburger.js":
 /*!*********************************!*\
   !*** ./components/Hamburger.js ***!
@@ -180,13 +300,18 @@ const style = __jsx("style", {
       position: relative;
       transition: transform 0.3s;
     }
+    @media (min-width: 801px) {
+      .hamburger-container {
+        display: none;
+      }
+    }
   `);
 
 const openStyle = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 42
+    lineNumber: 47
   },
   __self: undefined
 }, `
@@ -458,9 +583,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _Logo_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Logo.js */ "./components/Logo.js");
 /* harmony import */ var _Hamburger_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Hamburger.js */ "./components/Hamburger.js");
+/* harmony import */ var _DesktopNav_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./DesktopNav.js */ "./components/DesktopNav.js");
 var _jsxFileName = "/Users/jeremie/web/28_portfolio/components/Header.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -469,26 +596,33 @@ const Header = () => __jsx("div", {
   className: "header-container",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 6
+    lineNumber: 7
   },
   __self: undefined
 }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
   href: "/",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 7
+    lineNumber: 8
   },
   __self: undefined
 }, __jsx(_Logo_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 8
+    lineNumber: 9
   },
   __self: undefined
-})), __jsx(_Hamburger_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
+})), __jsx(_DesktopNav_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  className: "desktop-nav",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 10
+    lineNumber: 11
+  },
+  __self: undefined
+}), __jsx(_Hamburger_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 12
   },
   __self: undefined
 }), style);
@@ -497,7 +631,7 @@ const style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 16
+    lineNumber: 18
   },
   __self: undefined
 }, `
@@ -889,10 +1023,18 @@ const style = __jsx("style", {
       color: var(--color2);
     }
     .logo {
+      z-index: 100;
       font-size: 3rem;
       color: var(--color2);
       margin-left: var(--global-margin);
       margin-top: 1rem;
+      position: relative;
+    }
+    @media (min-width: 801px) {
+      .logo {
+        font-size: 4rem;
+        margin-top: 2rem;
+      }
     }
   `);
 
@@ -3066,6 +3208,11 @@ const style = __jsx("style", {
       align-items: flex-end;
       margin-bottom: 10rem;
       transform: translateY(-4rem);
+    }
+    @media (min-width: 801px) {
+      .landing-logo-container {
+        transform: scale(2);
+      }
     }
   `);
 

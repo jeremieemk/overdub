@@ -4,6 +4,9 @@ function HamburgerOpenMenu(props) {
   return (
     <div className="hamburger-menu-container">
       <div className="nested-menu-container">
+        <Link href="/index">
+          <a onClick={props.handleHamburgerClick}>HELLO</a>
+        </Link>
         <Link href="/about">
           <a onClick={props.handleHamburgerClick}>ABOUT ME</a>
         </Link>
@@ -90,7 +93,7 @@ const style = (
     }
     .get-in-touch {
       text-align: center;
-      transform: translateY(8rem);
+      transform: translateY(5rem);
     }
     .get-in-touch > p {
       color: black;

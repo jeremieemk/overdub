@@ -227,62 +227,60 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 function HamburgerOpenMenu(props) {
-  const test = () => console.log("ça marche");
-
   return __jsx("div", {
     className: "hamburger-menu-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 5
     },
     __self: this
   }, __jsx("div", {
     className: "nested-menu-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 6
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/about",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 7
     },
     __self: this
   }, __jsx("a", {
     onClick: props.handleHamburgerClick,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 8
     },
     __self: this
   }, "ABOUT ME")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/portfolio",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 10
     },
     __self: this
   }, __jsx("a", {
     onClick: props.handleHamburgerClick,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 11
     },
     __self: this
   }, "PORTFOLIO")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/skills",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 14
     },
     __self: this
   }, __jsx("a", {
     onClick: props.handleHamburgerClick,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 15
     },
     __self: this
   }, "SKILLS")), __jsx("a", {
@@ -290,27 +288,27 @@ function HamburgerOpenMenu(props) {
     onClick: props.handleHamburgerClick,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 18
     },
     __self: this
   }, "CV"), __jsx("div", {
     className: "get-in-touch",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 25
     },
     __self: this
   }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 26
     },
     __self: this
   }, "GET IN TOUCH"), __jsx("div", {
     className: "social-icons",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 27
     },
     __self: this
   }, __jsx("a", {
@@ -318,7 +316,7 @@ function HamburgerOpenMenu(props) {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 28
     },
     __self: this
   }, __jsx("img", {
@@ -327,7 +325,7 @@ function HamburgerOpenMenu(props) {
     alt: "fb",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 29
     },
     __self: this
   })), __jsx("a", {
@@ -335,7 +333,7 @@ function HamburgerOpenMenu(props) {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 31
     },
     __self: this
   }, __jsx("img", {
@@ -344,7 +342,7 @@ function HamburgerOpenMenu(props) {
     alt: "linkedin",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 35
     },
     __self: this
   })), __jsx("a", {
@@ -352,7 +350,7 @@ function HamburgerOpenMenu(props) {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 41
     },
     __self: this
   }, __jsx("img", {
@@ -361,7 +359,7 @@ function HamburgerOpenMenu(props) {
     alt: "mail",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 42
     },
     __self: this
   }))))), style);
@@ -371,7 +369,7 @@ const style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 55
+    lineNumber: 54
   },
   __self: undefined
 }, `

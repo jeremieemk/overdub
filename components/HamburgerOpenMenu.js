@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 function HamburgerOpenMenu(props) {
-  const test = () => console.log("ça marche");
   return (
     <div className="hamburger-menu-container">
       <div className="nested-menu-container">

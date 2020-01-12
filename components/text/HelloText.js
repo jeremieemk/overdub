@@ -2,7 +2,7 @@ const HelloText = () => (
   <div className="hello-text">
     <p className="upper-text">
       I’m Jérémie. I am a <span className="yellow">coder</span> , a music
-      producer <span className="">and a goofy polyglot. </span>
+      producer <span className="">and a nerdy polyglot. </span>
       <br />
       <p className="smaller2">
         I was born in France and I live in Lisbon, Portugal.
@@ -18,7 +18,7 @@ const HelloText = () => (
 const style = (
   <style jsx>{`
   .hello-text {
-    width: 16rem;
+    width: 70%;
     color: white;
     font-family: var(--font2);
     margin-top: 2rem;

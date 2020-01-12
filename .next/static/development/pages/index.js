@@ -107,64 +107,60 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 function HamburgerOpenMenu(props) {
-  var test = function test() {
-    return console.log("ça marche");
-  };
-
   return __jsx("div", {
     className: "hamburger-menu-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 5
     },
     __self: this
   }, __jsx("div", {
     className: "nested-menu-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 6
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/about",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 7
     },
     __self: this
   }, __jsx("a", {
     onClick: props.handleHamburgerClick,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 8
     },
     __self: this
   }, "ABOUT ME")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/portfolio",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 10
     },
     __self: this
   }, __jsx("a", {
     onClick: props.handleHamburgerClick,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 11
     },
     __self: this
   }, "PORTFOLIO")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/skills",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 14
     },
     __self: this
   }, __jsx("a", {
     onClick: props.handleHamburgerClick,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 15
     },
     __self: this
   }, "SKILLS")), __jsx("a", {
@@ -172,27 +168,27 @@ function HamburgerOpenMenu(props) {
     onClick: props.handleHamburgerClick,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 18
     },
     __self: this
   }, "CV"), __jsx("div", {
     className: "get-in-touch",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 25
     },
     __self: this
   }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 26
     },
     __self: this
   }, "GET IN TOUCH"), __jsx("div", {
     className: "social-icons",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 27
     },
     __self: this
   }, __jsx("a", {
@@ -200,7 +196,7 @@ function HamburgerOpenMenu(props) {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 28
     },
     __self: this
   }, __jsx("img", {
@@ -209,7 +205,7 @@ function HamburgerOpenMenu(props) {
     alt: "fb",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 29
     },
     __self: this
   })), __jsx("a", {
@@ -217,7 +213,7 @@ function HamburgerOpenMenu(props) {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 31
     },
     __self: this
   }, __jsx("img", {
@@ -226,7 +222,7 @@ function HamburgerOpenMenu(props) {
     alt: "linkedin",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 35
     },
     __self: this
   })), __jsx("a", {
@@ -234,7 +230,7 @@ function HamburgerOpenMenu(props) {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 41
     },
     __self: this
   }, __jsx("img", {
@@ -243,7 +239,7 @@ function HamburgerOpenMenu(props) {
     alt: "mail",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 42
     },
     __self: this
   }))))), style);
@@ -253,7 +249,7 @@ var style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 55
+    lineNumber: 54
   },
   __self: undefined
 }, "\n    .hamburger-menu-container {\n      height: 100vh;\n      width: 100vw;\n      left: 0;\n      top: 0;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      position: absolute;\n    }\n    .nested-menu-container {\n      background: -webkit-linear-gradient(165deg, white 65%, #f6f6f6 65%);\n      background: -o-linear-gradient(165deg, white 65%, #f6f6f6 65%);\n      background: -moz-linear-gradient(165deg, white 65%, #f6f6f6 65%);\n      background: linear-gradient(165deg, white 65%, #f6f6f6 65%);\n      height: 100%;\n      width: 100%;\n      padding: 2rem;\n      font-size: 1.05rem;\n      font-family: var(--font3);\n      letter-spacing: 0.1rem;\n      display: flex;\n      flex-direction: column;\n      justify-content: center;\n      align-items: center;\n      position: absolute;\n    }\n    .nested-menu-container > a {\n      padding: 1rem;\n    }\n    .social-icon-pic {\n      width: 1.5rem;\n      padding: 1rem;\n      height: auto;\n    }\n    .get-in-touch {\n      text-align: center;\n      transform: translateY(8rem);\n    }\n    .get-in-touch > p {\n      color: black;\n\n      font-size: 0.8rem;\n    }\n  ");
@@ -743,7 +739,7 @@ var HelloText = function HelloText() {
       lineNumber: 5
     },
     __self: this
-  }, "and a goofy polyglot. "), __jsx("br", {
+  }, "and a nerdy polyglot. "), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
@@ -782,7 +778,7 @@ var style = __jsx("style", {
     lineNumber: 19
   },
   __self: undefined
-}, "\n  .hello-text {\n    width: 16rem;\n    color: white;\n    font-family: var(--font2);\n    margin-top: 2rem;\n    padding-left: 3rem;\n    padding-right: 3rem;\n    text-align: left;\n    \n  }\n      .sardine {\n        margin-top: 2rem;\n      width: 12rem;\n      height: auto;\n    }\n  .img-container {\n    display : flex;\n    justify-content: center;\n  }\n  .upper-text {\n    font-size: 1.6rem;\n  }\n  .smaller {\n    font-size: 1.1rem;\n  }\n  .smaller2{\n    font-size: 1.3rem;\n    line-height: 1.5rem;\n    font-family: var(--font5);\n  }\n  .yellow {\n    color: var(--color2);\n    font-size: 2rem;\n    font-family: var(--font3);\n  }\n    }\n  ");
+}, "\n  .hello-text {\n    width: 70%;\n    color: white;\n    font-family: var(--font2);\n    margin-top: 2rem;\n    padding-left: 3rem;\n    padding-right: 3rem;\n    text-align: left;\n    \n  }\n      .sardine {\n        margin-top: 2rem;\n      width: 12rem;\n      height: auto;\n    }\n  .img-container {\n    display : flex;\n    justify-content: center;\n  }\n  .upper-text {\n    font-size: 1.6rem;\n  }\n  .smaller {\n    font-size: 1.1rem;\n  }\n  .smaller2{\n    font-size: 1.3rem;\n    line-height: 1.5rem;\n    font-family: var(--font5);\n  }\n  .yellow {\n    color: var(--color2);\n    font-size: 2rem;\n    font-family: var(--font3);\n  }\n    }\n  ");
 
 /* harmony default export */ __webpack_exports__["default"] = (HelloText);
 

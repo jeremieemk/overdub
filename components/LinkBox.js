@@ -62,6 +62,22 @@ const style = (
       width: 2rem;
       height: auto;
     }
+    @media (min-width: 801px) {
+      .text-box-container {
+        margin-top: 3rem;
+      }
+      .text-box {
+        width: 25rem;
+        height: 5rem;
+        font-size: 2rem;
+      }
+      .text {
+        padding-left: 5rem;
+      }
+      .arrow-box {
+        width: 10rem;
+      }
+    }
   `}</style>
 );
 

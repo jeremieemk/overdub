@@ -38,7 +38,7 @@ const DesktopNav = () => (
 const style = (
   <style jsx>{`
     .desktop-nav-container {
-      z-index: 1;
+      z-index: 100;
       width: 100%;
       position: absolute;
       padding-top: 2rem;

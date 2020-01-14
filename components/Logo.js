@@ -17,7 +17,7 @@ const style = (
       color: var(--color2);
     }
     .logo {
-      z-index: 100;
+      z-index: 200;
       font-size: 3rem;
       color: var(--color2);
       margin-left: var(--global-margin);

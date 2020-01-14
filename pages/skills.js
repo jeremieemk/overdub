@@ -40,6 +40,12 @@ const style = (
       padding-top: 2rem;
       padding-bottom: 5rem;
     }
+    @media (min-width: 801px) {
+      .skill-bar-group {
+        padding-left: var(--desktop-padding);
+        padding-right: var(--desktop-padding);
+      }
+    }
   `}</style>
 );
 

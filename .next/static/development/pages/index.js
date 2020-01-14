@@ -106,7 +106,7 @@ var style = __jsx("style", {
     lineNumber: 39
   },
   __self: undefined
-}, "\n    .desktop-nav-container {\n      z-index: 1;\n      width: 100%;\n      position: absolute;\n      padding-top: 2rem;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      font-family: var(--font4);\n      font-size: 1.2rem;\n      background-color: var(--color1);\n    }\n    .desktop-nav-container > * {\n      padding: 2rem;\n    }\n\n    .bottom-line {\n      padding-top: 0.5rem;\n      width: 1.2rem;\n      border-bottom: 0.2rem solid white;\n      margin-left: 0.5rem;\n      visibility: hidden;\n      opacity: 0;\n      transition: visibility 0s, opacity 0.3s linear;\n      position: absolute;\n    }\n    .menu-item-name:hover + .bottom-line {\n      visibility: visible;\n      opacity: 1;\n    }\n\n    @media (max-width: 801px) {\n      .desktop-nav-container {\n        display: none;\n      }\n    }\n  ");
+}, "\n    .desktop-nav-container {\n      z-index: 100;\n      width: 100%;\n      position: absolute;\n      padding-top: 2rem;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      font-family: var(--font4);\n      font-size: 1.2rem;\n      background-color: var(--color1);\n    }\n    .desktop-nav-container > * {\n      padding: 2rem;\n    }\n\n    .bottom-line {\n      padding-top: 0.5rem;\n      width: 1.2rem;\n      border-bottom: 0.2rem solid white;\n      margin-left: 0.5rem;\n      visibility: hidden;\n      opacity: 0;\n      transition: visibility 0s, opacity 0.3s linear;\n      position: absolute;\n    }\n    .menu-item-name:hover + .bottom-line {\n      visibility: visible;\n      opacity: 1;\n    }\n\n    @media (max-width: 801px) {\n      .desktop-nav-container {\n        display: none;\n      }\n    }\n  ");
 
 /* harmony default export */ __webpack_exports__["default"] = (DesktopNav);
 
@@ -703,13 +703,13 @@ var style = __jsx("style", {
     lineNumber: 33
   },
   __self: undefined
-}, "\n    .text-box-container {\n      margin-top: 1rem;\n      display: flex;\n      cursor: \"pointer\";\n    }\n    .text-box {\n      color: white;\n      font-family: var(--font3);\n      border: var(--line-width) solid white;\n      font-size: 1.3rem;\n      width: 11rem;\n      height: 3rem;\n      display: flex;\n      align-items: center;\n    }\n    .arrow-box {\n      border-width: var(--line-width) var(--line-width) var(--line-width) 0;\n      width: 5rem;\n      border-style: solid;\n      border-color: white;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n    }\n    .text {\n      padding-left: 2rem;\n    }\n    .arrow {\n      width: 2rem;\n      height: auto;\n    }\n  ");
+}, "\n    .text-box-container {\n      margin-top: 1rem;\n      display: flex;\n      cursor: \"pointer\";\n    }\n    .text-box {\n      color: white;\n      font-family: var(--font3);\n      border: var(--line-width) solid white;\n      font-size: 1.3rem;\n      width: 11rem;\n      height: 3rem;\n      display: flex;\n      align-items: center;\n    }\n    .arrow-box {\n      border-width: var(--line-width) var(--line-width) var(--line-width) 0;\n      width: 5rem;\n      border-style: solid;\n      border-color: white;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n    }\n    .text {\n      padding-left: 2rem;\n    }\n    .arrow {\n      width: 2rem;\n      height: auto;\n    }\n    @media (min-width: 801px) {\n      .text-box-container {\n        margin-top: 3rem;\n      }\n      .text-box {\n        width: 25rem;\n        height: 5rem;\n        font-size: 2rem;\n      }\n      .text {\n        padding-left: 5rem;\n      }\n      .arrow-box {\n        width: 10rem;\n      }\n    }\n  ");
 
 var centeredTitle = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 69
+    lineNumber: 85
   },
   __self: undefined
 }, "\n    .text-box {\n      justify-content: center;\n      width: 80vw;\n    }\n    .text {\n      padding-left: 0;\n      font-size: 1.2rem;\n    }\n    @media (min-width: 801px) {\n      .text-box-container {\n        margin-left: var(--desktop-padding);\n        margin-right: var(--desktop-padding);\n      }\n    }\n  ");
@@ -777,7 +777,7 @@ var style = __jsx("style", {
     lineNumber: 15
   },
   __self: undefined
-}, "\n    .logo-letter {\n      color: var(--color2);\n    }\n    .logo {\n      z-index: 100;\n      font-size: 3rem;\n      color: var(--color2);\n      margin-left: var(--global-margin);\n      margin-top: 1rem;\n      position: relative;\n      width: 10rem;\n    }\n    @media (min-width: 801px) {\n      .logo {\n        font-size: 4rem;\n        margin-top: 2rem;\n      }\n    }\n  ");
+}, "\n    .logo-letter {\n      color: var(--color2);\n    }\n    .logo {\n      z-index: 200;\n      font-size: 3rem;\n      color: var(--color2);\n      margin-left: var(--global-margin);\n      margin-top: 1rem;\n      position: relative;\n      width: 10rem;\n    }\n    @media (min-width: 801px) {\n      .logo {\n        font-size: 4rem;\n        margin-top: 2rem;\n      }\n    }\n  ");
 
 /* harmony default export */ __webpack_exports__["default"] = (Logo);
 
@@ -880,7 +880,7 @@ var HelloText = function HelloText() {
       lineNumber: 5
     },
     __self: this
-  }, "and a nerdy polyglot. "), __jsx("br", {
+  }, "and a wandering polyglot. "), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
@@ -893,7 +893,7 @@ var HelloText = function HelloText() {
       lineNumber: 7
     },
     __self: this
-  }, "I was born in France and I live in Lisbon, Portugal."), __jsx("div", {
+  }, "I was born in France and I am currently based in Lisbon, Portugal."), __jsx("div", {
     className: "img-container",
     __source: {
       fileName: _jsxFileName,
@@ -919,7 +919,7 @@ var style = __jsx("style", {
     lineNumber: 19
   },
   __self: undefined
-}, "\n  .hello-text {\n    width: 70%;\n    color: white;\n    font-family: var(--font2);\n    margin-top: 2rem;\n    padding-left: 3rem;\n    padding-right: 3rem;\n    text-align: left;\n    \n  }\n      .sardine {\n        margin-top: 2rem;\n      width: 12rem;\n      height: auto;\n    }\n  .img-container {\n    display : flex;\n    justify-content: center;\n  }\n  .upper-text {\n    font-size: 1.6rem;\n  }\n  .smaller {\n    font-size: 1.1rem;\n  }\n  .smaller2{\n    font-size: 1.3rem;\n    line-height: 1.5rem;\n    font-family: var(--font5);\n  }\n  .yellow {\n    color: var(--color2);\n    font-size: 2rem;\n    font-family: var(--font3);\n  }\n    }\n  ");
+}, "\n    .hello-text {\n      width: 70%;\n      color: white;\n      font-family: var(--font2);\n      margin-top: 2rem;\n      padding-left: 3rem;\n      padding-right: 3rem;\n      text-align: left;\n    }\n    .sardine {\n      margin-top: 2rem;\n      width: 12rem;\n      height: auto;\n    }\n    .img-container {\n      display: flex;\n      justify-content: center;\n    }\n    .upper-text {\n      font-size: 1.6rem;\n    }\n    .smaller {\n      font-size: 1.1rem;\n    }\n    .smaller2 {\n      font-size: 1.3rem;\n      line-height: 1.5rem;\n      font-family: var(--font5);\n    }\n    .yellow {\n      color: var(--color2);\n      font-size: 2rem;\n      font-family: var(--font3);\n    }\n    @media (min-width: 801px) {\n      .upper-text {\n        font-size: 3rem;\n        font-family: var(--font4);\n      }\n      .smaller2 {\n        font-size: 2.5rem;\n        line-height: 3rem;\n        font-family: var(--font4);\n      }\n      .yellow {\n        font-size: 3.5rem;\n        font-family: var(--font4);\n      }\n      .sardine {\n        margin-top: 1.5rem;\n        width: 22rem;\n        height: auto;\n      }\n    }\n  ");
 
 /* harmony default export */ __webpack_exports__["default"] = (HelloText);
 
@@ -10298,7 +10298,7 @@ var style = __jsx("style", {
     lineNumber: 52
   },
   __self: undefined
-}, "\n    .landing-page-container {\n      visibility: visible;\n      opacity: 1;\n      transition: visibility 3s, opacity 2s linear;\n    }\n    .landing-logo-container {\n      height: 100vh;\n      display: flex;\n      flex-direction: column;\n      justify-content: center;\n      align-items: center;\n    }\n    .avatar {\n      width: 5.5rem;\n      height: auto;\n      margin-left: -0.5rem;\n    }\n\n    .over {\n      color: var(--color2);\n      font-family: var(--font2);\n      font-size: 3.5rem;\n\n      margin-top: -1rem;\n    }\n    .dub {\n      color: var(--color2);\n      font-family: var(--font2);\n      font-size: 6rem;\n      margin-top: -1.6rem;\n    }\n    h1,\n    h2 {\n      margin-block-start: 0;\n      margin-block-end: 0;\n    }\n    hr {\n      margin-block-start: 0;\n      margin-block-end: 0;\n      border-color: white;\n      width: 5.5rem;\n      border-top: 1px solid white;\n      margin-inline-start: 5rem;\n      margin-top: -1.3rem;\n      margin-inline-end: 0;\n    }\n    .web {\n      font-family: var(--font3);\n      color: white;\n      font-size: 1.15rem;\n      margin-left: 5.2rem;\n      margin-top: 0.1rem;\n    }\n    .arrow-container {\n      display: flex;\n      justify-content: center;\n      align-items: flex-end;\n      margin-bottom: 10rem;\n      transform: translateY(-4rem);\n    }\n    .logo-fades {\n      visibility: hidden;\n      opacity: 0;\n      transition: visibility 3s, opacity 2s;\n    }\n    .hello-section-jumps-up {\n      transform: translateY(-25rem);\n      transition: transform 2s linear;\n    }\n    @media (min-width: 801px) {\n      .landing-logo-wrapper {\n        transform: scale(2);\n      }\n    }\n  ");
+}, "\n    .landing-page-container {\n      visibility: visible;\n      opacity: 1;\n      transition: visibility 3s, opacity 2s linear;\n    }\n    .landing-logo-container {\n      height: 100vh;\n      display: flex;\n      flex-direction: column;\n      justify-content: center;\n      align-items: center;\n    }\n    .avatar {\n      width: 5.5rem;\n      height: auto;\n      margin-left: -0.5rem;\n    }\n\n    .over {\n      color: var(--color2);\n      font-family: var(--font2);\n      font-size: 3.5rem;\n\n      margin-top: -1rem;\n    }\n    .dub {\n      color: var(--color2);\n      font-family: var(--font2);\n      font-size: 6rem;\n      margin-top: -1.6rem;\n    }\n    h1,\n    h2 {\n      margin-block-start: 0;\n      margin-block-end: 0;\n    }\n    hr {\n      margin-block-start: 0;\n      margin-block-end: 0;\n      border-color: white;\n      width: 5.5rem;\n      border-top: 1px solid white;\n      margin-inline-start: 5rem;\n      margin-top: -1.3rem;\n      margin-inline-end: 0;\n    }\n    .web {\n      font-family: var(--font3);\n      color: white;\n      font-size: 1.15rem;\n      margin-left: 5.2rem;\n      margin-top: 0.1rem;\n    }\n    .arrow-container {\n      display: flex;\n      justify-content: center;\n      align-items: flex-end;\n      margin-bottom: 10rem;\n      transform: translateY(-4rem);\n    }\n    .logo-fades {\n      visibility: hidden;\n      opacity: 0;\n      transition: visibility 3s, opacity 2s;\n    }\n    .hello-section-jumps-up {\n      transform: translateY(-20rem);\n      transition: transform 2s linear;\n    }\n    @media (min-width: 801px) {\n      .landing-logo-wrapper {\n        transform: scale(2);\n      }\n    }\n  ");
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
 

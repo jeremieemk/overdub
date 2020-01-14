@@ -116,7 +116,7 @@ const style = (
       transition: visibility 3s, opacity 2s;
     }
     .hello-section-jumps-up {
-      transform: translateY(-25rem);
+      transform: translateY(-20rem);
       transition: transform 2s linear;
     }
     @media (min-width: 801px) {

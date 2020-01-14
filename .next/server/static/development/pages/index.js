@@ -3099,31 +3099,56 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+
 function Index() {
+  const {
+    0: hasScrolled,
+    1: sethasScrolled
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+
+  const handleScroll = () => {
+    if (document.documentElement.scrollTop > 150) {
+      sethasScrolled(true);
+    } else {
+      sethasScrolled(false);
+    }
+  };
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 19
     },
     __self: this
   }, __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 20
+    },
+    __self: this
+  }, __jsx("div", {
+    className: hasScrolled ? "landing-page-container logo-fades" : "landing-page-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
     },
     __self: this
   }, __jsx("div", {
     className: "landing-logo-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 28
     },
     __self: this
   }, __jsx("div", {
     className: "landing-logo-wrapper",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 29
     },
     __self: this
   }, __jsx("img", {
@@ -3132,41 +3157,41 @@ function Index() {
     alt: "avatar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 30
     },
     __self: this
   }), __jsx("h1", {
     className: "over",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 31
     },
     __self: this
   }, "over-"), __jsx("h1", {
     className: "dub",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 32
     },
     __self: this
   }, "duB"), __jsx("hr", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 33
     },
     __self: this
   }), __jsx("h2", {
     className: "web",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 34
     },
     __self: this
   }, "WEB DEV."))), __jsx("div", {
     className: "arrow-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 37
     },
     __self: this
   }, __jsx("img", {
@@ -3175,13 +3200,13 @@ function Index() {
     alt: "arrow",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 38
     },
     __self: this
-  })), __jsx(_components_Hello__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }))), __jsx(_components_Hello__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 42
     },
     __self: this
   })), style);
@@ -3191,10 +3216,15 @@ const style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 29
+    lineNumber: 51
   },
   __self: undefined
 }, `
+    .landing-page-container {
+      visibility: visible;
+      opacity: 1;
+      transition: visibility 3s, opacity 2s linear;
+    }
     .landing-logo-container {
       height: 100vh;
       display: flex;
@@ -3249,6 +3279,11 @@ const style = __jsx("style", {
       align-items: flex-end;
       margin-bottom: 10rem;
       transform: translateY(-4rem);
+    }
+    .logo-fades {
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 3s, opacity 2s;
     }
     @media (min-width: 801px) {
       .landing-logo-wrapper {

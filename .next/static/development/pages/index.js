@@ -17,86 +17,96 @@ var _jsxFileName = "/Users/jeremie/web/28_portfolio/components/DesktopNav.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
+var menuItems = [{
+  name: "HELLO",
+  link: "/"
+}, {
+  name: "ABOUT ME",
+  link: "/about"
+}, {
+  name: "PORTFOLIO",
+  link: "/portfolio"
+}, {
+  name: "SKILLS",
+  link: "/skills"
+}];
+
+var renderMenuItems = function renderMenuItems() {
+  return menuItems.map(function (item) {
+    return __jsx("div", {
+      className: "title-plus-line-container",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 12
+      },
+      __self: this
+    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      href: item.link,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 13
+      },
+      __self: this
+    }, __jsx("a", {
+      className: "menu-item-name",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 14
+      },
+      __self: this
+    }, item.name)), __jsx("div", {
+      className: "bottom-line",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 16
+      },
+      __self: this
+    }));
+  });
+};
 
 var DesktopNav = function DesktopNav() {
   return __jsx("div", {
     className: "desktop-nav-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
+      lineNumber: 21
     },
     __self: this
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/index",
+  }, renderMenuItems(), __jsx("div", {
+    className: "title-plus-line-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 23
     },
     __self: this
   }, __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, "HELLO")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/about",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, "ABOUT ME")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/portfolio",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }, __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }, "PORTFOLIO")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/skills",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }, __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
-  }, "SKILLS")), __jsx("a", {
+    className: "menu-item-name",
     href: "https://res.cloudinary.com/dbslwolfi/image/upload/v1578760331/rss/CV2020_gsc1gi.pdf",
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 24
     },
     __self: this
-  }, "CV"), style);
+  }, "CV"), __jsx("div", {
+    className: "bottom-line",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: this
+  })), style);
 };
 
 var style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 30
+    lineNumber: 39
   },
   __self: undefined
-}, "\n    .desktop-nav-container {\n      width: 100%;\n      position: absolute;\n      padding-top: 2rem;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      font-family: var(--font4);\n      font-size: 1.2rem;\n      background-color: var(--color1);\n    }\n    .desktop-nav-container > * {\n      padding: 2rem;\n    }\n    @media (max-width: 801px) {\n      .desktop-nav-container {\n        display: none;\n      }\n    }\n  ");
+}, "\n    .desktop-nav-container {\n      z-index: 1;\n      width: 100%;\n      position: absolute;\n      padding-top: 2rem;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      font-family: var(--font4);\n      font-size: 1.2rem;\n      background-color: var(--color1);\n    }\n    .desktop-nav-container > * {\n      padding: 2rem;\n    }\n\n    .bottom-line {\n      padding-top: 0.5rem;\n      width: 1.2rem;\n      border-bottom: 0.2rem solid white;\n      margin-left: 0.5rem;\n      display: none;\n      position: absolute;\n    }\n    .menu-item-name:hover + .bottom-line {\n      display: block;\n    }\n\n    @media (max-width: 801px) {\n      .desktop-nav-container {\n        display: none;\n      }\n    }\n  ");
 
 /* harmony default export */ __webpack_exports__["default"] = (DesktopNav);
 
@@ -767,7 +777,7 @@ var style = __jsx("style", {
     lineNumber: 15
   },
   __self: undefined
-}, "\n    .logo-letter {\n      color: var(--color2);\n    }\n    .logo {\n      z-index: 100;\n      font-size: 3rem;\n      color: var(--color2);\n      margin-left: var(--global-margin);\n      margin-top: 1rem;\n      position: relative;\n    }\n    @media (min-width: 801px) {\n      .logo {\n        font-size: 4rem;\n        margin-top: 2rem;\n      }\n    }\n  ");
+}, "\n    .logo-letter {\n      color: var(--color2);\n    }\n    .logo {\n      z-index: 100;\n      font-size: 3rem;\n      color: var(--color2);\n      margin-left: var(--global-margin);\n      margin-top: 1rem;\n      position: relative;\n      width: 10rem;\n    }\n    @media (min-width: 801px) {\n      .logo {\n        font-size: 4rem;\n        margin-top: 2rem;\n      }\n    }\n  ");
 
 /* harmony default export */ __webpack_exports__["default"] = (Logo);
 
@@ -10182,6 +10192,7 @@ function Index() {
     },
     __self: this
   }, __jsx("div", {
+    className: "landing-logo-wrapper",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
@@ -10255,7 +10266,7 @@ var style = __jsx("style", {
     lineNumber: 30
   },
   __self: undefined
-}, "\n    .landing-logo-container {\n      height: 100vh;\n      display: flex;\n      flex-direction: column;\n      justify-content: center;\n      align-items: center;\n    }\n    .avatar {\n      width: 5.5rem;\n      height: auto;\n      margin-left: -0.5rem;\n    }\n\n    .over {\n      color: var(--color2);\n      font-family: var(--font2);\n      font-size: 3.5rem;\n\n      margin-top: -1rem;\n    }\n    .dub {\n      color: var(--color2);\n      font-family: var(--font2);\n      font-size: 6rem;\n      margin-top: -1.6rem;\n    }\n    h1,\n    h2 {\n      margin-block-start: 0;\n      margin-block-end: 0;\n    }\n    hr {\n      margin-block-start: 0;\n      margin-block-end: 0;\n      border-color: white;\n      width: 5.5rem;\n      border-top: 1px solid white;\n      margin-inline-start: 5rem;\n      margin-top: -1.3rem;\n      margin-inline-end: 0;\n    }\n    .web {\n      font-family: var(--font3);\n      color: white;\n      font-size: 1.15rem;\n      margin-left: 5.2rem;\n      margin-top: 0.1rem;\n    }\n    .arrow-container {\n      display: flex;\n      justify-content: center;\n      align-items: flex-end;\n      margin-bottom: 10rem;\n      transform: translateY(-4rem);\n    }\n    @media (min-width: 801px) {\n      .landing-logo-container {\n        transform: scale(2);\n      }\n    }\n  ");
+}, "\n    .landing-logo-container {\n      height: 100vh;\n      display: flex;\n      flex-direction: column;\n      justify-content: center;\n      align-items: center;\n    }\n    .avatar {\n      width: 5.5rem;\n      height: auto;\n      margin-left: -0.5rem;\n    }\n\n    .over {\n      color: var(--color2);\n      font-family: var(--font2);\n      font-size: 3.5rem;\n\n      margin-top: -1rem;\n    }\n    .dub {\n      color: var(--color2);\n      font-family: var(--font2);\n      font-size: 6rem;\n      margin-top: -1.6rem;\n    }\n    h1,\n    h2 {\n      margin-block-start: 0;\n      margin-block-end: 0;\n    }\n    hr {\n      margin-block-start: 0;\n      margin-block-end: 0;\n      border-color: white;\n      width: 5.5rem;\n      border-top: 1px solid white;\n      margin-inline-start: 5rem;\n      margin-top: -1.3rem;\n      margin-inline-end: 0;\n    }\n    .web {\n      font-family: var(--font3);\n      color: white;\n      font-size: 1.15rem;\n      margin-left: 5.2rem;\n      margin-top: 0.1rem;\n    }\n    .arrow-container {\n      display: flex;\n      justify-content: center;\n      align-items: flex-end;\n      margin-bottom: 10rem;\n      transform: translateY(-4rem);\n    }\n    @media (min-width: 801px) {\n      .landing-logo-wrapper {\n        transform: scale(2);\n      }\n    }\n  ");
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
 

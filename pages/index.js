@@ -7,7 +7,7 @@ function Index() {
     <div>
       <Layout>
         <div className="landing-logo-container">
-          <div>
+          <div className="landing-logo-wrapper">
             <img className="avatar" src="/img/avatar1.png" alt="avatar" />
             <h1 className="over">over-</h1>
             <h1 className="dub">duB</h1>
@@ -84,7 +84,7 @@ const style = (
       transform: translateY(-4rem);
     }
     @media (min-width: 801px) {
-      .landing-logo-container {
+      .landing-logo-wrapper {
         transform: scale(2);
       }
     }

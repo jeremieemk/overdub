@@ -110,85 +110,92 @@ var _jsxFileName = "/Users/jeremie/web/28_portfolio/components/DesktopNav.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
+const menuItems = [{
+  name: "HELLO",
+  link: "/"
+}, {
+  name: "ABOUT ME",
+  link: "/about"
+}, {
+  name: "PORTFOLIO",
+  link: "/portfolio"
+}, {
+  name: "SKILLS",
+  link: "/skills"
+}];
 
-const DesktopNav = () => __jsx("div", {
-  className: "desktop-nav-container",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 4
-  },
-  __self: undefined
-}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  href: "/index",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5
-  },
-  __self: undefined
-}, __jsx("a", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6
-  },
-  __self: undefined
-}, "HELLO")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  href: "/about",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 8
-  },
-  __self: undefined
-}, __jsx("a", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 9
-  },
-  __self: undefined
-}, "ABOUT ME")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  href: "/portfolio",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 11
-  },
-  __self: undefined
-}, __jsx("a", {
+const renderMenuItems = () => menuItems.map(item => __jsx("div", {
+  className: "title-plus-line-container",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 12
   },
   __self: undefined
-}, "PORTFOLIO")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  href: "/skills",
+}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  href: item.link,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 15
+    lineNumber: 13
   },
   __self: undefined
 }, __jsx("a", {
+  className: "menu-item-name",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 14
+  },
+  __self: undefined
+}, item.name)), __jsx("div", {
+  className: "bottom-line",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 16
   },
   __self: undefined
-}, "SKILLS")), __jsx("a", {
+})));
+
+const DesktopNav = () => __jsx("div", {
+  className: "desktop-nav-container",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 21
+  },
+  __self: undefined
+}, renderMenuItems(), __jsx("div", {
+  className: "title-plus-line-container",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 23
+  },
+  __self: undefined
+}, __jsx("a", {
+  className: "menu-item-name",
   href: "https://res.cloudinary.com/dbslwolfi/image/upload/v1578760331/rss/CV2020_gsc1gi.pdf",
   target: "_blank",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 19
+    lineNumber: 24
   },
   __self: undefined
-}, "CV"), style);
+}, "CV"), __jsx("div", {
+  className: "bottom-line",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 31
+  },
+  __self: undefined
+})), style);
 
 const style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 30
+    lineNumber: 39
   },
   __self: undefined
 }, `
     .desktop-nav-container {
+      z-index: 1;
       width: 100%;
       position: absolute;
       padding-top: 2rem;
@@ -202,6 +209,19 @@ const style = __jsx("style", {
     .desktop-nav-container > * {
       padding: 2rem;
     }
+
+    .bottom-line {
+      padding-top: 0.5rem;
+      width: 1.2rem;
+      border-bottom: 0.2rem solid white;
+      margin-left: 0.5rem;
+      display: none;
+      position: absolute;
+    }
+    .menu-item-name:hover + .bottom-line {
+      display: block;
+    }
+
     @media (max-width: 801px) {
       .desktop-nav-container {
         display: none;
@@ -1029,6 +1049,7 @@ const style = __jsx("style", {
       margin-left: var(--global-margin);
       margin-top: 1rem;
       position: relative;
+      width: 10rem;
     }
     @media (min-width: 801px) {
       .logo {
@@ -3080,6 +3101,7 @@ function Index() {
     },
     __self: this
   }, __jsx("div", {
+    className: "landing-logo-wrapper",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
@@ -3210,7 +3232,7 @@ const style = __jsx("style", {
       transform: translateY(-4rem);
     }
     @media (min-width: 801px) {
-      .landing-logo-container {
+      .landing-logo-wrapper {
         transform: scale(2);
       }
     }

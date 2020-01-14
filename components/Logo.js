@@ -23,6 +23,7 @@ const style = (
       margin-left: var(--global-margin);
       margin-top: 1rem;
       position: relative;
+      width: 10rem;
     }
     @media (min-width: 801px) {
       .logo {

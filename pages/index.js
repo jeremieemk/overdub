@@ -38,8 +38,9 @@ function Index() {
             <img className="arrow" src="/img/arrow.png" alt="arrow" />
           </div>
         </div>
-
-        <Hello />
+        <div className={hasScrolled ? "hello-section-jumps-up" : null}>
+          <Hello />
+        </div>
       </Layout>
 
       {style}
@@ -113,6 +114,10 @@ const style = (
       visibility: hidden;
       opacity: 0;
       transition: visibility 3s, opacity 2s;
+    }
+    .hello-section-jumps-up {
+      transform: translateY(-25rem);
+      transition: transform 2s linear;
     }
     @media (min-width: 801px) {
       .landing-logo-wrapper {

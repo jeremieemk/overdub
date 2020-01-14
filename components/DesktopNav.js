@@ -58,11 +58,14 @@ const style = (
       width: 1.2rem;
       border-bottom: 0.2rem solid white;
       margin-left: 0.5rem;
-      display: none;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.3s linear;
       position: absolute;
     }
     .menu-item-name:hover + .bottom-line {
-      display: block;
+      visibility: visible;
+      opacity: 1;
     }
 
     @media (max-width: 801px) {

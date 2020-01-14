@@ -215,11 +215,14 @@ const style = __jsx("style", {
       width: 1.2rem;
       border-bottom: 0.2rem solid white;
       margin-left: 0.5rem;
-      display: none;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.3s linear;
       position: absolute;
     }
     .menu-item-name:hover + .bottom-line {
-      display: block;
+      visibility: visible;
+      opacity: 1;
     }
 
     @media (max-width: 801px) {
@@ -775,6 +778,12 @@ const style = __jsx("style", {
       align-items: center;
       margin-bottom: 5rem;
     }
+    @media (min-width: 801px) {
+      .hello-container {
+        padding-left: var(--desktop-padding);
+        padding-right: var(--desktop-padding);
+      }
+    }
   `);
 
 /* harmony default export */ __webpack_exports__["default"] = (Hello);
@@ -975,6 +984,12 @@ const centeredTitle = __jsx("style", {
       padding-left: 0;
       font-size: 1.2rem;
     }
+    @media (min-width: 801px) {
+      .text-box-container {
+        margin-left: var(--desktop-padding);
+        margin-right: var(--desktop-padding);
+      }
+    }
   `);
 
 /* harmony default export */ __webpack_exports__["default"] = (LinkBox);
@@ -1128,6 +1143,11 @@ const style = __jsx("style", {
       width: 1.2rem;
       border-bottom: 0.2rem solid white;
       margin-left: 3.3rem;
+    }
+    @media (min-width: 801px) {
+      .page-title-container {
+        padding-top: 10rem;
+      }
     }
   `);
 
@@ -3079,32 +3099,31 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-
 function Index() {
   return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 6
     },
     __self: this
   }, __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 7
     },
     __self: this
   }, __jsx("div", {
     className: "landing-logo-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 8
     },
     __self: this
   }, __jsx("div", {
     className: "landing-logo-wrapper",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 9
     },
     __self: this
   }, __jsx("img", {
@@ -3113,41 +3132,41 @@ function Index() {
     alt: "avatar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 10
     },
     __self: this
   }), __jsx("h1", {
     className: "over",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 11
     },
     __self: this
   }, "over-"), __jsx("h1", {
     className: "dub",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 12
     },
     __self: this
   }, "duB"), __jsx("hr", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 13
     },
     __self: this
   }), __jsx("h2", {
     className: "web",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 14
     },
     __self: this
   }, "WEB DEV."))), __jsx("div", {
     className: "arrow-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 17
     },
     __self: this
   }, __jsx("img", {
@@ -3156,13 +3175,13 @@ function Index() {
     alt: "arrow",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 18
     },
     __self: this
   })), __jsx(_components_Hello__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 20
     },
     __self: this
   })), style);
@@ -3172,7 +3191,7 @@ const style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 30
+    lineNumber: 29
   },
   __self: undefined
 }, `
@@ -3260,9 +3279,9 @@ __webpack_require__.r(__webpack_exports__);
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 const GlobalStyles = __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-  id: "2126316238",
+  id: "3722228556",
   __self: undefined
-}, "@font-face{font-family:\"PxGroteskBold\";src:url(\"fonts/PxGrotesk-Bold.woff2\") format(\"woff2\");src:url(\"fonts/PxGrotesk-Bold.woff\") format(\"woff\");src:url(\"fonts/PxGroteskBold.ttf\") format(\"truetype\");}@font-face{font-family:\"Sectra\";src:url(\"fonts/Sectra.woff2\") format(\"woff2\");src:url(\"fonts/Sectra.woff\") format(\"woff\");src:url(\"fonts/Sectra.ttf\") format(\"truetype\");}@font-face{font-family:\"WorkSans-Bold\";src:url(\"fonts/WorkSans-Bold.woff2\") format(\"woff2\");src:url(\"fonts/WorkSans-Bold.woff\") format(\"woff\");src:url(\"fonts/WorkSans-Bold.ttf\") format(\"truetype\");}@font-face{font-family:\"WorkSans-Regular\";src:url(\"fonts/WorkSans-Regular.ttf\") format(\"truetype\");}:root{--global-margin:2rem;--color1:#f85e3c;--color2:#fff55a;--font1:\"Sectra\";--font2:\"PxGroteskBold\";--font3:\"WorkSans-Bold\";--font4:\"WorkSans-Regular\";--line-width:0.1rem;}body{background-color:var(--color1);margin:0;}a{-webkit-text-decoration:none;text-decoration:none;color:inherit;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9qZXJlbWllL3dlYi8yOF9wb3J0Zm9saW8vc3R5bGUvR2xvYmFsU3R5bGVzLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNxQixBQUdtQyxBQU1QLEFBTU8sQUFNRyxBQUtWLEFBVVUsQUFJVixxQkE5QnlCLEFBaUI3QixPQXZCcUMsQUFZRCxHQU1JLEFBZWhELE9BVFEsRUFVbkIsVUFHZ0IsS0FaRyxTQWFuQixHQS9COEMsS0FtQnBCLFNBYjJCLENBWkMsTUFrQnRELFFBUTBCLGVBbkJ1QixTQW9CcEIsWUFkMkIsRUFaQSxhQTJCbEMsV0FwQnRCLFNBcUJBLG1CQWZBLEVBWkEiLCJmaWxlIjoiL1VzZXJzL2plcmVtaWUvd2ViLzI4X3BvcnRmb2xpby9zdHlsZS9HbG9iYWxTdHlsZXMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBHbG9iYWxTdHlsZXMgPSAoXG4gIDxzdHlsZSBqc3ggZ2xvYmFsPntgXG4gICAgQGZvbnQtZmFjZSB7XG4gICAgICBmb250LWZhbWlseTogXCJQeEdyb3Rlc2tCb2xkXCI7XG4gICAgICBzcmM6IHVybChcImZvbnRzL1B4R3JvdGVzay1Cb2xkLndvZmYyXCIpIGZvcm1hdChcIndvZmYyXCIpO1xuICAgICAgc3JjOiB1cmwoXCJmb250cy9QeEdyb3Rlc2stQm9sZC53b2ZmXCIpIGZvcm1hdChcIndvZmZcIik7XG4gICAgICBzcmM6IHVybChcImZvbnRzL1B4R3JvdGVza0JvbGQudHRmXCIpIGZvcm1hdChcInRydWV0eXBlXCIpO1xuICAgIH1cbiAgICBAZm9udC1mYWNlIHtcbiAgICAgIGZvbnQtZmFtaWx5OiBcIlNlY3RyYVwiO1xuICAgICAgc3JjOiB1cmwoXCJmb250cy9TZWN0cmEud29mZjJcIikgZm9ybWF0KFwid29mZjJcIik7XG4gICAgICBzcmM6IHVybChcImZvbnRzL1NlY3RyYS53b2ZmXCIpIGZvcm1hdChcIndvZmZcIik7XG4gICAgICBzcmM6IHVybChcImZvbnRzL1NlY3RyYS50dGZcIikgZm9ybWF0KFwidHJ1ZXR5cGVcIik7XG4gICAgfVxuICAgIEBmb250LWZhY2Uge1xuICAgICAgZm9udC1mYW1pbHk6IFwiV29ya1NhbnMtQm9sZFwiO1xuICAgICAgc3JjOiB1cmwoXCJmb250cy9Xb3JrU2Fucy1Cb2xkLndvZmYyXCIpIGZvcm1hdChcIndvZmYyXCIpO1xuICAgICAgc3JjOiB1cmwoXCJmb250cy9Xb3JrU2Fucy1Cb2xkLndvZmZcIikgZm9ybWF0KFwid29mZlwiKTtcbiAgICAgIHNyYzogdXJsKFwiZm9udHMvV29ya1NhbnMtQm9sZC50dGZcIikgZm9ybWF0KFwidHJ1ZXR5cGVcIik7XG4gICAgfVxuICAgIEBmb250LWZhY2Uge1xuICAgICAgZm9udC1mYW1pbHk6IFwiV29ya1NhbnMtUmVndWxhclwiO1xuICAgICAgc3JjOiB1cmwoXCJmb250cy9Xb3JrU2Fucy1SZWd1bGFyLnR0ZlwiKSBmb3JtYXQoXCJ0cnVldHlwZVwiKTtcbiAgICB9XG5cbiAgICA6cm9vdCB7XG4gICAgICAtLWdsb2JhbC1tYXJnaW46IDJyZW07XG4gICAgICAtLWNvbG9yMTogI2Y4NWUzYztcbiAgICAgIC0tY29sb3IyOiAjZmZmNTVhO1xuICAgICAgLS1mb250MTogXCJTZWN0cmFcIjtcbiAgICAgIC0tZm9udDI6IFwiUHhHcm90ZXNrQm9sZFwiO1xuICAgICAgLS1mb250MzogXCJXb3JrU2Fucy1Cb2xkXCI7XG4gICAgICAtLWZvbnQ0OiBcIldvcmtTYW5zLVJlZ3VsYXJcIjtcbiAgICAgIC0tbGluZS13aWR0aDogMC4xcmVtO1xuICAgIH1cbiAgICBib2R5IHtcbiAgICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWNvbG9yMSk7XG4gICAgICBtYXJnaW46IDA7XG4gICAgfVxuICAgIGEge1xuICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICAgICAgY29sb3I6IGluaGVyaXQ7XG4gICAgfVxuICBgfTwvc3R5bGU+XG4pO1xuXG5leHBvcnQgZGVmYXVsdCBHbG9iYWxTdHlsZXM7XG4iXX0= */\n/*@ sourceURL=/Users/jeremie/web/28_portfolio/style/GlobalStyles.js */");
+}, "@font-face{font-family:\"PxGroteskBold\";src:url(\"fonts/PxGrotesk-Bold.woff2\") format(\"woff2\");src:url(\"fonts/PxGrotesk-Bold.woff\") format(\"woff\");src:url(\"fonts/PxGroteskBold.ttf\") format(\"truetype\");}@font-face{font-family:\"Sectra\";src:url(\"fonts/Sectra.woff2\") format(\"woff2\");src:url(\"fonts/Sectra.woff\") format(\"woff\");src:url(\"fonts/Sectra.ttf\") format(\"truetype\");}@font-face{font-family:\"WorkSans-Bold\";src:url(\"fonts/WorkSans-Bold.woff2\") format(\"woff2\");src:url(\"fonts/WorkSans-Bold.woff\") format(\"woff\");src:url(\"fonts/WorkSans-Bold.ttf\") format(\"truetype\");}@font-face{font-family:\"WorkSans-Regular\";src:url(\"fonts/WorkSans-Regular.ttf\") format(\"truetype\");}:root{--global-margin:2rem;--desktop-padding:25%;--color1:#f85e3c;--color2:#fff55a;--font1:\"Sectra\";--font2:\"PxGroteskBold\";--font3:\"WorkSans-Bold\";--font4:\"WorkSans-Regular\";--line-width:0.1rem;}body{background-color:var(--color1);margin:0;}a{-webkit-text-decoration:none;text-decoration:none;color:inherit;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9qZXJlbWllL3dlYi8yOF9wb3J0Zm9saW8vc3R5bGUvR2xvYmFsU3R5bGVzLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNxQixBQUdtQyxBQU1QLEFBTU8sQUFNRyxBQUtWLEFBV1UsQUFJVixxQkEvQnlCLEFBaUJ4QixPQXZCZ0MsQUFZRCxHQU1JLEFBZ0JoRCxTQUNYLEdBWG1CLE9BY0gsVUFiRyxJQWNuQixHQWhDOEMsVUFtQjNCLElBYmtDLENBWkMsTUFrQnRELE1BUTBCLGlCQW5CdUIsT0FvQnZCLGNBZDhCLEVBWkEsUUEyQjNCLGdCQXBCN0IsV0FxQnNCLGlCQWZ0QixFQVpBLENBNEJBIiwiZmlsZSI6Ii9Vc2Vycy9qZXJlbWllL3dlYi8yOF9wb3J0Zm9saW8vc3R5bGUvR2xvYmFsU3R5bGVzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiY29uc3QgR2xvYmFsU3R5bGVzID0gKFxuICA8c3R5bGUganN4IGdsb2JhbD57YFxuICAgIEBmb250LWZhY2Uge1xuICAgICAgZm9udC1mYW1pbHk6IFwiUHhHcm90ZXNrQm9sZFwiO1xuICAgICAgc3JjOiB1cmwoXCJmb250cy9QeEdyb3Rlc2stQm9sZC53b2ZmMlwiKSBmb3JtYXQoXCJ3b2ZmMlwiKTtcbiAgICAgIHNyYzogdXJsKFwiZm9udHMvUHhHcm90ZXNrLUJvbGQud29mZlwiKSBmb3JtYXQoXCJ3b2ZmXCIpO1xuICAgICAgc3JjOiB1cmwoXCJmb250cy9QeEdyb3Rlc2tCb2xkLnR0ZlwiKSBmb3JtYXQoXCJ0cnVldHlwZVwiKTtcbiAgICB9XG4gICAgQGZvbnQtZmFjZSB7XG4gICAgICBmb250LWZhbWlseTogXCJTZWN0cmFcIjtcbiAgICAgIHNyYzogdXJsKFwiZm9udHMvU2VjdHJhLndvZmYyXCIpIGZvcm1hdChcIndvZmYyXCIpO1xuICAgICAgc3JjOiB1cmwoXCJmb250cy9TZWN0cmEud29mZlwiKSBmb3JtYXQoXCJ3b2ZmXCIpO1xuICAgICAgc3JjOiB1cmwoXCJmb250cy9TZWN0cmEudHRmXCIpIGZvcm1hdChcInRydWV0eXBlXCIpO1xuICAgIH1cbiAgICBAZm9udC1mYWNlIHtcbiAgICAgIGZvbnQtZmFtaWx5OiBcIldvcmtTYW5zLUJvbGRcIjtcbiAgICAgIHNyYzogdXJsKFwiZm9udHMvV29ya1NhbnMtQm9sZC53b2ZmMlwiKSBmb3JtYXQoXCJ3b2ZmMlwiKTtcbiAgICAgIHNyYzogdXJsKFwiZm9udHMvV29ya1NhbnMtQm9sZC53b2ZmXCIpIGZvcm1hdChcIndvZmZcIik7XG4gICAgICBzcmM6IHVybChcImZvbnRzL1dvcmtTYW5zLUJvbGQudHRmXCIpIGZvcm1hdChcInRydWV0eXBlXCIpO1xuICAgIH1cbiAgICBAZm9udC1mYWNlIHtcbiAgICAgIGZvbnQtZmFtaWx5OiBcIldvcmtTYW5zLVJlZ3VsYXJcIjtcbiAgICAgIHNyYzogdXJsKFwiZm9udHMvV29ya1NhbnMtUmVndWxhci50dGZcIikgZm9ybWF0KFwidHJ1ZXR5cGVcIik7XG4gICAgfVxuXG4gICAgOnJvb3Qge1xuICAgICAgLS1nbG9iYWwtbWFyZ2luOiAycmVtO1xuICAgICAgLS1kZXNrdG9wLXBhZGRpbmc6IDI1JTtcbiAgICAgIC0tY29sb3IxOiAjZjg1ZTNjO1xuICAgICAgLS1jb2xvcjI6ICNmZmY1NWE7XG4gICAgICAtLWZvbnQxOiBcIlNlY3RyYVwiO1xuICAgICAgLS1mb250MjogXCJQeEdyb3Rlc2tCb2xkXCI7XG4gICAgICAtLWZvbnQzOiBcIldvcmtTYW5zLUJvbGRcIjtcbiAgICAgIC0tZm9udDQ6IFwiV29ya1NhbnMtUmVndWxhclwiO1xuICAgICAgLS1saW5lLXdpZHRoOiAwLjFyZW07XG4gICAgfVxuICAgIGJvZHkge1xuICAgICAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tY29sb3IxKTtcbiAgICAgIG1hcmdpbjogMDtcbiAgICB9XG4gICAgYSB7XG4gICAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gICAgICBjb2xvcjogaW5oZXJpdDtcbiAgICB9XG4gIGB9PC9zdHlsZT5cbik7XG5cbmV4cG9ydCBkZWZhdWx0IEdsb2JhbFN0eWxlcztcbiJdfQ== */\n/*@ sourceURL=/Users/jeremie/web/28_portfolio/style/GlobalStyles.js */");
 
 /* harmony default export */ __webpack_exports__["default"] = (GlobalStyles);
 

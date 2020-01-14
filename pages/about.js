@@ -31,6 +31,12 @@ const style = (
       width: 10rem;
       height: auto;
     }
+    @media (min-width: 801px) {
+      .under-the-title {
+        padding-left: var(--desktop-padding);
+        padding-right: var(--desktop-padding);
+      }
+    }
   `}</style>
 );
 

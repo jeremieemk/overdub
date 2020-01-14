@@ -36,6 +36,12 @@ const style = (
       align-items: center;
       margin-bottom: 5rem;
     }
+    @media (min-width: 801px) {
+      .hello-container {
+        padding-left: var(--desktop-padding);
+        padding-right: var(--desktop-padding);
+      }
+    }
   `}</style>
 );
 

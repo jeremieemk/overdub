@@ -28,6 +28,11 @@ const style = (
       border-bottom: 0.2rem solid white;
       margin-left: 3.3rem;
     }
+    @media (min-width: 801px) {
+      .page-title-container {
+        padding-top: 10rem;
+      }
+    }
   `}</style>
 );
 

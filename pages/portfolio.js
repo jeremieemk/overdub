@@ -5,16 +5,24 @@ import ProjectDetails from "../components/text/ProjectDetails";
 
 const Portfolio = () => (
   <Layout>
-    <PageTitle title="my Portfolio" />
-    <ProjectItem {...ProjectDetails.escuta} />
-    <ProjectItem {...ProjectDetails.raum404} />
-    <ProjectItem {...ProjectDetails.izem} />
-    {style}
+    <div className="portfolio-container">
+      <PageTitle title="my Portfolio" />
+      <ProjectItem {...ProjectDetails.escuta} />
+      <ProjectItem {...ProjectDetails.raum404} />
+      <ProjectItem {...ProjectDetails.izem} />
+      {style}
+    </div>
   </Layout>
 );
 
 const style = (
   <style jsx>{`
+  @media (min-width: 801px) {
+      .portfolio-container {
+        padding-left: var(--desktop-padding);
+        padding-right: var(--desktop-padding);
+      }
+    }
    
     }
   `}</style>

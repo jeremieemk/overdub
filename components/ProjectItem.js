@@ -47,6 +47,10 @@ const style = (
       margin-bottom: 1rem;
       width: 100%;
       height: auto;
+
+    }
+
+   
     }
   `}</style>
 );

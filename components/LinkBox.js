@@ -75,6 +75,12 @@ const centeredTitle = (
       padding-left: 0;
       font-size: 1.2rem;
     }
+    @media (min-width: 801px) {
+      .text-box-container {
+        margin-left: var(--desktop-padding);
+        margin-right: var(--desktop-padding);
+      }
+    }
   `}</style>
 );
 

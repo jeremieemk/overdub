@@ -47,7 +47,7 @@ const style = (
         padding-right: var(--desktop-padding);
       }
       .books {
-        width: 30rem;
+        width: 20rem;
         height: auto;
       }
     }

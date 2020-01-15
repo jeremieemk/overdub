@@ -37,8 +37,8 @@ const style = (
         padding-right: var(--desktop-padding);
       }
       .dancing-avatar {
-        margin-top: 3rem;
-        width: 20rem;
+        margin-top: 2rem;
+        width: 15rem;
       }
     }
   `}</style>

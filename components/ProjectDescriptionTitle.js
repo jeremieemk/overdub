@@ -30,9 +30,9 @@ const style = (
     }
     @media (min-width: 801px) {
       .project-title {
-        font-family: var(--font3);
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
+        font-family: var(--font2);
+        font-size: 0.9rem;
+        margin-bottom: 0.3rem;
       }
     }
   `}</style>

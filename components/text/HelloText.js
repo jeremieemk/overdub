@@ -53,21 +53,21 @@ const style = (
     }
     @media (min-width: 801px) {
       .upper-text {
-        font-size: 3rem;
+        font-size: 2.3rem;
         font-family: var(--font4);
       }
       .smaller2 {
-        font-size: 2.5rem;
-        line-height: 3rem;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
         font-family: var(--font4);
       }
       .yellow {
-        font-size: 3rem;
+        font-size: 2.3rem;
         font-family: var(--font4);
       }
       .sardine {
         margin-top: 1.5rem;
-        width: 22rem;
+        width: 15rem;
         height: auto;
       }
     }

@@ -27,8 +27,8 @@ const style = (
     }
     @media (min-width: 801px) {
       .logo {
-        font-size: 4rem;
-        margin-top: 2rem;
+        font-size: 3rem;
+        margin-top: 2.3rem;
       }
     }
   `}</style>

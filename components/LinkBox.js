@@ -64,18 +64,18 @@ const style = (
     }
     @media (min-width: 801px) {
       .text-box-container {
-        margin-top: 3rem;
+        margin-top: 2rem;
       }
       .text-box {
-        width: 20rem;
-        height: 5rem;
-        font-size: 2rem;
+        width: 11rem;
+        height: 3rem;
+        font-size: 1.4rem;
       }
       .text {
-        padding-left: 5rem;
+        padding-left: 2rem;
       }
       .arrow-box {
-        width: 10rem;
+        width: rem;
       }
     }
   `}</style>

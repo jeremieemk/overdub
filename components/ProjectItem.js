@@ -82,17 +82,18 @@ const style = (
     }
     @media (min-width: 801px) {
       p {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         margin-block-end: 0.5rem;
       }
       .link-arrow {
         width: 1rem;
-        transform: translateY(0.7rem);
+        transform: translateY(0.5rem);
         padding-left: 0.7rem;
       }
       .arrow {
         width: 3rem;
         opacity: 0.8;
+        z-index: -10;
       }
       .arrow-container {
         margin-bottom: -3rem;

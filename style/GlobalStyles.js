@@ -25,7 +25,7 @@ const GlobalStyles = (
 
     :root {
       --global-margin: 2rem;
-      --desktop-padding: 25%;
+      --desktop-padding: 20%;
       --color1: #f85e3c;
       --color2: #fff55a;
       --font1: "Sectra";

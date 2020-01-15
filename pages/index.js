@@ -116,12 +116,12 @@ const style = (
       transition: visibility 3s, opacity 2s;
     }
     .hello-section-jumps-up {
-      transform: translateY(-20rem);
-      transition: transform 2s linear;
+      transform: translateY(-15rem);
+      transition: transform 1.5s linear;
     }
     @media (min-width: 801px) {
       .landing-logo-wrapper {
-        transform: scale(2);
+        transform: scale(1.4);
       }
     }
   `}</style>

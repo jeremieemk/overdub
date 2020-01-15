@@ -67,14 +67,15 @@ const style = (
     }
     @media (min-width: 801px) {
       .about-title {
-        font-size: 2.4rem;
+        font-size: 2rem;
         text-align: left;
-        margin-top: 6rem;
-        margin-bottom: 4rem;
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+        line-height: 2.3rem;
       }
       .about-text {
-        font-size: 1.7rem;
-        line-height: 2.3rem;
+        font-size: 1.2rem;
+        line-height: 1.9rem;
       }
     }
   `}</style>

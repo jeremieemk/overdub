@@ -3266,6 +3266,8 @@ const style = __jsx("style", {
       visibility: visible;
       opacity: 1;
       transition: visibility 3s, opacity 2s linear;
+      position: relative;
+      z-index: -1;
     }
     .landing-logo-container {
       height: 100vh;
@@ -3273,11 +3275,15 @@ const style = __jsx("style", {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      position: relative;
+      z-index: -1;
     }
     .avatar {
       width: 5.5rem;
       height: auto;
       margin-left: -0.5rem;
+      position: relative;
+      z-index: -1;
     }
 
     .over {
@@ -3286,17 +3292,23 @@ const style = __jsx("style", {
       font-size: 3.5rem;
 
       margin-top: -1rem;
+      position: relative;
+      z-index: -1;
     }
     .dub {
       color: var(--color2);
       font-family: var(--font2);
       font-size: 6rem;
       margin-top: -1.6rem;
+      position: relative;
+      z-index: -1;
     }
     h1,
     h2 {
       margin-block-start: 0;
       margin-block-end: 0;
+      position: relative;
+      z-index: -1;
     }
     hr {
       margin-block-start: 0;
@@ -3307,6 +3319,8 @@ const style = __jsx("style", {
       margin-inline-start: 5rem;
       margin-top: -1.3rem;
       margin-inline-end: 0;
+      position: relative;
+      z-index: -1;
     }
     .web {
       font-family: var(--font3);
@@ -3314,6 +3328,8 @@ const style = __jsx("style", {
       font-size: 1.15rem;
       margin-left: 5.2rem;
       margin-top: 0.1rem;
+      position: relative;
+      z-index: -1;
     }
     .arrow-container {
       display: flex;
@@ -3321,19 +3337,25 @@ const style = __jsx("style", {
       align-items: flex-end;
       margin-bottom: 10rem;
       transform: translateY(-4rem);
+      position: relative;
+      z-index: -1;
     }
     .logo-fades {
       visibility: hidden;
       opacity: 0;
       transition: visibility 3s, opacity 2s;
+      position: relative;
+      z-index: -1;
     }
     .hello-section-jumps-up {
       transform: translateY(-15rem);
       transition: transform 1.5s linear;
+      position: relative;
+      z-index: -1;
     }
     @media (min-width: 801px) {
       .landing-logo-wrapper {
-        transform: scale(1.4);
+        transform: scale(1.4) translateZ(-1em);
       }
     }
   `);

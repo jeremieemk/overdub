@@ -5,9 +5,13 @@ function ProjectItem(props) {
   return (
     <div className="project-item-container">
       <ProjectDescriptionTitle title="WEBSITE" />
-      <a href={props.link} target="_blank">
+      <a href={props.link} target="_blank" className="link-and-arrow-container">
         <p>{props.name}</p>
+        <div className="link-arrow-container">
+          <img className="link-arrow" src="/img/whitearrow3.png" alt="arrow" />
+        </div>
       </a>
+
       <ProjectDescriptionTitle title="COMPANY" />
       <p>{props.company}</p>
       <ProjectDescriptionTitle title="ROLE" />
@@ -32,10 +36,19 @@ const style = (
       padding-left: var(--global-margin);
       margin-top: 2rem;
     }
+    .link-and-arrow-container{
+      display: flex;
+
+    }
     .item-title-container {
       width: 100%;
       display: flex;
       justify-content: center;
+    }
+    .link-arrow {
+      width: 1rem;
+      transform: translateY(0.35rem);
+      padding-left: 0.4rem;
     }
     p {
       font-size: 1.1rem;
@@ -68,6 +81,7 @@ const style = (
     .arrow {
       width: 2rem;
       opacity: 0.8;
+
     }
     }
   `}</style>

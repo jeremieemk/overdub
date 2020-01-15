@@ -1162,6 +1162,7 @@ function ProjectItem(props) {
   }), __jsx("a", {
     href: props.link,
     target: "_blank",
+    className: "link-and-arrow-container",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
@@ -1173,34 +1174,24 @@ function ProjectItem(props) {
       lineNumber: 9
     },
     __self: this
-  }, props.name)), __jsx(_ProjectDescriptionTitle__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    title: "COMPANY",
+  }, props.name), __jsx("div", {
+    className: "link-arrow-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, __jsx("img", {
+    className: "link-arrow",
+    src: "/img/whitearrow3.png",
+    alt: "arrow",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
     },
     __self: this
-  }), __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }, props.company), __jsx(_ProjectDescriptionTitle__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    title: "ROLE",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }), __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, props.role), __jsx(_ProjectDescriptionTitle__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    title: "TOOLS",
+  }))), __jsx(_ProjectDescriptionTitle__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: "COMPANY",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15
@@ -1212,12 +1203,38 @@ function ProjectItem(props) {
       lineNumber: 16
     },
     __self: this
+  }, props.company), __jsx(_ProjectDescriptionTitle__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: "ROLE",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, props.role), __jsx(_ProjectDescriptionTitle__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: "TOOLS",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
   }, props.tools), __jsx("a", {
     href: props.link,
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 21
     },
     __self: this
   }, __jsx("img", {
@@ -1226,14 +1243,14 @@ function ProjectItem(props) {
     alt: "screenshot",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 22
     },
     __self: this
   })), __jsx("div", {
     className: "arrow-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 24
     },
     __self: this
   }, __jsx("img", {
@@ -1242,7 +1259,7 @@ function ProjectItem(props) {
     alt: "arrow",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 25
     },
     __self: this
   })), style);
@@ -1252,7 +1269,7 @@ const style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 29
+    lineNumber: 33
   },
   __self: undefined
 }, `
@@ -1261,10 +1278,19 @@ const style = __jsx("style", {
       padding-left: var(--global-margin);
       margin-top: 2rem;
     }
+    .link-and-arrow-container{
+      display: flex;
+
+    }
     .item-title-container {
       width: 100%;
       display: flex;
       justify-content: center;
+    }
+    .link-arrow {
+      width: 1rem;
+      transform: translateY(0.35rem);
+      padding-left: 0.4rem;
     }
     p {
       font-size: 1.1rem;
@@ -1297,6 +1323,7 @@ const style = __jsx("style", {
     .arrow {
       width: 2rem;
       opacity: 0.8;
+
     }
     }
   `);

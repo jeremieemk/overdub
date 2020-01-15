@@ -48,6 +48,8 @@ const style = (
       width: 1rem;
       transform: translateY(0.35rem);
       padding-left: 0.4rem;
+      position: relative;
+      z-index: -1;
     }
     p {
       font-size: 1.1rem;
@@ -75,6 +77,8 @@ const style = (
       margin-top: 4rem;
       margin-bottom: -5rem;
       transform: translateY(-4rem);
+      position: relative;
+      z-index: -1;
     }
     .arrow {
       width: 2rem;

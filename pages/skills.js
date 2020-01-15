@@ -34,8 +34,7 @@ const style = (
       height: auto;
     }
     .books-pic-container {
-      display: flex;
-      justify-content: center;
+      text-align: center;
     }
     .skill-bar-group {
       padding-top: 2rem;

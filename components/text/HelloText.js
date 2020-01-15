@@ -29,11 +29,9 @@ const style = (
     .sardine {
       margin-top: 2rem;
       width: 12rem;
-      height: auto;
     }
     .img-container {
-      display: flex;
-      justify-content: center;
+      text-align: center;
     }
     .upper-text {
       font-size: 1.6rem;
@@ -68,7 +66,6 @@ const style = (
       .sardine {
         margin-top: 1.5rem;
         width: 15rem;
-        height: auto;
       }
     }
   `}</style>

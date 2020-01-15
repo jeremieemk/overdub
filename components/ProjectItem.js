@@ -4,11 +4,10 @@ import ProjectDescriptionTitle from "./ProjectDescriptionTitle";
 function ProjectItem(props) {
   return (
     <div className="project-item-container">
-      <div className="item-title-container">
-        <a href={props.link} target="_blank">
-          <LinkBox name={props.name} />
-        </a>
-      </div>
+      <ProjectDescriptionTitle title="WEBSITE" />
+      <a href={props.link} target="_blank">
+        <p>{props.name}</p>
+      </a>
       <ProjectDescriptionTitle title="COMPANY" />
       <p>{props.company}</p>
       <ProjectDescriptionTitle title="ROLE" />
@@ -18,6 +17,9 @@ function ProjectItem(props) {
       <a href={props.link} target="_blank">
         <img className="screenshot" src={props.img} alt="screenshot" />
       </a>
+      <div className="arrow-container">
+        <img className="arrow" src="/img/arrow.png" alt="arrow" />
+      </div>
       {style}
     </div>
   );
@@ -36,7 +38,7 @@ const style = (
       justify-content: center;
     }
     p {
-      font-size: 1rem;
+      font-size: 1.1rem;
       color: white;
       font-family: var(--font4);
       margin-block-start: 0.2rem;
@@ -49,8 +51,24 @@ const style = (
       height: auto;
 
     }
-
-   
+.separation-line {
+      margin-bottom: 0.5rem;
+      width: 100%;
+      float: right;
+      border-bottom: 0.2rem solid white;
+    }
+.arrow-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-top:4rem;
+      margin-bottom: -5rem;
+      transform: translateY(-4rem);
+    }
+    .arrow {
+      width: 2rem;
+      opacity: 0.8;
+    }
     }
   `}</style>
 );

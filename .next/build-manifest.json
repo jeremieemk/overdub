@@ -31,6 +31,10 @@
     "/portfolio": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
+    ],
+    "/skills": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ]
   }
 }

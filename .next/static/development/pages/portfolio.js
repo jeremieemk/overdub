@@ -781,7 +781,7 @@ var style = __jsx("style", {
     lineNumber: 12
   },
   __self: undefined
-}, "\n    .project-title-container {\n      padding-top: 1rem;\n      display: flex;\n      flex-direction: column;\n      align-items: flex-start;\n    }\n    .project-title {\n      color: var(--color2);\n      font-family: var(--font3);\n      text-align: center;\n      font-size: 1rem;\n      margin-bottom: 0.2rem;\n    }\n    .project-title-line {\n      margin-bottom: 0.5rem;\n      width: 1.2rem;\n      border-bottom: 0.2rem solid white;\n    }\n  ");
+}, "\n    .project-title-container {\n      padding-top: 1rem;\n      display: flex;\n      flex-direction: column;\n      align-items: flex-start;\n    }\n    .project-title {\n      color: var(--color2);\n      font-family: var(--font3);\n      text-align: center;\n      font-size: 1.2rem;\n      margin-bottom: 0.2rem;\n    }\n    .project-title-line {\n      margin-bottom: 0.5rem;\n      width: 1.2rem;\n      border-bottom: 0.2rem solid white;\n    }\n  ");
 
 /* harmony default export */ __webpack_exports__["default"] = (ProjectDescriptionTitle);
 
@@ -814,14 +814,14 @@ function ProjectItem(props) {
       lineNumber: 6
     },
     __self: this
-  }, __jsx("div", {
-    className: "item-title-container",
+  }, __jsx(_ProjectDescriptionTitle__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: "WEBSITE",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     },
     __self: this
-  }, __jsx("a", {
+  }), __jsx("a", {
     href: props.link,
     target: "_blank",
     __source: {
@@ -829,50 +829,49 @@ function ProjectItem(props) {
       lineNumber: 8
     },
     __self: this
-  }, __jsx(_LinkBox__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    name: props.name,
+  }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     },
     __self: this
-  }))), __jsx(_ProjectDescriptionTitle__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, props.name)), __jsx(_ProjectDescriptionTitle__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "COMPANY",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 11
     },
     __self: this
   }), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 12
     },
     __self: this
   }, props.company), __jsx(_ProjectDescriptionTitle__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "ROLE",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 13
     },
     __self: this
   }), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 14
     },
     __self: this
   }, props.role), __jsx(_ProjectDescriptionTitle__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "TOOLS",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 15
     },
     __self: this
   }), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 16
     },
     __self: this
   }, props.tools), __jsx("a", {
@@ -880,7 +879,7 @@ function ProjectItem(props) {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 17
     },
     __self: this
   }, __jsx("img", {
@@ -889,7 +888,23 @@ function ProjectItem(props) {
     alt: "screenshot",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 18
+    },
+    __self: this
+  })), __jsx("div", {
+    className: "arrow-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }, __jsx("img", {
+    className: "arrow",
+    src: "/img/arrow.png",
+    alt: "arrow",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
     },
     __self: this
   })), style);
@@ -899,10 +914,10 @@ var style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 27
+    lineNumber: 29
   },
   __self: undefined
-}, "\n    .project-item-container {\n      padding-right: var(--global-margin);\n      padding-left: var(--global-margin);\n      margin-top: 2rem;\n    }\n    .item-title-container {\n      width: 100%;\n      display: flex;\n      justify-content: center;\n    }\n    p {\n      font-size: 1rem;\n      color: white;\n      font-family: var(--font4);\n      margin-block-start: 0.2rem;\n      margin-block-end: 0;\n    }\n    .screenshot {\n      margin-top: 1.5rem;\n      margin-bottom: 1rem;\n      width: 100%;\n      height: auto;\n\n    }\n\n   \n    }\n  ");
+}, "\n    .project-item-container {\n      padding-right: var(--global-margin);\n      padding-left: var(--global-margin);\n      margin-top: 2rem;\n    }\n    .item-title-container {\n      width: 100%;\n      display: flex;\n      justify-content: center;\n    }\n    p {\n      font-size: 1.1rem;\n      color: white;\n      font-family: var(--font4);\n      margin-block-start: 0.2rem;\n      margin-block-end: 0;\n    }\n    .screenshot {\n      margin-top: 1.5rem;\n      margin-bottom: 1rem;\n      width: 100%;\n      height: auto;\n\n    }\n.separation-line {\n      margin-bottom: 0.5rem;\n      width: 100%;\n      float: right;\n      border-bottom: 0.2rem solid white;\n    }\n.arrow-container {\n      display: flex;\n      justify-content: center;\n      align-items: flex-end;\n      margin-top:4rem;\n      margin-bottom: -5rem;\n      transform: translateY(-4rem);\n    }\n    .arrow {\n      width: 2rem;\n      opacity: 0.8;\n    }\n    }\n  ");
 
 /* harmony default export */ __webpack_exports__["default"] = (ProjectItem);
 

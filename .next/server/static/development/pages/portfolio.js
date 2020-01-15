@@ -1111,7 +1111,7 @@ const style = __jsx("style", {
       color: var(--color2);
       font-family: var(--font3);
       text-align: center;
-      font-size: 1rem;
+      font-size: 1.2rem;
       margin-bottom: 0.2rem;
     }
     .project-title-line {
@@ -1152,14 +1152,14 @@ function ProjectItem(props) {
       lineNumber: 6
     },
     __self: this
-  }, __jsx("div", {
-    className: "item-title-container",
+  }, __jsx(_ProjectDescriptionTitle__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: "WEBSITE",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     },
     __self: this
-  }, __jsx("a", {
+  }), __jsx("a", {
     href: props.link,
     target: "_blank",
     __source: {
@@ -1167,50 +1167,49 @@ function ProjectItem(props) {
       lineNumber: 8
     },
     __self: this
-  }, __jsx(_LinkBox__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    name: props.name,
+  }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     },
     __self: this
-  }))), __jsx(_ProjectDescriptionTitle__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, props.name)), __jsx(_ProjectDescriptionTitle__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "COMPANY",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 11
     },
     __self: this
   }), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 12
     },
     __self: this
   }, props.company), __jsx(_ProjectDescriptionTitle__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "ROLE",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 13
     },
     __self: this
   }), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 14
     },
     __self: this
   }, props.role), __jsx(_ProjectDescriptionTitle__WEBPACK_IMPORTED_MODULE_2__["default"], {
     title: "TOOLS",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 15
     },
     __self: this
   }), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 16
     },
     __self: this
   }, props.tools), __jsx("a", {
@@ -1218,7 +1217,7 @@ function ProjectItem(props) {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 17
     },
     __self: this
   }, __jsx("img", {
@@ -1227,7 +1226,23 @@ function ProjectItem(props) {
     alt: "screenshot",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 18
+    },
+    __self: this
+  })), __jsx("div", {
+    className: "arrow-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }, __jsx("img", {
+    className: "arrow",
+    src: "/img/arrow.png",
+    alt: "arrow",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
     },
     __self: this
   })), style);
@@ -1237,7 +1252,7 @@ const style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 27
+    lineNumber: 29
   },
   __self: undefined
 }, `
@@ -1252,7 +1267,7 @@ const style = __jsx("style", {
       justify-content: center;
     }
     p {
-      font-size: 1rem;
+      font-size: 1.1rem;
       color: white;
       font-family: var(--font4);
       margin-block-start: 0.2rem;
@@ -1265,8 +1280,24 @@ const style = __jsx("style", {
       height: auto;
 
     }
-
-   
+.separation-line {
+      margin-bottom: 0.5rem;
+      width: 100%;
+      float: right;
+      border-bottom: 0.2rem solid white;
+    }
+.arrow-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-top:4rem;
+      margin-bottom: -5rem;
+      transform: translateY(-4rem);
+    }
+    .arrow {
+      width: 2rem;
+      opacity: 0.8;
+    }
     }
   `);
 

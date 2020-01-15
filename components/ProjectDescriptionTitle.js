@@ -28,6 +28,13 @@ const style = (
       width: 1.2rem;
       border-bottom: 0.2rem solid white;
     }
+    @media (min-width: 801px) {
+      .project-title {
+        font-family: var(--font3);
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+    }
   `}</style>
 );
 

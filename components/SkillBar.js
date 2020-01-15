@@ -50,7 +50,20 @@ const style = (
     .skill-bar {
       border-bottom: 1rem solid white;
     }
-    .yellow {
+    @media (min-width: 801px) {
+      .skill-name-container {
+        font-size: 1.5rem;
+      }
+      .skill-name-container > p {
+        margin-block-start: 2rem;
+        margin-block-end: 1rem;
+      }
+      .skill-bar {
+        border-bottom: 1.5rem solid white;
+      }
+      .skill-bar-outline {
+        height: 1.5rem;
+      }
     }
   `}</style>
 );

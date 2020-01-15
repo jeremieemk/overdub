@@ -203,7 +203,7 @@ const style = __jsx("style", {
       justify-content: center;
       align-items: center;
       font-family: var(--font2);
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       background-color: var(--color1);
     }
     .desktop-nav-container > * {

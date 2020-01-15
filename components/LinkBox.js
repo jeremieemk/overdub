@@ -67,7 +67,7 @@ const style = (
         margin-top: 3rem;
       }
       .text-box {
-        width: 25rem;
+        width: 20rem;
         height: 5rem;
         font-size: 2rem;
       }

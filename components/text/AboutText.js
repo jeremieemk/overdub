@@ -34,8 +34,8 @@ const AboutText = () => (
       project last year for an internet radio that involved interactions with a
       map. I also built an architect portfolio using
       <span className="yellow"> jQuery </span> and Vapid. During the summer 2019
-      I also helped the Reveel team building their music metadata app on React
-      Native.
+      I also helped the Reveel team building their music metadata app on{" "}
+      <span className="yellow"> React Native</span>.
     </p>
     <p>
       Currently I am developing a music creativity enhancing app with my younger
@@ -64,6 +64,18 @@ const style = (
     .yellow {
       color: var(--color2);
       font-family: var(--font4);
+    }
+    @media (min-width: 801px) {
+      .about-title {
+        font-size: 2.4rem;
+        text-align: left;
+        margin-top: 6rem;
+        margin-bottom: 4rem;
+      }
+      .about-text {
+        font-size: 1.7rem;
+        line-height: 2.3rem;
+      }
     }
   `}</style>
 );

@@ -36,6 +36,10 @@ const style = (
         padding-left: var(--desktop-padding);
         padding-right: var(--desktop-padding);
       }
+      .dancing-avatar {
+        margin-top: 3rem;
+        width: 20rem;
+      }
     }
   `}</style>
 );

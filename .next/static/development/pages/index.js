@@ -106,7 +106,7 @@ var style = __jsx("style", {
     lineNumber: 39
   },
   __self: undefined
-}, "\n    .desktop-nav-container {\n      z-index: 100;\n      width: 100%;\n      position: absolute;\n      padding-top: 2rem;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      font-family: var(--font4);\n      font-size: 1.2rem;\n      background-color: var(--color1);\n    }\n    .desktop-nav-container > * {\n      padding: 2rem;\n    }\n\n    .bottom-line {\n      padding-top: 0.5rem;\n      width: 1.2rem;\n      border-bottom: 0.2rem solid white;\n      margin-left: 0.5rem;\n      visibility: hidden;\n      opacity: 0;\n      transition: visibility 0s, opacity 0.3s linear;\n      position: absolute;\n    }\n    .menu-item-name:hover + .bottom-line {\n      visibility: visible;\n      opacity: 1;\n    }\n\n    @media (max-width: 801px) {\n      .desktop-nav-container {\n        display: none;\n      }\n    }\n  ");
+}, "\n    .desktop-nav-container {\n      z-index: 100;\n      width: 100%;\n      position: absolute;\n      padding-top: 2rem;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      font-family: var(--font2);\n      font-size: 1.2rem;\n      background-color: var(--color1);\n    }\n    .desktop-nav-container > * {\n      padding: 2rem;\n    }\n\n    .bottom-line {\n      padding-top: 0.5rem;\n      width: 1.2rem;\n      border-bottom: 0.2rem solid white;\n      margin-left: 0.5rem;\n      visibility: hidden;\n      opacity: 0;\n      transition: visibility 0s, opacity 0.3s linear;\n      position: absolute;\n    }\n    .menu-item-name:hover + .bottom-line {\n      visibility: visible;\n      opacity: 1;\n    }\n\n    @media (max-width: 801px) {\n      .desktop-nav-container {\n        display: none;\n      }\n    }\n  ");
 
 /* harmony default export */ __webpack_exports__["default"] = (DesktopNav);
 
@@ -703,7 +703,7 @@ var style = __jsx("style", {
     lineNumber: 33
   },
   __self: undefined
-}, "\n    .text-box-container {\n      margin-top: 1rem;\n      display: flex;\n      cursor: \"pointer\";\n    }\n    .text-box {\n      color: white;\n      font-family: var(--font3);\n      border: var(--line-width) solid white;\n      font-size: 1.3rem;\n      width: 11rem;\n      height: 3rem;\n      display: flex;\n      align-items: center;\n    }\n    .arrow-box {\n      border-width: var(--line-width) var(--line-width) var(--line-width) 0;\n      width: 5rem;\n      border-style: solid;\n      border-color: white;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n    }\n    .text {\n      padding-left: 2rem;\n    }\n    .arrow {\n      width: 2rem;\n      height: auto;\n    }\n    @media (min-width: 801px) {\n      .text-box-container {\n        margin-top: 3rem;\n      }\n      .text-box {\n        width: 25rem;\n        height: 5rem;\n        font-size: 2rem;\n      }\n      .text {\n        padding-left: 5rem;\n      }\n      .arrow-box {\n        width: 10rem;\n      }\n    }\n  ");
+}, "\n    .text-box-container {\n      margin-top: 1rem;\n      display: flex;\n      cursor: \"pointer\";\n    }\n    .text-box {\n      color: white;\n      font-family: var(--font3);\n      border: var(--line-width) solid white;\n      font-size: 1.3rem;\n      width: 11rem;\n      height: 3rem;\n      display: flex;\n      align-items: center;\n    }\n    .arrow-box {\n      border-width: var(--line-width) var(--line-width) var(--line-width) 0;\n      width: 5rem;\n      border-style: solid;\n      border-color: white;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n    }\n    .text {\n      padding-left: 2rem;\n    }\n    .arrow {\n      width: 2rem;\n      height: auto;\n    }\n    @media (min-width: 801px) {\n      .text-box-container {\n        margin-top: 3rem;\n      }\n      .text-box {\n        width: 20rem;\n        height: 5rem;\n        font-size: 2rem;\n      }\n      .text {\n        padding-left: 5rem;\n      }\n      .arrow-box {\n        width: 10rem;\n      }\n    }\n  ");
 
 var centeredTitle = __jsx("style", {
   jsx: true,
@@ -880,7 +880,7 @@ var HelloText = function HelloText() {
       lineNumber: 5
     },
     __self: this
-  }, "and a wandering polyglot. "), __jsx("br", {
+  }, "and a nerdy polyglot. "), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
@@ -919,7 +919,7 @@ var style = __jsx("style", {
     lineNumber: 19
   },
   __self: undefined
-}, "\n    .hello-text {\n      width: 70%;\n      color: white;\n      font-family: var(--font2);\n      margin-top: 2rem;\n      padding-left: 3rem;\n      padding-right: 3rem;\n      text-align: left;\n    }\n    .sardine {\n      margin-top: 2rem;\n      width: 12rem;\n      height: auto;\n    }\n    .img-container {\n      display: flex;\n      justify-content: center;\n    }\n    .upper-text {\n      font-size: 1.6rem;\n    }\n    .smaller {\n      font-size: 1.1rem;\n    }\n    .smaller2 {\n      font-size: 1.3rem;\n      line-height: 1.5rem;\n      font-family: var(--font5);\n    }\n    .yellow {\n      color: var(--color2);\n      font-size: 2rem;\n      font-family: var(--font3);\n    }\n    @media (min-width: 801px) {\n      .upper-text {\n        font-size: 3rem;\n        font-family: var(--font4);\n      }\n      .smaller2 {\n        font-size: 2.5rem;\n        line-height: 3rem;\n        font-family: var(--font4);\n      }\n      .yellow {\n        font-size: 3.5rem;\n        font-family: var(--font4);\n      }\n      .sardine {\n        margin-top: 1.5rem;\n        width: 22rem;\n        height: auto;\n      }\n    }\n  ");
+}, "\n    .hello-text {\n      width: 70%;\n      color: white;\n      font-family: var(--font2);\n      margin-top: 2rem;\n      padding-left: 3rem;\n      padding-right: 3rem;\n      text-align: left;\n    }\n    .sardine {\n      margin-top: 2rem;\n      width: 12rem;\n      height: auto;\n    }\n    .img-container {\n      display: flex;\n      justify-content: center;\n    }\n    .upper-text {\n      font-size: 1.6rem;\n    }\n    .smaller {\n      font-size: 1.1rem;\n    }\n    .smaller2 {\n      font-size: 1.3rem;\n      line-height: 1.5rem;\n      font-family: var(--font5);\n    }\n    .yellow {\n      color: var(--color2);\n      font-size: 2rem;\n      font-family: var(--font3);\n    }\n    @media (min-width: 801px) {\n      .upper-text {\n        font-size: 3rem;\n        font-family: var(--font4);\n      }\n      .smaller2 {\n        font-size: 2.5rem;\n        line-height: 3rem;\n        font-family: var(--font4);\n      }\n      .yellow {\n        font-size: 3rem;\n        font-family: var(--font4);\n      }\n      .sardine {\n        margin-top: 1.5rem;\n        width: 22rem;\n        height: auto;\n      }\n    }\n  ");
 
 /* harmony default export */ __webpack_exports__["default"] = (HelloText);
 

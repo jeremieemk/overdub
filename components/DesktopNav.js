@@ -45,7 +45,7 @@ const style = (
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: var(--font4);
+      font-family: var(--font2);
       font-size: 1.2rem;
       background-color: var(--color1);
     }

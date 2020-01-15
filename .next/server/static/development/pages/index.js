@@ -202,7 +202,7 @@ const style = __jsx("style", {
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: var(--font4);
+      font-family: var(--font2);
       font-size: 1.2rem;
       background-color: var(--color1);
     }
@@ -971,7 +971,7 @@ const style = __jsx("style", {
         margin-top: 3rem;
       }
       .text-box {
-        width: 25rem;
+        width: 20rem;
         height: 5rem;
         font-size: 2rem;
       }
@@ -1214,7 +1214,7 @@ const HelloText = () => __jsx("div", {
     lineNumber: 5
   },
   __self: undefined
-}, "and a wandering polyglot. "), __jsx("br", {
+}, "and a nerdy polyglot. "), __jsx("br", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 6
@@ -1298,7 +1298,7 @@ const style = __jsx("style", {
         font-family: var(--font4);
       }
       .yellow {
-        font-size: 3.5rem;
+        font-size: 3rem;
         font-family: var(--font4);
       }
       .sardine {

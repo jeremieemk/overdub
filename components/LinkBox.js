@@ -2,7 +2,7 @@ import Link from "next/link";
 
 function LinkBox(props) {
   return (
-    <div>
+    <div className="linkbox-container">
       <Link href={props.link}>
         <a>
           <div className="text-box-container">
@@ -31,6 +31,10 @@ function LinkBox(props) {
 
 const style = (
   <style jsx>{`
+    .linkbox-container {
+      position: relative;
+      z-index: 10;
+    }
     .text-box-container {
       margin-top: 1rem;
       display: flex;

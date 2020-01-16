@@ -25,6 +25,8 @@ const style = (
       padding-left: 3rem;
       padding-right: 3rem;
       text-align: left;
+      position: relative;
+      z-index: -1;
     }
     .sardine {
       margin-top: 2rem;

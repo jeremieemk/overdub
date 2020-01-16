@@ -16,6 +16,7 @@ const style = (
   <style jsx>{`
     .container {
       position: relative;
+      width: 100%;
     }
   `}</style>
 );

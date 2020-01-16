@@ -20,8 +20,6 @@ function SkillBar(props) {
 const style = (
   <style jsx>{`
     .skill-bar-container {
-      margin-left: var(--global-margin);
-
       width: 100%;
     }
     .skill-name-container,
@@ -40,7 +38,6 @@ const style = (
     }
 
     .skill-measure-bar-container {
-      padding-right: 4rem;
     }
     .skill-bar-outline {
       width: 100%;

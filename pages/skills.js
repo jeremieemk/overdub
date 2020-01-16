@@ -39,6 +39,8 @@ const style = (
     .skill-bar-group {
       padding-top: 2rem;
       padding-bottom: 5rem;
+      padding-right: var(--global-margin);
+      padding-left: var(--global-margin);
     }
     @media (min-width: 801px) {
       .skill-bar-group {

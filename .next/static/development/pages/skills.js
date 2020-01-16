@@ -233,60 +233,67 @@ function HamburgerOpenMenu(props) {
       lineNumber: 6
     },
     __self: this
+  }, __jsx("div", {
+    className: "menu-contents",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/index",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 8
     },
     __self: this
   }, __jsx("a", {
     onClick: props.handleHamburgerClick,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 9
     },
     __self: this
   }, "HELLO")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/about",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 11
     },
     __self: this
   }, __jsx("a", {
     onClick: props.handleHamburgerClick,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 12
     },
     __self: this
   }, "ABOUT ME")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/portfolio",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 14
     },
     __self: this
   }, __jsx("a", {
     onClick: props.handleHamburgerClick,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 15
     },
     __self: this
   }, "PORTFOLIO")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/skills",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 18
     },
     __self: this
   }, __jsx("a", {
     onClick: props.handleHamburgerClick,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 19
     },
     __self: this
   }, "SKILLS")), __jsx("a", {
@@ -295,27 +302,27 @@ function HamburgerOpenMenu(props) {
     onClick: props.handleHamburgerClick,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 22
     },
     __self: this
   }, "CV"), __jsx("div", {
     className: "get-in-touch",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 30
     },
     __self: this
   }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 31
     },
     __self: this
   }, "GET IN TOUCH"), __jsx("div", {
     className: "social-icons",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 32
     },
     __self: this
   }, __jsx("a", {
@@ -323,7 +330,7 @@ function HamburgerOpenMenu(props) {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 33
     },
     __self: this
   }, __jsx("img", {
@@ -332,7 +339,7 @@ function HamburgerOpenMenu(props) {
     alt: "fb",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 34
     },
     __self: this
   })), __jsx("a", {
@@ -340,7 +347,7 @@ function HamburgerOpenMenu(props) {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 36
     },
     __self: this
   }, __jsx("img", {
@@ -349,7 +356,7 @@ function HamburgerOpenMenu(props) {
     alt: "linkedin",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 40
     },
     __self: this
   })), __jsx("a", {
@@ -357,7 +364,7 @@ function HamburgerOpenMenu(props) {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 46
     },
     __self: this
   }, __jsx("img", {
@@ -366,20 +373,20 @@ function HamburgerOpenMenu(props) {
     alt: "mail",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 47
     },
     __self: this
-  }))))), style);
+  })))))), style);
 }
 
 var style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 58
+    lineNumber: 64
   },
   __self: undefined
-}, "\n    .hamburger-menu-container {\n      height: 100vh;\n      width: 100vw;\n      left: 0;\n      top: 0;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      position: absolute;\n      z-index:300;\n    }\n    .nested-menu-container {\n      background: -webkit-linear-gradient(165deg, white 65%, #f6f6f6 65%);\n      background: -o-linear-gradient(165deg, white 65%, #f6f6f6 65%);\n      background: -moz-linear-gradient(165deg, white 65%, #f6f6f6 65%);\n      background: linear-gradient(165deg, white 65%, #f6f6f6 65%);\n      height: 100%;\n      width: 100%;\n      padding: 2rem;\n      font-size: 1.05rem;\n      font-family: var(--font3);\n      letter-spacing: 0.1rem;\n      display: flex;\n      flex-direction: column;\n      justify-content: center;\n      align-items: center;\n      position: absolute;\n    }\n    .nested-menu-container > a {\n      padding: 1rem;\n    }\n    .social-icon-pic {\n      width: 1.5rem;\n      padding: 1rem;\n      height: auto;\n    }\n    .get-in-touch {\n      text-align: center;\n      transform: translateY(5rem);\n    }\n    .get-in-touch > p {\n      color: black;\n\n      font-size: 0.8rem;\n    }\n  ");
+}, "\n    .hamburger-menu-container {\n      height: 100vh;\n      width: 100vw;\n      left: 0;\n      top: 0;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      position: absolute;\n      z-index: 300;\n    }\n    .nested-menu-container {\n      background: -webkit-linear-gradient(165deg, white 65%, #f6f6f6 65%);\n      background: -o-linear-gradient(165deg, white 65%, #f6f6f6 65%);\n      background: -moz-linear-gradient(165deg, white 65%, #f6f6f6 65%);\n      background: linear-gradient(165deg, white 60%, #f6f6f6 60%);\n      height: 100%;\n      width: 100%;\n\n      font-size: 1.05rem;\n      font-family: var(--font3);\n      letter-spacing: 0.1rem;\n    }\n    .menu-contents {\n      height: 100%;\n      display: flex;\n      margin-top: -2rem;\n      flex-direction: column;\n      justify-content: center;\n      align-items: center;\n    }\n    .menu-contents > a {\n      padding: 1rem;\n    }\n    .social-icon-pic {\n      width: 1.5rem;\n      padding: 1rem;\n      height: auto;\n    }\n    .get-in-touch {\n      text-align: center;\n      transform: translateY(3rem);\n    }\n    .get-in-touch > p {\n      color: black;\n\n      font-size: 0.8rem;\n    }\n  ");
 
 /* harmony default export */ __webpack_exports__["default"] = (HamburgerOpenMenu);
 
@@ -10137,7 +10144,7 @@ var GlobalStyles = __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /*!**********************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fskills&absolutePagePath=%2FUsers%2Fjeremie%2Fweb%2F28_portfolio%2Fpages%2Fskills.js ***!
   \**********************************************************************************************************************************/
@@ -10160,5 +10167,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=skills.js.map

@@ -795,6 +795,9 @@ const style = __jsx("style", {
         padding-left: var(--desktop-padding);
         padding-right: var(--desktop-padding);
       }
+      .under-the-title {
+        margin-bottom: 3rem;
+      }
     }
   `);
 
@@ -3255,7 +3258,7 @@ function Index() {
     },
     __self: this
   }))), __jsx("div", {
-    className: hasScrolled ? "hello-section-jumps-up" : null,
+    className: hasScrolled ? "hello-section-jumps-up" : "hello-section-pre-scroll",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 41
@@ -3264,7 +3267,7 @@ function Index() {
   }, __jsx(_components_Hello__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 46
     },
     __self: this
   }))), style);
@@ -3274,7 +3277,7 @@ const style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 52
+    lineNumber: 56
   },
   __self: undefined
 }, `
@@ -3359,14 +3362,20 @@ const style = __jsx("style", {
     .logo-fades {
       visibility: hidden;
       opacity: 0;
-      transition: visibility 3s, opacity 2s;
+      transition: visibility 2s, opacity 1s;
       position: relative;
       z-index: -1;
     }
+    .hello-section-pre-scroll {
+      opacity: 0;
+    }
     .hello-section-jumps-up {
+      margin: -5rem;
       transform: translateY(-15rem);
-      transition: transform 1.5s linear;
+      transition: transform 1s linear;
       position: relative;
+      opacity: 1;
+      transition: opacity 1s linear;
       z-index: -1;
     }
     @media (min-width: 801px) {

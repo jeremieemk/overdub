@@ -38,7 +38,11 @@ function Index() {
             <img className="arrow" src="/img/arrow.png" alt="arrow" />
           </div>
         </div>
-        <div className={hasScrolled ? "hello-section-jumps-up" : null}>
+        <div
+          className={
+            hasScrolled ? "hello-section-jumps-up" : "hello-section-pre-scroll"
+          }
+        >
           <Hello />
         </div>
       </Layout>
@@ -131,14 +135,20 @@ const style = (
     .logo-fades {
       visibility: hidden;
       opacity: 0;
-      transition: visibility 3s, opacity 2s;
+      transition: visibility 2s, opacity 1s;
       position: relative;
       z-index: -1;
     }
+    .hello-section-pre-scroll {
+      opacity: 0;
+    }
     .hello-section-jumps-up {
+      margin: -5rem;
       transform: translateY(-15rem);
-      transition: transform 1.5s linear;
+      transition: transform 1s linear;
       position: relative;
+      opacity: 1;
+      transition: opacity 1s linear;
       z-index: -1;
     }
     @media (min-width: 801px) {

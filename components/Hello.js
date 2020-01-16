@@ -41,6 +41,9 @@ const style = (
         padding-left: var(--desktop-padding);
         padding-right: var(--desktop-padding);
       }
+      .under-the-title {
+        margin-bottom: 3rem;
+      }
     }
   `}</style>
 );

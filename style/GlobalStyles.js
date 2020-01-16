@@ -37,6 +37,7 @@ const GlobalStyles = (
     body {
       background-color: var(--color1);
       margin: 0;
+      overflow-y: hidden;
     }
     a {
       text-decoration: none;

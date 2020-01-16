@@ -25,6 +25,7 @@ const style = (
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      margin-bottom: 3rem;
     }
 
     .dancing-avatar {

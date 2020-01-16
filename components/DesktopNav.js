@@ -21,11 +21,7 @@ const DesktopNav = () => (
   <div className="desktop-nav-container">
     {renderMenuItems()}
     <div className="title-plus-line-container">
-      <a
-        className="menu-item-name"
-        href="https://res.cloudinary.com/dbslwolfi/image/upload/v1579203730/rss/CV2020-3_mv8gpi.pdf"
-        target="_blank"
-      >
+      <a className="menu-item-name" href="/img/cv2020.pdf" target="_blank">
         CV
       </a>
       <div className="bottom-line"></div>

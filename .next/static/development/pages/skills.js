@@ -82,7 +82,7 @@ var DesktopNav = function DesktopNav() {
     __self: this
   }, __jsx("a", {
     className: "menu-item-name",
-    href: "https://res.cloudinary.com/dbslwolfi/image/upload/v1579203730/rss/CV2020-3_mv8gpi.pdf",
+    href: "/img/cv2020.pdf",
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
@@ -93,7 +93,7 @@ var DesktopNav = function DesktopNav() {
     className: "bottom-line",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 27
     },
     __self: this
   })), style);
@@ -103,7 +103,7 @@ var style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 39
+    lineNumber: 35
   },
   __self: undefined
 }, "\n    .desktop-nav-container {\n      z-index: 100;\n      width: 100%;\n      position: absolute;\n      padding-top: 2rem;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      font-family: var(--font2);\n      font-size: 0.8rem;\n      background-color: var(--color1);\n      opacity: 1;\n    }\n    .desktop-nav-container > * {\n      padding: 2.3rem;\n    }\n\n    .bottom-line {\n      padding-top: 0.5rem;\n      width: 1.2rem;\n      border-bottom: 0.2rem solid white;\n      margin-left: 0.5rem;\n      visibility: hidden;\n      opacity: 0;\n      transition: visibility 0s, opacity 0.3s linear;\n      position: absolute;\n    }\n    .menu-item-name:hover + .bottom-line {\n      visibility: visible;\n      opacity: 1;\n    }\n\n    @media (max-width: 801px) {\n      .desktop-nav-container {\n        display: none;\n      }\n    }\n  ");
@@ -297,7 +297,7 @@ function HamburgerOpenMenu(props) {
     },
     __self: this
   }, "SKILLS")), __jsx("a", {
-    href: "https://res.cloudinary.com/dbslwolfi/image/upload/v1579203730/rss/CV2020-3_mv8gpi.pdf",
+    href: "/img/cv2020.pdf",
     target: "_blank",
     onClick: props.handleHamburgerClick,
     __source: {

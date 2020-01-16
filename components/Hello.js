@@ -11,9 +11,7 @@ const Hello = () => (
       <LinkBox link={"/portfolio"} name="portfolio" showArrow="true" />
       <LinkBox link={"/skills"} name="skills" showArrow="true" />
       <LinkBox
-        externalLink={
-          "https://res.cloudinary.com/dbslwolfi/image/upload/v1579203730/rss/CV2020-3_mv8gpi.pdf"
-        }
+        externalLink={"/img/cv2020.pdf"}
         target={"_blank"}
         name="cv"
         showArrow="true"

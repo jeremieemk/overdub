@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -170,7 +170,7 @@ const DesktopNav = () => __jsx("div", {
   __self: undefined
 }, __jsx("a", {
   className: "menu-item-name",
-  href: "https://res.cloudinary.com/dbslwolfi/image/upload/v1579203730/rss/CV2020-3_mv8gpi.pdf",
+  href: "/img/cv2020.pdf",
   target: "_blank",
   __source: {
     fileName: _jsxFileName,
@@ -181,7 +181,7 @@ const DesktopNav = () => __jsx("div", {
   className: "bottom-line",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 31
+    lineNumber: 27
   },
   __self: undefined
 })), style);
@@ -190,7 +190,7 @@ const style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 39
+    lineNumber: 35
   },
   __self: undefined
 }, `
@@ -459,7 +459,7 @@ function HamburgerOpenMenu(props) {
     },
     __self: this
   }, "SKILLS")), __jsx("a", {
-    href: "https://res.cloudinary.com/dbslwolfi/image/upload/v1579203730/rss/CV2020-3_mv8gpi.pdf",
+    href: "/img/cv2020.pdf",
     target: "_blank",
     onClick: props.handleHamburgerClick,
     __source: {
@@ -3031,7 +3031,7 @@ const GlobalStyles = __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default
 
 /***/ }),
 
-/***/ 6:
+/***/ 4:
 /*!*******************************!*\
   !*** multi ./pages/skills.js ***!
   \*******************************/

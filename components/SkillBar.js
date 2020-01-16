@@ -49,17 +49,17 @@ const style = (
     }
     @media (min-width: 801px) {
       .skill-name-container {
-        font-size: 1.2rem;
+        font-size: 1rem;
       }
       .skill-name-container > p {
         margin-block-start: 1.5rem;
         margin-block-end: 0.8rem;
       }
       .skill-bar {
-        border-bottom: 1.2rem solid white;
+        border-bottom: 1rem solid white;
       }
       .skill-bar-outline {
-        height: 1.2rem;
+        height: 1rem;
       }
     }
   `}</style>

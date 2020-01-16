@@ -64,7 +64,7 @@ const style = (
     }
     @media (min-width: 801px) {
       .text-box-container {
-        margin-top: 2rem;
+        margin-top: 1rem;
       }
       .text-box {
         width: 11rem;
@@ -73,9 +73,6 @@ const style = (
       }
       .text {
         padding-left: 2rem;
-      }
-      .arrow-box {
-        width: rem;
       }
     }
   `}</style>

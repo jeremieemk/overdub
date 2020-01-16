@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/about.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/skills.js"],{
 
 /***/ "./components/DesktopNav.js":
 /*!**********************************!*\
@@ -639,10 +639,10 @@ var style = __jsx("style", {
 
 /***/ }),
 
-/***/ "./components/text/AboutText.js":
-/*!**************************************!*\
-  !*** ./components/text/AboutText.js ***!
-  \**************************************/
+/***/ "./components/SkillBar.js":
+/*!********************************!*\
+  !*** ./components/SkillBar.js ***!
+  \********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -650,134 +650,75 @@ var style = __jsx("style", {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/jeremie/web/28_portfolio/components/text/AboutText.js";
+var _jsxFileName = "/Users/jeremie/web/28_portfolio/components/SkillBar.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-var AboutText = function AboutText() {
+function SkillBar(props) {
   return __jsx("div", {
-    className: "about-text",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 2
-    },
-    __self: this
-  }, __jsx("h1", {
-    className: "about-title",
+    className: "skill-bar-container",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 3
     },
     __self: this
-  }, "I learnt to ", __jsx("span", {
-    className: "yellow",
+  }, __jsx("div", {
+    className: "skill-name-container",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 4
     },
     __self: this
-  }, "code "), " by building online radio stations."), __jsx("p", {
-    className: "",
+  }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 5
     },
     __self: this
-  }, "I built my first web project back in 2008. I had been working in FM radio stations as an engineer for a few years and I wanted to take advantage of streaming technology to build a truly international and multilingual radio station on the internet. ", __jsx("span", {
-    className: "yellow",
+  }, "| ", __jsx("span", {
+    className: "skill",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, props.skillName), " |")), __jsx("div", {
+    className: "skill-measure-bar-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "skill-bar-outline",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "skill-bar",
+    style: {
+      width: props.percentage
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
     },
     __self: this
-  }, "Groovalizacion "), "radio was born in 2008 in the midst of my travels (I lived in 7 countries in 10 years). I built the first version and I have helped designing the following versions since although I didn\u2019t develop them myself. During those years I was also developing a career as a DJ and music producer. I always had in the back of my mind that studying computer science would be a fantastic tool to renew my approach to music making and to open myself to new intellectual horizons."), __jsx("h1", {
-    className: "about-title",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
-  }, "The technologies I have used the most so far are", __jsx("span", {
-    className: "yellow",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
-    },
-    __self: this
-  }, " Javascript "), " and", __jsx("span", {
-    className: "yellow",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    },
-    __self: this
-  }, " React. ")), __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25
-    },
-    __self: this
-  }, "I took the \u2018CS50' course at", __jsx("span", {
-    className: "yellow",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27
-    },
-    __self: this
-  }, " Harvard University "), " online in 2017 and it was a revelation. I felt confident to take on more ambitious projects. I rebuilt my artist site using my newly-learnt skills in", __jsx("span", {
-    className: "yellow",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30
-    },
-    __self: this
-  }, " Python "), "and", __jsx("span", {
-    className: "yellow",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31
-    },
-    __self: this
-  }, " Javascript "), ". I connected with more experienced developers as mentors and got involved in a few more projects in the following years. I did a ", __jsx("span", {
-    className: "yellow",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33
-    },
-    __self: this
-  }, " React "), "project last year for an internet radio that involved interactions with a map. I also built an architect portfolio using", __jsx("span", {
-    className: "yellow",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36
-    },
-    __self: this
-  }, " jQuery "), " and Vapid. During the summer 2019 I also helped the Reveel team build their music metadata app on", " ", __jsx("span", {
-    className: "yellow",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38
-    },
-    __self: this
-  }, " React Native"), "."), __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40
-    },
-    __self: this
-  }, "Currently I am developing a music creativity enhancing app with my younger brother using Firebase and Flutter."), style);
-};
+  }))), style);
+}
 
 var style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 49
+    lineNumber: 21
   },
   __self: undefined
-}, "\n    .about-title {\n      font-size: 1.4rem;\n      text-align: center;\n      margin-top: 2rem;\n      margin-bottom: 2rem;\n    }\n    .about-text {\n      color: white;\n      font-family: var(--font4);\n      padding-left: 3rem;\n      padding-right: 3rem;\n      text-align: left;\n      font-size: 1rem;\n    }\n    .yellow {\n      color: var(--color2);\n      font-family: var(--font4);\n    }\n    @media (min-width: 801px) {\n      .about-title {\n        font-size: 2rem;\n        text-align: left;\n        margin-top: 4rem;\n        margin-bottom: 3rem;\n        line-height: 2.3rem;\n      }\n      .about-text {\n        font-size: 1.2rem;\n        line-height: 1.9rem;\n      }\n    }\n  ");
+}, "\n    .skill-bar-container {\n      width: 100%;\n    }\n    .skill-name-container,\n    .skill-measure-bar-container {\n      display: flex;\n      justify-content: flex-start;\n      align-items: center;\n      font-family: var(--font4);\n    }\n    .skill {\n      color: white;\n    }\n    .skill-name-container > p {\n      margin-block-start: 0.5rem;\n      margin-block-end: 0.5rem;\n    }\n\n    .skill-measure-bar-container {\n    }\n    .skill-bar-outline {\n      width: 100%;\n      height: 1rem;\n      border: 1px solid white;\n    }\n    .skill-bar {\n      border-bottom: 1rem solid white;\n    }\n    @media (min-width: 801px) {\n      .skill-name-container {\n        font-size: 1.2rem;\n      }\n      .skill-name-container > p {\n        margin-block-start: 1.5rem;\n        margin-block-end: 0.8rem;\n      }\n      .skill-bar {\n        border-bottom: 1.2rem solid white;\n      }\n      .skill-bar-outline {\n        height: 1.2rem;\n      }\n    }\n  ");
 
-/* harmony default export */ __webpack_exports__["default"] = (AboutText);
+/* harmony default export */ __webpack_exports__["default"] = (SkillBar);
 
 /***/ }),
 
@@ -5382,21 +5323,21 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fabout&absolutePagePath=%2FUsers%2Fjeremie%2Fweb%2F28_portfolio%2Fpages%2Fabout.js!./":
-/*!****************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fabout&absolutePagePath=%2FUsers%2Fjeremie%2Fweb%2F28_portfolio%2Fpages%2Fabout.js ***!
-  \****************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fskills&absolutePagePath=%2FUsers%2Fjeremie%2Fweb%2F28_portfolio%2Fpages%2Fskills.js!./":
+/*!******************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fskills&absolutePagePath=%2FUsers%2Fjeremie%2Fweb%2F28_portfolio%2Fpages%2Fskills.js ***!
+  \******************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/about", function() {
-      var mod = __webpack_require__(/*! ./pages/about.js */ "./pages/about.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/skills", function() {
+      var mod = __webpack_require__(/*! ./pages/skills.js */ "./pages/skills.js")
       if(true) {
-        module.hot.accept(/*! ./pages/about.js */ "./pages/about.js", function() {
-          if(!next.router.components["/about"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/about.js */ "./pages/about.js")
-          next.router.update("/about", updatedPage)
+        module.hot.accept(/*! ./pages/skills.js */ "./pages/skills.js", function() {
+          if(!next.router.components["/skills"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/skills.js */ "./pages/skills.js")
+          next.router.update("/skills", updatedPage)
         })
       }
       return mod
@@ -10007,10 +9948,10 @@ module.exports = __webpack_require__(/*! ./dist/style */ "./node_modules/styled-
 
 /***/ }),
 
-/***/ "./pages/about.js":
-/*!************************!*\
-  !*** ./pages/about.js ***!
-  \************************/
+/***/ "./pages/skills.js":
+/*!*************************!*\
+  !*** ./pages/skills.js ***!
+  \*************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -10020,15 +9961,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
 /* harmony import */ var _components_PageTitle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/PageTitle */ "./components/PageTitle.js");
-/* harmony import */ var _components_text_AboutText__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/text/AboutText */ "./components/text/AboutText.js");
-var _jsxFileName = "/Users/jeremie/web/28_portfolio/pages/about.js";
+/* harmony import */ var _components_SkillBar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/SkillBar */ "./components/SkillBar.js");
+var _jsxFileName = "/Users/jeremie/web/28_portfolio/pages/skills.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
-var About = function About() {
+var Skills = function Skills() {
   return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
@@ -10036,32 +9977,113 @@ var About = function About() {
     },
     __self: this
   }, __jsx(_components_PageTitle__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    title: "about Me",
+    title: "my technical Skills",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     },
     __self: this
   }), __jsx("div", {
-    className: "under-the-title",
+    className: "books-pic-container",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     },
     __self: this
   }, __jsx("img", {
-    className: "dancing-avatar",
-    src: "/img/shower.png",
-    alt: "dancing-avatar",
+    className: "books",
+    src: "/img/bookish.png",
+    alt: "me-carrying-books",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     },
     __self: this
-  }), __jsx(_components_text_AboutText__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  })), __jsx("div", {
+    className: "skill-bar-group",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, __jsx(_components_SkillBar__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    skillName: "JavaScript",
+    percentage: "90%",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }), __jsx(_components_SkillBar__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    skillName: "React",
+    percentage: "85%",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 14
+    },
+    __self: this
+  }), __jsx(_components_SkillBar__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    skillName: "Next.js",
+    percentage: "85%",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }), __jsx(_components_SkillBar__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    skillName: "CSS",
+    percentage: "90%",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }), __jsx(_components_SkillBar__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    skillName: "HTML",
+    percentage: "90%",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }), __jsx(_components_SkillBar__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    skillName: "React-Native",
+    percentage: "50%",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }), __jsx(_components_SkillBar__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    skillName: "jQuery",
+    percentage: "70%",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }), __jsx(_components_SkillBar__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    skillName: "Python",
+    percentage: "50%",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }), __jsx(_components_SkillBar__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    skillName: "Figma",
+    percentage: "50%",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }), __jsx(_components_SkillBar__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    skillName: "Git",
+    percentage: "65%",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
     },
     __self: this
   })), style);
@@ -10071,12 +10093,12 @@ var style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 21
+    lineNumber: 29
   },
   __self: undefined
-}, "\n    .under-the-title {\n      margin-top: 1.5rem;\n      display: flex;\n      flex-direction: column;\n      justify-content: center;\n      align-items: center;\n    }\n\n    .dancing-avatar {\n      width: 10rem;\n      height: auto;\n    }\n    @media (min-width: 801px) {\n      .under-the-title {\n        padding-left: var(--desktop-padding);\n        padding-right: var(--desktop-padding);\n      }\n      .dancing-avatar {\n        margin-top: 2rem;\n        width: 15rem;\n      }\n    }\n  ");
+}, "\n    .books {\n      width: 15rem;\n      height: auto;\n    }\n    .books-pic-container {\n      text-align: center;\n    }\n    .skill-bar-group {\n      padding-top: 2rem;\n      padding-bottom: 5rem;\n      padding-right: var(--global-margin);\n      padding-left: var(--global-margin);\n    }\n    @media (min-width: 801px) {\n      .skill-bar-group {\n        padding-left: var(--desktop-padding);\n        padding-right: var(--desktop-padding);\n      }\n      .books {\n        width: 20rem;\n        height: auto;\n      }\n    }\n  ");
 
-/* harmony default export */ __webpack_exports__["default"] = (About);
+/* harmony default export */ __webpack_exports__["default"] = (Skills);
 
 /***/ }),
 
@@ -10106,14 +10128,14 @@ var GlobalStyles = __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a
 
 /***/ }),
 
-/***/ 1:
-/*!********************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fabout&absolutePagePath=%2FUsers%2Fjeremie%2Fweb%2F28_portfolio%2Fpages%2Fabout.js ***!
-  \********************************************************************************************************************************/
+/***/ 3:
+/*!**********************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fskills&absolutePagePath=%2FUsers%2Fjeremie%2Fweb%2F28_portfolio%2Fpages%2Fskills.js ***!
+  \**********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fabout&absolutePagePath=%2FUsers%2Fjeremie%2Fweb%2F28_portfolio%2Fpages%2Fabout.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fabout&absolutePagePath=%2FUsers%2Fjeremie%2Fweb%2F28_portfolio%2Fpages%2Fabout.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fskills&absolutePagePath=%2FUsers%2Fjeremie%2Fweb%2F28_portfolio%2Fpages%2Fskills.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fskills&absolutePagePath=%2FUsers%2Fjeremie%2Fweb%2F28_portfolio%2Fpages%2Fskills.js!./");
 
 
 /***/ }),
@@ -10129,5 +10151,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=about.js.map
+},[[3,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=skills.js.map

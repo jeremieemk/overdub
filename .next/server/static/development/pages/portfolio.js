@@ -863,7 +863,7 @@ const style = __jsx("style", {
     }
     @media (min-width: 801px) {
       .text-box-container {
-        margin-top: 2rem;
+        margin-top: 1rem;
       }
       .text-box {
         width: 11rem;
@@ -873,9 +873,6 @@ const style = __jsx("style", {
       .text {
         padding-left: 2rem;
       }
-      .arrow-box {
-        width: rem;
-      }
     }
   `);
 
@@ -883,7 +880,7 @@ const centeredTitle = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 85
+    lineNumber: 82
   },
   __self: undefined
 }, `

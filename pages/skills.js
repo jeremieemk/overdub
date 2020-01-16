@@ -12,15 +12,13 @@ const Skills = () => (
     <div className="skill-bar-group">
       <SkillBar skillName="JavaScript" percentage="90%" />
       <SkillBar skillName="React" percentage="85%" />
+      <SkillBar skillName="Next.js" percentage="85%" />
       <SkillBar skillName="CSS" percentage="90%" />
       <SkillBar skillName="HTML" percentage="90%" />
       <SkillBar skillName="React-Native" percentage="50%" />
       <SkillBar skillName="jQuery" percentage="70%" />
       <SkillBar skillName="Python" percentage="50%" />
-      <SkillBar skillName="C" percentage="30%" />
-      <SkillBar skillName="SQL" percentage="40%" />
       <SkillBar skillName="Figma" percentage="50%" />
-      <SkillBar skillName="Heroku" percentage="50%" />
       <SkillBar skillName="Git" percentage="65%" />
     </div>
     {style}

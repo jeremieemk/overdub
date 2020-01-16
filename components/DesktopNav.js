@@ -23,7 +23,7 @@ const DesktopNav = () => (
     <div className="title-plus-line-container">
       <a
         className="menu-item-name"
-        href="https://res.cloudinary.com/dbslwolfi/image/upload/v1578760331/rss/CV2020_gsc1gi.pdf"
+        href="https://res.cloudinary.com/dbslwolfi/image/upload/v1579188041/rss/CV2020_ytyjik.pdf"
         target="_blank"
       >
         CV

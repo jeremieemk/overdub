@@ -10,12 +10,12 @@ const AboutText = () => (
       streaming technology to build a truly international and multilingual radio
       station on the internet. <span className="yellow">Groovalizacion </span>
       radio was born in 2008 in the midst of my travels (I lived in 7 countries
-      in 10 years). I built the first version on Joomla and I have helped
-      designing the following versions since although I didn’t develop them
-      myself. During those years I was also developing a career as a DJ and
-      music producer. I always had in the back of my mind that studying computer
-      science would be a fantastic tool to renew my approach to music making and
-      to open myself to new intellectual horizons.
+      in 10 years). I built the first version and I have helped designing the
+      following versions since although I didn’t develop them myself. During
+      those years I was also developing a career as a DJ and music producer. I
+      always had in the back of my mind that studying computer science would be
+      a fantastic tool to renew my approach to music making and to open myself
+      to new intellectual horizons.
     </p>
     <h1 className="about-title">
       The technologies I have used the most so far are

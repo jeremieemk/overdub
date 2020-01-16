@@ -170,7 +170,7 @@ const DesktopNav = () => __jsx("div", {
   __self: undefined
 }, __jsx("a", {
   className: "menu-item-name",
-  href: "https://res.cloudinary.com/dbslwolfi/image/upload/v1578760331/rss/CV2020_gsc1gi.pdf",
+  href: "https://res.cloudinary.com/dbslwolfi/image/upload/v1579188041/rss/CV2020_ytyjik.pdf",
   target: "_blank",
   __source: {
     fileName: _jsxFileName,

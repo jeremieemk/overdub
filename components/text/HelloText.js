@@ -50,6 +50,9 @@ const style = (
       font-family: var(--font3);
     }
     @media (min-width: 801px) {
+      .hello-text {
+        width: 85%;
+      }
       .upper-text {
         font-size: 2.3rem;
         font-family: var(--font4);

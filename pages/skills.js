@@ -14,7 +14,7 @@ const Skills = () => (
       <SkillBar skillName="React" percentage="85%" />
       <SkillBar skillName="CSS" percentage="90%" />
       <SkillBar skillName="HTML" percentage="90%" />
-      <SkillBar skillName="React-Native" percentage="70%" />
+      <SkillBar skillName="React-Native" percentage="50%" />
       <SkillBar skillName="jQuery" percentage="70%" />
       <SkillBar skillName="Python" percentage="50%" />
       <SkillBar skillName="C" percentage="30%" />

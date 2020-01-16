@@ -82,7 +82,7 @@ var DesktopNav = function DesktopNav() {
     __self: this
   }, __jsx("a", {
     className: "menu-item-name",
-    href: "https://res.cloudinary.com/dbslwolfi/image/upload/v1578760331/rss/CV2020_gsc1gi.pdf",
+    href: "https://res.cloudinary.com/dbslwolfi/image/upload/v1579188041/rss/CV2020_ytyjik.pdf",
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
@@ -10033,7 +10033,7 @@ var Skills = function Skills() {
     __self: this
   }), __jsx(_components_SkillBar__WEBPACK_IMPORTED_MODULE_3__["default"], {
     skillName: "React-Native",
-    percentage: "70%",
+    percentage: "50%",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17

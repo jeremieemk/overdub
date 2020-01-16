@@ -65,6 +65,7 @@ const style = (
       align-items: center;
       justify-content: center;
       position: absolute;
+      z-index:300;
     }
     .nested-menu-container {
       background: -webkit-linear-gradient(165deg, white 65%, #f6f6f6 65%);

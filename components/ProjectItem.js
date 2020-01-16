@@ -4,20 +4,38 @@ import ProjectDescriptionTitle from "./ProjectDescriptionTitle";
 function ProjectItem(props) {
   return (
     <div className="project-item-container">
-      <ProjectDescriptionTitle title="WEBSITE" />
-      <a href={props.link} target="_blank" className="link-and-arrow-container">
-        <p>{props.name}</p>
-        <div className="link-arrow-container">
-          <img className="link-arrow" src="/img/whitearrow3.png" alt="arrow" />
+      <div className="project-info-section">
+        <div>
+          <ProjectDescriptionTitle title="WEBSITE" />
+          <a
+            href={props.link}
+            target="_blank"
+            className="link-and-arrow-container"
+          >
+            <p>{props.name}</p>
+            <div className="link-arrow-container">
+              <img
+                className="link-arrow"
+                src="/img/whitearrow3.png"
+                alt="arrow"
+              />
+            </div>
+          </a>
         </div>
-      </a>
+        <div>
+          <ProjectDescriptionTitle title="COMPANY" />
+          <p>{props.company}</p>
+        </div>
+        <div>
+          <ProjectDescriptionTitle title="ROLE" />
+          <p>{props.role}</p>
+        </div>
+        <div>
+          <ProjectDescriptionTitle title="TOOLS" />
+          <p>{props.tools}</p>
+        </div>
+      </div>
 
-      <ProjectDescriptionTitle title="COMPANY" />
-      <p>{props.company}</p>
-      <ProjectDescriptionTitle title="ROLE" />
-      <p>{props.role}</p>
-      <ProjectDescriptionTitle title="TOOLS" />
-      <p>{props.tools}</p>
       <a href={props.link} target="_blank">
         <img className="screenshot" src={props.img} alt="screenshot" />
       </a>
@@ -86,12 +104,16 @@ const style = (
     }
     @media (min-width: 801px) {
       p {
-        font-size: 1.3rem;
+        font-size: 1rem;
         margin-block-end: 0.5rem;
+      }
+      .project-info-section {
+        display: grid;
+        grid-template-columns: 50% 50%;
       }
       .link-arrow {
         width: 1rem;
-        transform: translateY(0.5rem);
+        transform: translateY(0.4rem);
         padding-left: 0.7rem;
       }
       .arrow {

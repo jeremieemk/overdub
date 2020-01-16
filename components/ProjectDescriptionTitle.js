@@ -34,6 +34,9 @@ const style = (
         font-size: 0.9rem;
         margin-bottom: 0.3rem;
       }
+      .project-title-line {
+        display: none;
+      }
     }
   `}</style>
 );

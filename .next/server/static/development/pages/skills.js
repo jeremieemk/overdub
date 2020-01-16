@@ -344,7 +344,7 @@ const openStyle = __jsx("style", {
     }
     .line {
       border-bottom: 0.2rem solid black;
-      z-index: 100;
+      z-index: 400;
       margin-bottom: 0;
       transition: transform 0.3s;
     }
@@ -551,6 +551,7 @@ const style = __jsx("style", {
       align-items: center;
       justify-content: center;
       position: absolute;
+      z-index:300;
     }
     .nested-menu-container {
       background: -webkit-linear-gradient(165deg, white 65%, #f6f6f6 65%);

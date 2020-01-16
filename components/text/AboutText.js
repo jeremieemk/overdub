@@ -25,12 +25,12 @@ const AboutText = () => (
     <p>
       I took the ‘CS50' course at
       <span className="yellow"> Harvard University </span> online in 2017 and it
-      was a revelation. I felt more confident to take on more ambitious
-      projects. I rebuilt my artist site using my newly-learnt skills in
+      was a revelation. I felt confident to take on more ambitious projects. I
+      rebuilt my artist site using my newly-learnt skills in
       <span className="yellow"> Python </span>and
       <span className="yellow"> Javascript </span>. I connected with more
-      experienced developers as mentors and got hired for a few more projects in
-      the following years. I did a <span className="yellow"> React </span>
+      experienced developers as mentors and got involved in a few more projects
+      in the following years. I did a <span className="yellow"> React </span>
       project last year for an internet radio that involved interactions with a
       map. I also built an architect portfolio using
       <span className="yellow"> jQuery </span> and Vapid. During the summer 2019

@@ -2,7 +2,7 @@ const ProjectDetails = {
   escuta: {
     name: "escuta.pt",
     company: "Largo Residencias (Lisbon, Portugal)",
-    role: "Front End developer. Project manager.",
+    role: "Front End developer.",
     tools:
       "React, React-router, Google-map-react, React-switch-lang, Strapi, Material UI",
     img: "/img/escutaScreen.png",
@@ -11,7 +11,7 @@ const ProjectDetails = {
   raum404: {
     name: "raum404.ch",
     company: "Raum404 (Zurich, Switzerland)",
-    role: "FullStack Developer",
+    role: "Fullstack Developer",
     tools: "CSS, jQuery, Vapid",
     img: "/img/raum404Screen.png",
     link: "https://www.raum404.ch/"

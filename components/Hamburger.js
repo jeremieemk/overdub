@@ -50,7 +50,7 @@ const openStyle = (
     }
     .line {
       border-bottom: 0.2rem solid black;
-      z-index: 100;
+      z-index: 400;
       margin-bottom: 0;
       transition: transform 0.3s;
     }

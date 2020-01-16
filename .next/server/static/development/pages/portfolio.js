@@ -1359,6 +1359,8 @@ const style = __jsx("style", {
       margin-bottom: 1rem;
       width: 100%;
       height: auto;
+      border: 8px solid white;
+      border-radius: 5px;
     }
     .separation-line {
       margin-bottom: 0.5rem;

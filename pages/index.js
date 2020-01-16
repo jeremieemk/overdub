@@ -143,7 +143,7 @@ const style = (
       opacity: 0;
     }
     .hello-section-jumps-up {
-      margin: -5rem;
+      margin-top: -5rem;
       transform: translateY(-15rem);
       transition: transform 1s linear;
       position: relative;

@@ -505,17 +505,32 @@ var Layout = function Layout(props) {
       lineNumber: 7
     },
     __self: this
-  }), props.children), _style_GlobalStyles__WEBPACK_IMPORTED_MODULE_2__["default"], style);
+  }), props.children, __jsx("div", {
+    className: "footer",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, "(Built with react.js and open-sourced on", " ", __jsx("a", {
+    href: "https://github.com/jeremieemk/overdub/",
+    target: "_blank",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, "GitHub"), ")")), _style_GlobalStyles__WEBPACK_IMPORTED_MODULE_2__["default"], style);
 };
 
 var style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 16
+    lineNumber: 23
   },
   __self: undefined
-}, "\n    .container {\n      position: relative;\n      width: 100%;\n    }\n  ");
+}, "\n    .container {\n      position: relative;\n      width: 100%;\n    }\n    .footer {\n      width: 100%;\n      position: absolute;\n      bottom: -2;\n      margin-bottom: 1rem;\n      margin-top: 2rem;\n      text-align: center;\n      color: white;\n      font-family: var(--font4);\n      font-size: 0.8rem;\n    }\n    .footer > a {\n      color: var(--color2);\n    }\n  ");
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
 

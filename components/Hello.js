@@ -24,7 +24,6 @@ const Hello = () => (
 const style = (
   <style jsx>{`
     .hello-container {
-      height: 100vh;
       margin-bottom: 5rem;
     }
 
@@ -32,7 +31,6 @@ const style = (
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-bottom: 5rem;
     }
     @media (min-width: 801px) {
       .hello-container {

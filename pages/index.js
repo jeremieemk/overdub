@@ -144,8 +144,6 @@ const style = (
     }
     .hello-section-jumps-up {
       margin-top: -5rem;
-      transform: translateY(-15rem);
-      transition: transform 1s linear;
       position: relative;
       opacity: 1;
       transition: opacity 1s linear;

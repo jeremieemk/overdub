@@ -780,7 +780,6 @@ const style = __jsx("style", {
   __self: undefined
 }, `
     .hello-container {
-      height: 100vh;
       margin-bottom: 5rem;
     }
 
@@ -788,7 +787,6 @@ const style = __jsx("style", {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-bottom: 5rem;
     }
     @media (min-width: 801px) {
       .hello-container {
@@ -843,19 +841,48 @@ const Layout = props => __jsx("div", {
     lineNumber: 7
   },
   __self: undefined
-}), props.children), _style_GlobalStyles__WEBPACK_IMPORTED_MODULE_2__["default"], style);
+}), props.children, __jsx("div", {
+  className: "footer",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 9
+  },
+  __self: undefined
+}, "(Built with react.js and open-sourced on", " ", __jsx("a", {
+  href: "https://github.com/jeremieemk/overdub/",
+  target: "_blank",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 11
+  },
+  __self: undefined
+}, "GitHub"), ")")), _style_GlobalStyles__WEBPACK_IMPORTED_MODULE_2__["default"], style);
 
 const style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 16
+    lineNumber: 23
   },
   __self: undefined
 }, `
     .container {
       position: relative;
       width: 100%;
+    }
+    .footer {
+      width: 100%;
+      position: absolute;
+      bottom: -2;
+      margin-bottom: 1rem;
+      margin-top: 2rem;
+      text-align: center;
+      color: white;
+      font-family: var(--font4);
+      font-size: 0.8rem;
+    }
+    .footer > a {
+      color: var(--color2);
     }
   `);
 
@@ -3371,8 +3398,6 @@ const style = __jsx("style", {
     }
     .hello-section-jumps-up {
       margin-top: -5rem;
-      transform: translateY(-15rem);
-      transition: transform 1s linear;
       position: relative;
       opacity: 1;
       transition: opacity 1s linear;

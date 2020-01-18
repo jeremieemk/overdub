@@ -677,6 +677,7 @@ const style = __jsx("style", {
       position: fixed;
       top: 0;
       width: 100%;
+      z-index: 400;
     }
   `);
 
@@ -815,37 +816,54 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
-/* harmony import */ var _style_GlobalStyles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../style/GlobalStyles */ "./style/GlobalStyles.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _style_GlobalStyles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../style/GlobalStyles */ "./style/GlobalStyles.js");
 var _jsxFileName = "/Users/jeremie/web/28_portfolio/components/Layout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+
 const Layout = props => __jsx("div", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5
-  },
-  __self: undefined
-}, __jsx("div", {
-  className: "container",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 6
   },
   __self: undefined
-}, __jsx(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
+}, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 7
+  },
+  __self: undefined
+}, __jsx("link", {
+  rel: "shortcut icon",
+  href: "/static/favicon.ico",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 8
+  },
+  __self: undefined
+})), __jsx("div", {
+  className: "container",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 11
+  },
+  __self: undefined
+}, __jsx(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 12
   },
   __self: undefined
 }), props.children, __jsx("div", {
   className: "footer",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 9
+    lineNumber: 14
   },
   __self: undefined
 }, "(Built with react.js and open-sourced on", " ", __jsx("a", {
@@ -853,16 +871,16 @@ const Layout = props => __jsx("div", {
   target: "_blank",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 11
+    lineNumber: 16
   },
   __self: undefined
-}, "GitHub"), ")")), _style_GlobalStyles__WEBPACK_IMPORTED_MODULE_2__["default"], style);
+}, "GitHub"), ")")), _style_GlobalStyles__WEBPACK_IMPORTED_MODULE_3__["default"], style);
 
 const style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 23
+    lineNumber: 28
   },
   __self: undefined
 }, `
@@ -3401,7 +3419,6 @@ const style = __jsx("style", {
       position: relative;
       opacity: 1;
       transition: opacity 1s linear;
-      z-index: -1;
     }
     @media (min-width: 801px) {
       .landing-logo-wrapper {
@@ -3559,6 +3576,17 @@ module.exports = require("core-js/library/fn/symbol/iterator");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/weak-map");
+
+/***/ }),
+
+/***/ "next/head":
+/*!****************************!*\
+  !*** external "next/head" ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/head");
 
 /***/ }),
 

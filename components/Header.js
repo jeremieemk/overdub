@@ -23,6 +23,7 @@ const style = (
       position: fixed;
       top: 0;
       width: 100%;
+      z-index: 400;
     }
   `}</style>
 );

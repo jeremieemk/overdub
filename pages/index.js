@@ -147,7 +147,6 @@ const style = (
       position: relative;
       opacity: 1;
       transition: opacity 1s linear;
-      z-index: -1;
     }
     @media (min-width: 801px) {
       .landing-logo-wrapper {

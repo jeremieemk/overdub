@@ -1,8 +1,13 @@
 import Header from "./Header";
+import Head from "next/head";
 import GlobalStyles from "../style/GlobalStyles";
 
 const Layout = props => (
   <div>
+    <Head>
+      <link rel="shortcut icon" href="/static/favicon.ico" />
+    </Head>
+
     <div className="container">
       <Header />
       {props.children}

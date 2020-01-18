@@ -5,7 +5,7 @@ import Hello from "../components/Hello";
 function Index() {
   const [hasScrolled, sethasScrolled] = useState(false);
   const handleScroll = () => {
-    if (document.documentElement.scrollTop > 150) {
+    if (window.scrollY > 150) {
       sethasScrolled(true);
     } else {
       sethasScrolled(false);
@@ -13,6 +13,7 @@ function Index() {
   };
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
@@ -135,7 +136,6 @@ const style = (
     .logo-fades {
       visibility: hidden;
       opacity: 0;
-      transition: visibility 2s, opacity 1s;
       position: relative;
       z-index: -1;
     }

@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -375,9 +375,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _SocialIcons_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SocialIcons.js */ "./components/SocialIcons.js");
 var _jsxFileName = "/Users/jeremie/web/28_portfolio/components/HamburgerOpenMenu.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 function HamburgerOpenMenu(props) {
@@ -385,77 +387,77 @@ function HamburgerOpenMenu(props) {
     className: "hamburger-menu-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 6
     },
     __self: this
   }, __jsx("div", {
     className: "nested-menu-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 7
     },
     __self: this
   }, __jsx("div", {
     className: "menu-contents",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 8
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/index",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 9
     },
     __self: this
   }, __jsx("a", {
     onClick: props.handleHamburgerClick,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 10
     },
     __self: this
   }, "HELLO")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/about",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 12
     },
     __self: this
   }, __jsx("a", {
     onClick: props.handleHamburgerClick,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 13
     },
     __self: this
   }, "ABOUT ME")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/portfolio",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 15
     },
     __self: this
   }, __jsx("a", {
     onClick: props.handleHamburgerClick,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 16
     },
     __self: this
   }, "PORTFOLIO")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/skills",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 19
     },
     __self: this
   }, __jsx("a", {
     onClick: props.handleHamburgerClick,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 20
     },
     __self: this
   }, "SKILLS")), __jsx("a", {
@@ -464,88 +466,36 @@ function HamburgerOpenMenu(props) {
     onClick: props.handleHamburgerClick,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 23
     },
     __self: this
   }, "CV"), __jsx("div", {
     className: "get-in-touch",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 31
     },
     __self: this
   }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
-    },
-    __self: this
-  }, "GET IN TOUCH"), __jsx("div", {
-    className: "social-icons",
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 32
     },
     __self: this
-  }, __jsx("a", {
-    href: "https://www.facebook.com/jeremieemk",
-    target: "_blank",
+  }, "GET IN TOUCH"), __jsx(_SocialIcons_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 33
     },
     __self: this
-  }, __jsx("img", {
-    className: "social-icon-pic",
-    src: "/img/fb.png",
-    alt: "fb",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34
-    },
-    __self: this
-  })), __jsx("a", {
-    href: "https://www.linkedin.com/in/jeremiemoussaidkerouanton/",
-    target: "_blank",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36
-    },
-    __self: this
-  }, __jsx("img", {
-    className: "social-icon-pic",
-    src: "/img/linkedin.png",
-    alt: "linkedin",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40
-    },
-    __self: this
-  })), __jsx("a", {
-    href: "mailto:jeremieemk@gmail.com",
-    target: "_blank",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 46
-    },
-    __self: this
-  }, __jsx("img", {
-    className: "social-icon-pic",
-    src: "/img/mail.png",
-    alt: "mail",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47
-    },
-    __self: this
-  })))))), style);
+  })))), style);
 }
 
 const style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 64
+    lineNumber: 44
   },
   __self: undefined
 }, `
@@ -583,11 +533,7 @@ const style = __jsx("style", {
     .menu-contents > a {
       padding: 1rem;
     }
-    .social-icon-pic {
-      width: 1.5rem;
-      padding: 1rem;
-      height: auto;
-    }
+
     .get-in-touch {
       text-align: center;
       transform: translateY(3rem);
@@ -819,6 +765,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "next/head");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _style_GlobalStyles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../style/GlobalStyles */ "./style/GlobalStyles.js");
+/* harmony import */ var _SocialIcons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./SocialIcons */ "./components/SocialIcons.js");
 var _jsxFileName = "/Users/jeremie/web/28_portfolio/components/Layout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -826,16 +773,17 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+
 const Layout = props => __jsx("div", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 6
+    lineNumber: 7
   },
   __self: undefined
 }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 7
+    lineNumber: 8
   },
   __self: undefined
 }, __jsx("link", {
@@ -843,44 +791,58 @@ const Layout = props => __jsx("div", {
   href: "/static/favicon.ico",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 8
+    lineNumber: 9
   },
   __self: undefined
 })), __jsx("div", {
   className: "container",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 11
+    lineNumber: 12
   },
   __self: undefined
 }, __jsx(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 12
+    lineNumber: 13
   },
   __self: undefined
 }), props.children, __jsx("div", {
   className: "footer",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 14
+    lineNumber: 15
   },
   __self: undefined
-}, "(Built with react.js and open-sourced on", " ", __jsx("a", {
-  href: "https://github.com/jeremieemk/overdub/",
-  target: "_blank",
+}, __jsx("div", {
+  className: "open-source",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 16
   },
   __self: undefined
-}, "GitHub"), ")")), _style_GlobalStyles__WEBPACK_IMPORTED_MODULE_3__["default"], style);
+}, "(Built with react.js and open-sourced on", " ", __jsx("a", {
+  className: "github-link",
+  href: "https://github.com/jeremieemk/overdub/",
+  target: "_blank",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 18
+  },
+  __self: undefined
+}, "GitHub"), ")"), __jsx(_SocialIcons__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 27
+  },
+  __self: undefined
+}))), _style_GlobalStyles__WEBPACK_IMPORTED_MODULE_3__["default"], style);
 
 const style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 28
+    lineNumber: 36
   },
   __self: undefined
 }, `
@@ -899,8 +861,11 @@ const style = __jsx("style", {
       font-family: var(--font4);
       font-size: 0.8rem;
     }
-    .footer > a {
+    .github-link {
       color: var(--color2);
+    }
+    .open-source {
+      margin-bottom: 0.5rem;
     }
   `);
 
@@ -1231,6 +1196,108 @@ const style = __jsx("style", {
   `);
 
 /* harmony default export */ __webpack_exports__["default"] = (PageTitle);
+
+/***/ }),
+
+/***/ "./components/SocialIcons.js":
+/*!***********************************!*\
+  !*** ./components/SocialIcons.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/jeremie/web/28_portfolio/components/SocialIcons.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+const SocialIcons = () => __jsx("div", {
+  className: "social-icons",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 2
+  },
+  __self: undefined
+}, __jsx("a", {
+  href: "https://www.facebook.com/jeremieemk",
+  target: "_blank",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 3
+  },
+  __self: undefined
+}, __jsx("img", {
+  className: "social-icon-pic fb",
+  src: "/img/fb.png",
+  alt: "fb",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 4
+  },
+  __self: undefined
+})), __jsx("a", {
+  href: "https://www.linkedin.com/in/jeremiemoussaidkerouanton/",
+  target: "_blank",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 6
+  },
+  __self: undefined
+}, __jsx("img", {
+  className: "social-icon-pic",
+  src: "/img/linkedin.png",
+  alt: "linkedin",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 10
+  },
+  __self: undefined
+})), __jsx("a", {
+  href: "mailto:jeremieemk@gmail.com",
+  target: "_blank",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 12
+  },
+  __self: undefined
+}, __jsx("img", {
+  className: "social-icon-pic mail",
+  src: "/img/mail.png",
+  alt: "mail",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 13
+  },
+  __self: undefined
+})), style);
+
+const style = __jsx("style", {
+  jsx: true,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 20
+  },
+  __self: undefined
+}, `
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .social-icon-pic {
+      width: 1.5rem;
+      padding: 1rem;
+    }
+    .mail,
+    .fb {
+      width: 1.3rem;
+    }
+  `);
+
+/* harmony default export */ __webpack_exports__["default"] = (SocialIcons);
 
 /***/ }),
 
@@ -3457,7 +3524,7 @@ const GlobalStyles = __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

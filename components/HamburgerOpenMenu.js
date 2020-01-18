@@ -1,4 +1,5 @@
 import Link from "next/link";
+import SocialIcons from "./SocialIcons.js";
 
 function HamburgerOpenMenu(props) {
   return (
@@ -29,28 +30,7 @@ function HamburgerOpenMenu(props) {
 
           <div className="get-in-touch">
             <p>GET IN TOUCH</p>
-            <div className="social-icons">
-              <a href="https://www.facebook.com/jeremieemk" target="_blank">
-                <img className="social-icon-pic" src="/img/fb.png" alt="fb" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/jeremiemoussaidkerouanton/"
-                target="_blank"
-              >
-                <img
-                  className="social-icon-pic"
-                  src="/img/linkedin.png"
-                  alt="linkedin"
-                />
-              </a>
-              <a href="mailto:jeremieemk@gmail.com" target="_blank">
-                <img
-                  className="social-icon-pic"
-                  src="/img/mail.png"
-                  alt="mail"
-                />
-              </a>
-            </div>
+            <SocialIcons />
           </div>
         </div>
       </div>
@@ -96,11 +76,7 @@ const style = (
     .menu-contents > a {
       padding: 1rem;
     }
-    .social-icon-pic {
-      width: 1.5rem;
-      padding: 1rem;
-      height: auto;
-    }
+
     .get-in-touch {
       text-align: center;
       transform: translateY(3rem);

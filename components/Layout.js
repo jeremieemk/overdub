@@ -1,6 +1,7 @@
 import Header from "./Header";
 import Head from "next/head";
 import GlobalStyles from "../style/GlobalStyles";
+import SocialIcons from "./SocialIcons";
 
 const Layout = props => (
   <div>
@@ -12,11 +13,18 @@ const Layout = props => (
       <Header />
       {props.children}
       <div className="footer">
-        (Built with react.js and open-sourced on{" "}
-        <a href="https://github.com/jeremieemk/overdub/" target="_blank">
-          GitHub
-        </a>
-        )
+        <div className="open-source">
+          (Built with react.js and open-sourced on{" "}
+          <a
+            className="github-link"
+            href="https://github.com/jeremieemk/overdub/"
+            target="_blank"
+          >
+            GitHub
+          </a>
+          )
+        </div>
+        <SocialIcons />
       </div>
     </div>
     {GlobalStyles}
@@ -41,8 +49,11 @@ const style = (
       font-family: var(--font4);
       font-size: 0.8rem;
     }
-    .footer > a {
+    .github-link {
       color: var(--color2);
+    }
+    .open-source {
+      margin-bottom: 0.5rem;
     }
   `}</style>
 );

@@ -38,8 +38,8 @@ const AboutText = () => (
       <span className="yellow"> React Native</span>.
     </p>
     <p>
-      Currently I am developing a music creativity enhancing app with my younger
-      brother using Firebase and Flutter.
+      Currently I am developing a music creativity enhancing app with my brother
+      using Firebase and Flutter.
     </p>
     {style}
   </div>

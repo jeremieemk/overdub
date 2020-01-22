@@ -757,7 +757,7 @@ var AboutText = function AboutText() {
       lineNumber: 3
     },
     __self: this
-  }, "I learnt to ", __jsx("span", {
+  }, "I learned to ", __jsx("span", {
     className: "yellow",
     __source: {
       fileName: _jsxFileName,
@@ -778,7 +778,7 @@ var AboutText = function AboutText() {
       lineNumber: 11
     },
     __self: this
-  }, "Groovalizacion "), "radio was born in 2008 in the midst of my travels (I lived in 7 countries in 10 years). I built the first version and I have helped designing the following versions since although I didn\u2019t develop them myself. During those years I was also developing a career as a DJ and music producer. I always had in the back of my mind that studying computer science would be a fantastic tool to renew my approach to music making and to open myself to new intellectual horizons."), __jsx("h1", {
+  }, "Groovalizacion "), "radio was born in 2008 in the midst of my travels (I lived in 7 countries in 10 years). I built the first version and I have helped design the following versions although I didn\u2019t develop them myself. During those years I was also developing a career as a DJ and music producer. I always had in the back of my mind that studying computer science would be a fantastic tool to renew my approach to music making and to open myself to new intellectual horizons."), __jsx("h1", {
     className: "about-title",
     __source: {
       fileName: _jsxFileName,
@@ -812,7 +812,7 @@ var AboutText = function AboutText() {
       lineNumber: 27
     },
     __self: this
-  }, " Harvard University "), " online in 2017 and it was a revelation. I felt confident to take on more ambitious projects. I rebuilt my artist site using my newly-learnt skills in", __jsx("span", {
+  }, " Harvard University "), " online in 2017 and it was a revelation. I felt confident to take on more ambitious projects. I rebuilt my artist site using my newly-learned skills in", __jsx("span", {
     className: "yellow",
     __source: {
       fileName: _jsxFileName,
@@ -840,7 +840,7 @@ var AboutText = function AboutText() {
       lineNumber: 36
     },
     __self: this
-  }, " jQuery "), " and Vapid. During the summer 2019 I also helped the Reveel team build their music metadata app on", " ", __jsx("span", {
+  }, " jQuery "), " and Vapid. During the summer 2019 I helped the Reveel team build their music metadata app on", " ", __jsx("span", {
     className: "yellow",
     __source: {
       fileName: _jsxFileName,
@@ -10867,7 +10867,7 @@ var GlobalStyles = __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a
 
 /***/ }),
 
-/***/ 3:
+/***/ 1:
 /*!********************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fabout&absolutePagePath=%2FUsers%2Fjeremie%2Fweb%2F28_portfolio%2Fpages%2Fabout.js ***!
   \********************************************************************************************************************************/
@@ -10890,5 +10890,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=about.js.map

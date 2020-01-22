@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1344,7 +1344,7 @@ const HelloText = () => __jsx("div", {
     lineNumber: 5
   },
   __self: undefined
-}, "and a bearded polyglot. "), __jsx("br", {
+}, "and a bearded globe-trotter. "), __jsx("br", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 6
@@ -3523,7 +3523,7 @@ const GlobalStyles = __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

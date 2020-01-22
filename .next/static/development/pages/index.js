@@ -976,7 +976,7 @@ var HelloText = function HelloText() {
       lineNumber: 5
     },
     __self: this
-  }, "and a bearded polyglot. "), __jsx("br", {
+  }, "and a bearded globe-trotter. "), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
@@ -11099,7 +11099,7 @@ var GlobalStyles = __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a
 
 /***/ }),
 
-/***/ 1:
+/***/ 0:
 /*!***************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fjeremie%2Fweb%2F28_portfolio%2Fpages%2Findex.js ***!
   \***************************************************************************************************************************/
@@ -11122,5 +11122,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

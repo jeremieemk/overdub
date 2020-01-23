@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/about.js"],{
 
 /***/ "./components/DesktopNav.js":
 /*!**********************************!*\
@@ -416,108 +416,6 @@ var style = __jsx("style", {
 
 /***/ }),
 
-/***/ "./components/Hello.js":
-/*!*****************************!*\
-  !*** ./components/Hello.js ***!
-  \*****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _PageTitle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PageTitle */ "./components/PageTitle.js");
-/* harmony import */ var _text_HelloText__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./text/HelloText */ "./components/text/HelloText.js");
-/* harmony import */ var _LinkBox__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./LinkBox */ "./components/LinkBox.js");
-var _jsxFileName = "/Users/jeremie/web/28_portfolio/components/Hello.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-var Hello = function Hello() {
-  return __jsx("div", {
-    className: "hello-container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, __jsx(_PageTitle__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    title: "Hey, Hi",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }), __jsx("div", {
-    className: "under-the-title",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, __jsx(_text_HelloText__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }), __jsx(_LinkBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    link: "/about",
-    name: "about me",
-    showArrow: "true",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }), __jsx(_LinkBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    link: "/portfolio",
-    name: "portfolio",
-    showArrow: "true",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }), __jsx(_LinkBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    link: "/skills",
-    name: "skills",
-    showArrow: "true",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }), __jsx(_LinkBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    externalLink: "/img/cv2020.pdf",
-    target: "_blank",
-    name: "cv",
-    showArrow: "true",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  })), style);
-};
-
-var style = __jsx("style", {
-  jsx: true,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 25
-  },
-  __self: undefined
-}, "\n    .hello-container {\n      margin-bottom: 5rem;\n    }\n\n    .under-the-title {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      margin-top: 2rem;\n    }\n    @media (min-width: 801px) {\n      .hello-container {\n        padding-left: var(--desktop-padding);\n        padding-right: var(--desktop-padding);\n      }\n      .under-the-title {\n        margin-bottom: 3rem;\n      }\n    }\n  ");
-
-/* harmony default export */ __webpack_exports__["default"] = (Hello);
-
-/***/ }),
-
 /***/ "./components/Layout.js":
 /*!******************************!*\
   !*** ./components/Layout.js ***!
@@ -618,109 +516,6 @@ var style = __jsx("style", {
 }, "\n    .container {\n      position: relative;\n      width: 100%;\n    }\n    .footer {\n      width: 100%;\n      position: absolute;\n      bottom: -2;\n      margin-bottom: 1rem;\n      margin-top: 2rem;\n      text-align: center;\n      color: white;\n      font-family: var(--font4);\n      font-size: 0.8rem;\n    }\n    .github-link {\n      color: var(--color2);\n    }\n    .open-source {\n      margin-bottom: 0.5rem;\n    }\n  ");
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
-
-/***/ }),
-
-/***/ "./components/LinkBox.js":
-/*!*******************************!*\
-  !*** ./components/LinkBox.js ***!
-  \*******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/jeremie/web/28_portfolio/components/LinkBox.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-function LinkBox(props) {
-  return __jsx("div", {
-    className: "linkbox-container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: props.link,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }, __jsx("div", {
-    className: "text-box-container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, __jsx("div", {
-    className: "text-box",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, __jsx("a", {
-    href: props.externalLink,
-    target: props.target,
-    className: "text",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }, props.name)), props.showArrow ? __jsx("div", {
-    className: "arrow-box",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }, __jsx("img", {
-    className: "arrow",
-    src: "/img/whitearrow3.png",
-    alt: "arrow",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
-  })) : null))), style, !props.showArrow ? centeredTitle : null);
-}
-
-var style = __jsx("style", {
-  jsx: true,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 33
-  },
-  __self: undefined
-}, "\n    .linkbox-container {\n      position: relative;\n      z-index: 10;\n    }\n    .text-box-container {\n      margin-top: 1rem;\n      display: flex;\n      cursor: \"pointer\";\n    }\n    .text-box {\n      color: white;\n      font-family: var(--font3);\n      border: var(--line-width) solid white;\n      font-size: 1.3rem;\n      width: 11rem;\n      height: 3rem;\n      display: flex;\n      align-items: center;\n    }\n    .arrow-box {\n      border-width: var(--line-width) var(--line-width) var(--line-width) 0;\n      width: 5rem;\n      border-style: solid;\n      border-color: white;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n    }\n    .text {\n      padding-left: 2rem;\n    }\n    .arrow {\n      width: 2rem;\n      height: auto;\n    }\n    @media (min-width: 801px) {\n      .text-box-container {\n        margin-top: 1rem;\n      }\n      .text-box {\n        width: 11rem;\n        height: 3rem;\n        font-size: 1.4rem;\n      }\n      .text {\n        padding-left: 2rem;\n      }\n    }\n  ");
-
-var centeredTitle = __jsx("style", {
-  jsx: true,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 86
-  },
-  __self: undefined
-}, "\n    .text-box {\n      justify-content: center;\n      width: 80vw;\n    }\n    .text {\n      padding-left: 0;\n      font-size: 1.2rem;\n    }\n    @media (min-width: 801px) {\n      .text-box-container {\n        margin-left: var(--desktop-padding);\n        margin-right: var(--desktop-padding);\n      }\n    }\n  ");
-
-/* harmony default export */ __webpack_exports__["default"] = (LinkBox);
 
 /***/ }),
 
@@ -932,9 +727,9 @@ var style = __jsx("style", {
 
 /***/ }),
 
-/***/ "./components/text/HelloText.js":
+/***/ "./components/text/AboutText.js":
 /*!**************************************!*\
-  !*** ./components/text/HelloText.js ***!
+  !*** ./components/text/AboutText.js ***!
   \**************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -943,81 +738,134 @@ var style = __jsx("style", {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/jeremie/web/28_portfolio/components/text/HelloText.js";
+var _jsxFileName = "/Users/jeremie/web/28_portfolio/components/text/AboutText.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-var HelloText = function HelloText() {
+var AboutText = function AboutText() {
   return __jsx("div", {
-    className: "hello-text",
+    className: "about-text",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 2
     },
     __self: this
-  }, __jsx("p", {
-    className: "upper-text",
+  }, __jsx("h1", {
+    className: "about-title",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 3
     },
     __self: this
-  }, "I\u2019m J\xE9r\xE9mie. I am a ", __jsx("span", {
+  }, "I learned to ", __jsx("span", {
     className: "yellow",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 4
     },
     __self: this
-  }, "coder"), " , a music producer ", __jsx("span", {
+  }, "code "), " by building online radio stations."), __jsx("p", {
     className: "",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }, "and a bearded globe-trotter. "), __jsx("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }), __jsx("p", {
-    className: "smaller2",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     },
     __self: this
-  }, "I was born in France and I am currently based in Lisbon, Portugal."), __jsx("div", {
-    className: "img-container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }, __jsx("img", {
-    className: "sardine",
-    src: "/img/car.png",
-    alt: "car",
+  }, "I built my first web project back in 2008. I had been working in FM radio stations as an engineer for a few years and I wanted to take advantage of streaming technology to build a truly international and multilingual radio station on the internet. ", __jsx("span", {
+    className: "yellow",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
     },
     __self: this
-  }))), style);
+  }, "Groovalizacion "), "radio was born in 2008 in the midst of my travels (I lived in 7 countries in 10 years). I built the first version and I have helped design the following versions although I didn\u2019t develop them myself. During those years I was also developing a career as a DJ and music producer. I always had in the back of my mind that studying computer science would be a fantastic tool to renew my approach to music making and to open myself to new intellectual horizons."), __jsx("h1", {
+    className: "about-title",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }, "The technologies I have used the most so far are", __jsx("span", {
+    className: "yellow",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }, " Javascript "), " and", __jsx("span", {
+    className: "yellow",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: this
+  }, " React. ")), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }, "I took the \u2018CS50' course at", __jsx("span", {
+    className: "yellow",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: this
+  }, " Harvard University "), " online in 2017 and it was a revelation. I felt confident to take on more ambitious projects. I rebuilt my artist site using my newly-learned skills in", __jsx("span", {
+    className: "yellow",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  }, " Python "), "and", __jsx("span", {
+    className: "yellow",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: this
+  }, " Javascript "), ". I connected with more experienced developers as mentors and got involved in a few more projects in the following years. I did a ", __jsx("span", {
+    className: "yellow",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33
+    },
+    __self: this
+  }, " React "), "project last year for an internet radio that involved interactions with a map. I also built an architect portfolio using", __jsx("span", {
+    className: "yellow",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
+    },
+    __self: this
+  }, " jQuery "), " and Vapid. During the summer 2019 I helped the Reveel team build their music metadata app on", " ", __jsx("span", {
+    className: "yellow",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38
+    },
+    __self: this
+  }, " React Native"), "."), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
+    },
+    __self: this
+  }, "Currently I am developing a music creativity enhancing app with my brother using Firebase and Flutter."), style);
 };
 
 var style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 19
+    lineNumber: 49
   },
   __self: undefined
-}, "\n    .hello-text {\n      width: 70%;\n      color: white;\n      font-family: var(--font2);\n      margin-top: 2rem;\n      margin-bottom: 2rem;\n      padding-left: 3rem;\n      padding-right: 3rem;\n      text-align: left;\n      position: relative;\n      z-index: -1;\n    }\n    .sardine {\n      margin-top: 2rem;\n      width: 12rem;\n    }\n    .img-container {\n      text-align: center;\n    }\n    .upper-text {\n      font-size: 1.6rem;\n    }\n    .smaller {\n      font-size: 1.1rem;\n    }\n    .smaller2 {\n      font-size: 1.3rem;\n      line-height: 1.5rem;\n      font-family: var(--font5);\n    }\n    .yellow {\n      color: var(--color2);\n      font-size: 2rem;\n      font-family: var(--font3);\n    }\n    @media (min-width: 801px) {\n      .hello-text {\n        width: 85%;\n      }\n      .upper-text {\n        font-size: 2.3rem;\n        font-family: var(--font4);\n      }\n      .smaller2 {\n        font-size: 1.8rem;\n        line-height: 2.4rem;\n        font-family: var(--font4);\n      }\n      .yellow {\n        font-size: 2.3rem;\n        font-family: var(--font4);\n      }\n      .sardine {\n        margin-top: 1.5rem;\n        width: 15rem;\n      }\n    }\n  ");
+}, "\n    .about-title {\n      font-size: 1.4rem;\n      text-align: center;\n      margin-top: 2rem;\n      margin-bottom: 2rem;\n    }\n    .about-text {\n      color: white;\n      font-family: var(--font4);\n      padding-left: 3rem;\n      padding-right: 3rem;\n      text-align: left;\n      font-size: 1rem;\n    }\n    .yellow {\n      color: var(--color2);\n      font-family: var(--font4);\n    }\n    @media (min-width: 801px) {\n      .about-title {\n        font-size: 2rem;\n        text-align: left;\n        margin-top: 4rem;\n        margin-bottom: 3rem;\n        line-height: 2.3rem;\n      }\n      .about-text {\n        font-size: 1.2rem;\n        line-height: 1.9rem;\n      }\n    }\n  ");
 
-/* harmony default export */ __webpack_exports__["default"] = (HelloText);
+/* harmony default export */ __webpack_exports__["default"] = (AboutText);
 
 /***/ }),
 
@@ -5891,21 +5739,21 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fjeremie%2Fweb%2F28_portfolio%2Fpages%2Findex.js!./":
-/*!***********************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fjeremie%2Fweb%2F28_portfolio%2Fpages%2Findex.js ***!
-  \***********************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fabout&absolutePagePath=%2FUsers%2Fjeremie%2Fweb%2F28_portfolio%2Fpages%2Fabout.js!./":
+/*!****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fabout&absolutePagePath=%2FUsers%2Fjeremie%2Fweb%2F28_portfolio%2Fpages%2Fabout.js ***!
+  \****************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/", function() {
-      var mod = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/about", function() {
+      var mod = __webpack_require__(/*! ./pages/about.js */ "./pages/about.js")
       if(true) {
-        module.hot.accept(/*! ./pages/index.js */ "./pages/index.js", function() {
-          if(!next.router.components["/"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
-          next.router.update("/", updatedPage)
+        module.hot.accept(/*! ./pages/about.js */ "./pages/about.js", function() {
+          if(!next.router.components["/about"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/about.js */ "./pages/about.js")
+          next.router.update("/about", updatedPage)
         })
       }
       return mod
@@ -10920,9 +10768,9 @@ module.exports = __webpack_require__(/*! ./dist/style */ "./node_modules/styled-
 
 /***/ }),
 
-/***/ "./pages/index.js":
+/***/ "./pages/about.js":
 /*!************************!*\
-  !*** ./pages/index.js ***!
+  !*** ./pages/about.js ***!
   \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -10932,144 +10780,64 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _components_Hello__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Hello */ "./components/Hello.js");
-var _jsxFileName = "/Users/jeremie/web/28_portfolio/pages/index.js";
+/* harmony import */ var _components_PageTitle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/PageTitle */ "./components/PageTitle.js");
+/* harmony import */ var _components_text_AboutText__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/text/AboutText */ "./components/text/AboutText.js");
+var _jsxFileName = "/Users/jeremie/web/28_portfolio/pages/about.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
-function Index() {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
-      hasScrolled = _useState[0],
-      sethasScrolled = _useState[1];
-
-  var handleScroll = function handleScroll() {
-    if (window.scrollY > 150) {
-      sethasScrolled(true);
-    } else {
-      sethasScrolled(false);
-    }
-  };
-
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    window.addEventListener("scroll", handleScroll);
-    return function () {
-      return window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-  return __jsx("div", {
+var About = function About() {
+  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 6
     },
     __self: this
-  }, __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, __jsx(_components_PageTitle__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: "about Me",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 7
     },
     __self: this
-  }, __jsx("div", {
-    className: hasScrolled ? "landing-page-container logo-fades" : "landing-page-container",
+  }), __jsx("div", {
+    className: "under-the-title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
-    },
-    __self: this
-  }, __jsx("div", {
-    className: "landing-logo-container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29
-    },
-    __self: this
-  }, __jsx("div", {
-    className: "landing-logo-wrapper",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 8
     },
     __self: this
   }, __jsx("img", {
-    className: "avatar",
-    src: "/img/avatar1.png",
-    alt: "avatar",
+    className: "dancing-avatar",
+    src: "/img/shower.png",
+    alt: "dancing-avatar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 9
     },
     __self: this
-  }), __jsx("h1", {
-    className: "over",
+  }), __jsx(_components_text_AboutText__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 14
     },
     __self: this
-  }, "over-"), __jsx("h1", {
-    className: "dub",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33
-    },
-    __self: this
-  }, "duB"), __jsx("hr", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34
-    },
-    __self: this
-  }), __jsx("h2", {
-    className: "web",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35
-    },
-    __self: this
-  }, "WEB DEV."))), __jsx("div", {
-    className: "arrow-container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38
-    },
-    __self: this
-  }, __jsx("img", {
-    className: "arrow",
-    src: "/img/arrow.png",
-    alt: "arrow",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39
-    },
-    __self: this
-  }))), __jsx("div", {
-    className: hasScrolled ? "hello-section-jumps-up" : "hello-section-pre-scroll",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 42
-    },
-    __self: this
-  }, __jsx(_components_Hello__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47
-    },
-    __self: this
-  }))), style);
-}
+  })), style);
+};
 
 var style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 57
+    lineNumber: 21
   },
   __self: undefined
-}, "\n    .landing-page-container {\n      visibility: visible;\n      opacity: 1;\n      transition: visibility 3s, opacity 2s linear;\n      position: relative;\n      z-index: -1;\n    }\n    .landing-logo-container {\n      height: 100vh;\n      display: flex;\n      flex-direction: column;\n      justify-content: center;\n      align-items: center;\n      position: relative;\n      z-index: -1;\n    }\n    .avatar {\n      width: 5.5rem;\n      height: auto;\n      margin-left: -0.5rem;\n      position: relative;\n      z-index: -1;\n    }\n\n    .over {\n      color: var(--color2);\n      font-family: var(--font2);\n      font-size: 3.5rem;\n\n      margin-top: -1rem;\n      position: relative;\n      z-index: -1;\n    }\n    .dub {\n      color: var(--color2);\n      font-family: var(--font2);\n      font-size: 6rem;\n      margin-top: -1.6rem;\n      position: relative;\n      z-index: -1;\n    }\n    h1,\n    h2 {\n      margin-block-start: 0;\n      margin-block-end: 0;\n      position: relative;\n      z-index: -1;\n    }\n    hr {\n      margin-block-start: 0;\n      margin-block-end: 0;\n      border-color: white;\n      width: 5.5rem;\n      border-top: 1px solid white;\n      margin-inline-start: 5rem;\n      margin-top: -1.3rem;\n      margin-inline-end: 0;\n      position: relative;\n      z-index: -1;\n    }\n    .web {\n      font-family: var(--font3);\n      color: white;\n      font-size: 1.15rem;\n      margin-left: 5.2rem;\n      margin-top: 0.1rem;\n      position: relative;\n      z-index: -1;\n    }\n    .arrow-container {\n      display: flex;\n      justify-content: center;\n      align-items: flex-end;\n      margin-bottom: 10rem;\n      transform: translateY(-4rem);\n      position: relative;\n      z-index: -1;\n    }\n    .logo-fades {\n      visibility: hidden;\n      opacity: 0;\n      position: relative;\n      z-index: -1;\n    }\n    .hello-section-pre-scroll {\n      opacity: 0;\n    }\n    .hello-section-jumps-up {\n      margin-top: -5rem;\n      position: relative;\n      opacity: 1;\n      transition: opacity 1s linear;\n    }\n    @media (min-width: 801px) {\n      .landing-logo-wrapper {\n        transform: scale(1.4) translateZ(-1em);\n      }\n    }\n  ");
+}, "\n    .under-the-title {\n      margin-top: 1.5rem;\n      display: flex;\n      flex-direction: column;\n      justify-content: center;\n      align-items: center;\n      margin-bottom: 3rem;\n    }\n\n    .dancing-avatar {\n      width: 10rem;\n      height: auto;\n    }\n    @media (min-width: 801px) {\n      .under-the-title {\n        padding-left: var(--desktop-padding);\n        padding-right: var(--desktop-padding);\n      }\n      .dancing-avatar {\n        margin-top: 2rem;\n        width: 15rem;\n      }\n    }\n  ");
 
-/* harmony default export */ __webpack_exports__["default"] = (Index);
+/* harmony default export */ __webpack_exports__["default"] = (About);
 
 /***/ }),
 
@@ -11099,14 +10867,14 @@ var GlobalStyles = __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a
 
 /***/ }),
 
-/***/ 0:
-/*!***************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fjeremie%2Fweb%2F28_portfolio%2Fpages%2Findex.js ***!
-  \***************************************************************************************************************************/
+/***/ 1:
+/*!********************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fabout&absolutePagePath=%2FUsers%2Fjeremie%2Fweb%2F28_portfolio%2Fpages%2Fabout.js ***!
+  \********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fjeremie%2Fweb%2F28_portfolio%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fjeremie%2Fweb%2F28_portfolio%2Fpages%2Findex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fabout&absolutePagePath=%2FUsers%2Fjeremie%2Fweb%2F28_portfolio%2Fpages%2Fabout.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fabout&absolutePagePath=%2FUsers%2Fjeremie%2Fweb%2F28_portfolio%2Fpages%2Fabout.js!./");
 
 
 /***/ }),
@@ -11122,5 +10890,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=index.js.map
+},[[1,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=about.js.map

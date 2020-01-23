@@ -8,7 +8,7 @@ const HelloText = () => (
         I was born in France and I am currently based in Lisbon, Portugal.
       </p>
       <div className="img-container">
-        <img className="sardine" src="/img/toilet.png" alt="sardine" />
+        <img className="sardine" src="/img/car.png" alt="car" />
       </div>
     </p>
     {style}
@@ -22,6 +22,7 @@ const style = (
       color: white;
       font-family: var(--font2);
       margin-top: 2rem;
+      margin-bottom: 2rem;
       padding-left: 3rem;
       padding-right: 3rem;
       text-align: left;

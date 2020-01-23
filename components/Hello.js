@@ -31,7 +31,6 @@ const style = (
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-top: 2rem;
     }
     @media (min-width: 801px) {
       .hello-container {

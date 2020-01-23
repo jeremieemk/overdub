@@ -106,7 +106,7 @@ var style = __jsx("style", {
     lineNumber: 35
   },
   __self: undefined
-}, "\n    .desktop-nav-container {\n      z-index: 100;\n      width: 100%;\n      position: absolute;\n      padding-top: 2rem;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      font-family: var(--font2);\n      font-size: 0.8rem;\n      background-color: var(--color1);\n      opacity: 1;\n    }\n    .desktop-nav-container > * {\n      padding: 2.3rem;\n    }\n\n    .bottom-line {\n      padding-top: 0.5rem;\n      width: 1.2rem;\n      border-bottom: 0.2rem solid white;\n      margin-left: 0.5rem;\n      visibility: hidden;\n      opacity: 0;\n      transition: visibility 0s, opacity 0.3s linear;\n      position: absolute;\n    }\n    .menu-item-name:hover + .bottom-line {\n      visibility: visible;\n      opacity: 1;\n    }\n\n    @media (max-width: 801px) {\n      .desktop-nav-container {\n        display: none;\n      }\n    }\n  ");
+}, "\n    .desktop-nav-container {\n      z-index: 100;\n      width: 100%;\n      position: absolute;\n      padding-top: 2rem;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      font-family: var(--font2);\n      font-size: 0.8rem;\n      background-color: var(--color1);\n      opacity: 0;\n      animation: slideFromTop 0.3s 0.8s;\n      animation-fill-mode: forwards;\n    }\n\n    .desktop-nav-container > * {\n      padding: 2.3rem;\n    }\n\n    .bottom-line {\n      padding-top: 0.5rem;\n      width: 1.2rem;\n      border-bottom: 0.2rem solid white;\n      margin-left: 0.5rem;\n      visibility: hidden;\n      opacity: 0;\n      transition: visibility 0s, opacity 0.3s linear;\n      position: absolute;\n    }\n    .menu-item-name:hover + .bottom-line {\n      visibility: visible;\n      opacity: 1;\n    }\n\n    @media (max-width: 801px) {\n      .desktop-nav-container {\n        display: none;\n      }\n    }\n    @keyframes slideFromTop {\n      from {\n        padding-top: 0;\n        opacity: 0;\n      }\n\n      to {\n        padding-top: 2rem;\n        opacity: 1;\n      }\n    }\n  ");
 
 /* harmony default export */ __webpack_exports__["default"] = (DesktopNav);
 
@@ -512,7 +512,7 @@ var style = __jsx("style", {
     lineNumber: 25
   },
   __self: undefined
-}, "\n    .hello-container {\n      margin-bottom: 5rem;\n    }\n\n    .under-the-title {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      margin-top: 2rem;\n    }\n    @media (min-width: 801px) {\n      .hello-container {\n        padding-left: var(--desktop-padding);\n        padding-right: var(--desktop-padding);\n      }\n      .under-the-title {\n        margin-bottom: 3rem;\n      }\n    }\n  ");
+}, "\n    .hello-container {\n      margin-bottom: 5rem;\n    }\n\n    .under-the-title {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n    }\n    @media (min-width: 801px) {\n      .hello-container {\n        padding-left: var(--desktop-padding);\n        padding-right: var(--desktop-padding);\n      }\n      .under-the-title {\n        margin-bottom: 3rem;\n      }\n    }\n  ");
 
 /* harmony default export */ __webpack_exports__["default"] = (Hello);
 

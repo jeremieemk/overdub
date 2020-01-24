@@ -15,6 +15,9 @@ const style = (
       display: flex;
       flex-direction: column;
       align-items: center;
+      opacity: 0;
+      animation: fadeIn 1s;
+      animation-fill-mode: forwards;
     }
     .page-title {
       color: var(--color2);

@@ -26,6 +26,9 @@ const style = (
       justify-content: center;
       align-items: center;
       margin-bottom: 3rem;
+      opacity: 0;
+      animation: fadeIn 1s;
+      animation-fill-mode: forwards;
     }
 
     .dancing-avatar {

@@ -33,22 +33,6 @@ const DesktopNav = () => (
 
 const style = (
   <style jsx>{`
-    .desktop-nav-container {
-      z-index: 100;
-      width: 100%;
-      position: absolute;
-      padding-top: 2rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: var(--font2);
-      font-size: 0.8rem;
-      background-color: var(--color1);
-      opacity: 0;
-      animation: slideFromTop 0.3s 0.8s;
-      animation-fill-mode: forwards;
-    }
-
     .desktop-nav-container > * {
       padding: 2.3rem;
     }
@@ -71,17 +55,6 @@ const style = (
     @media (max-width: 801px) {
       .desktop-nav-container {
         display: none;
-      }
-    }
-    @keyframes slideFromTop {
-      from {
-        padding-top: 0;
-        opacity: 0;
-      }
-
-      to {
-        padding-top: 2rem;
-        opacity: 1;
       }
     }
   `}</style>

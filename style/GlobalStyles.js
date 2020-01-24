@@ -42,6 +42,15 @@ const GlobalStyles = (
       text-decoration: none;
       color: inherit;
     }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
   `}</style>
 );
 

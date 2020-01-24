@@ -23,6 +23,9 @@ const style = (
   @media (min-width: 801px) {
       .projects-section {
         margin-top: 5rem;
+        opacity: 0;
+      animation: fadeIn 1s;
+      animation-fill-mode: forwards;
       }
       .portfolio-container {
         padding-left: var(--desktop-padding);

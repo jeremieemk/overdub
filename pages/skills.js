@@ -33,12 +33,18 @@ const style = (
     }
     .books-pic-container {
       text-align: center;
+      opacity: 0;
+      animation: fadeIn 1s;
+      animation-fill-mode: forwards;
     }
     .skill-bar-group {
       padding-top: 2rem;
       padding-bottom: 5rem;
       padding-right: var(--global-margin);
       padding-left: var(--global-margin);
+      opacity: 0;
+      animation: fadeIn 1s;
+      animation-fill-mode: forwards;
     }
     @media (min-width: 801px) {
       .skill-bar-group {

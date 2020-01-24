@@ -7,6 +7,7 @@ const Layout = props => (
   <div>
     <Head>
       <link rel="shortcut icon" href="/static/favicon.ico" />
+      <link rel="stylesheet" href="/css/priority.css"></link>
     </Head>
 
     <div className="container">

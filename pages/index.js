@@ -44,7 +44,7 @@ function Index() {
 const style = (
   <style jsx>{`
     .landing-page-container {
-      animation: fadeIn 2.5s;
+      animation: fadeIn 2s;
       animation-fill-mode: forwards;
       cursor: pointer;
     }

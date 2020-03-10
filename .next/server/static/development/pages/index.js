@@ -639,32 +639,34 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-function Hello() {
+function Hello(props) {
+  console.log(props.fireAnimation);
+  const helloContainerClassName = props.fireAnimation ? "hello-container animate" : "hello-container";
   return __jsx("div", {
-    className: "hello-container",
+    className: helloContainerClassName,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 11
     },
     __self: this
   }, __jsx(_PageTitle__WEBPACK_IMPORTED_MODULE_1__["default"], {
     title: "Hey, Hi",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 12
     },
     __self: this
   }), __jsx("div", {
     className: "under-the-title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 13
     },
     __self: this
   }, __jsx(_text_HelloText__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 14
     },
     __self: this
   }), __jsx(_LinkBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -673,7 +675,7 @@ function Hello() {
     showArrow: "true",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 15
     },
     __self: this
   }), __jsx(_LinkBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -682,7 +684,7 @@ function Hello() {
     showArrow: "true",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 16
     },
     __self: this
   }), __jsx(_LinkBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -691,7 +693,7 @@ function Hello() {
     showArrow: "true",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 17
     },
     __self: this
   }), __jsx(_LinkBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -701,7 +703,7 @@ function Hello() {
     showArrow: "true",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 18
     },
     __self: this
   })), style);
@@ -711,13 +713,15 @@ const style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 26
+    lineNumber: 30
   },
   __self: undefined
 }, `
     .hello-container {
-      margin-bottom: 5rem;
-      animation: fadeIn 2s;
+      margin-bottom: 2rem;
+    }
+    .animate {
+      animation: fadeIn 2.5s;
       animation-fill-mode: forwards;
     }
 
@@ -3270,6 +3274,10 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 function Index() {
+  const {
+    0: fireAnimation,
+    1: setFireAnimation
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   let helloSection = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])();
 
   function srollDownToHelloSection() {
@@ -3277,18 +3285,19 @@ function Index() {
     helloSection.current.scrollIntoView({
       behavior: "smooth"
     });
+    setFireAnimation(true);
   }
 
   return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 15
     },
     __self: this
   }, __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 16
     },
     __self: this
   }, __jsx("div", {
@@ -3296,21 +3305,21 @@ function Index() {
     onClick: srollDownToHelloSection,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 17
     },
     __self: this
   }, __jsx("div", {
     className: "landing-logo-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 21
     },
     __self: this
   }, __jsx("div", {
     className: "landing-logo-wrapper",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 22
     },
     __self: this
   }, __jsx("img", {
@@ -3319,41 +3328,41 @@ function Index() {
     alt: "avatar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 23
     },
     __self: this
   }), __jsx("h1", {
     className: "over",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 24
     },
     __self: this
   }, "over-"), __jsx("h1", {
     className: "dub",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 25
     },
     __self: this
   }, "duB"), __jsx("hr", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 26
     },
     __self: this
   }), __jsx("h2", {
     className: "web",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 27
     },
     __self: this
   }, "WEB DEV."))), __jsx("div", {
     className: "arrow-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 30
     },
     __self: this
   }, __jsx("img", {
@@ -3362,7 +3371,7 @@ function Index() {
     alt: "arrow",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 31
     },
     __self: this
   }))), __jsx("div", {
@@ -3370,13 +3379,14 @@ function Index() {
     ref: helloSection,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 34
     },
     __self: this
   }, __jsx(_components_Hello__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    fireAnimation: fireAnimation,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 35
     },
     __self: this
   }))), style);
@@ -3386,12 +3396,12 @@ const style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 43
+    lineNumber: 45
   },
   __self: undefined
 }, `
     .landing-page-container {
-      animation: fadeIn 2s;
+      animation: fadeIn 2.5s;
       animation-fill-mode: forwards;
       cursor: pointer;
     }

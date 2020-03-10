@@ -1,12 +1,14 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Layout from "../components/Layout";
 import Hello from "../components/Hello";
 
 function Index() {
+  const [fireAnimation, setFireAnimation] = useState(false);
   let helloSection = useRef();
   function srollDownToHelloSection() {
     console.log("arrow clicked");
     helloSection.current.scrollIntoView({ behavior: "smooth" });
+    setFireAnimation(true);
   }
 
   return (
@@ -30,7 +32,7 @@ function Index() {
           </div>
         </div>
         <div className="hello-section" ref={helloSection}>
-          <Hello />
+          <Hello fireAnimation={fireAnimation} />
         </div>
       </Layout>
 
@@ -42,7 +44,7 @@ function Index() {
 const style = (
   <style jsx>{`
     .landing-page-container {
-      animation: fadeIn 2s;
+      animation: fadeIn 2.5s;
       animation-fill-mode: forwards;
       cursor: pointer;
     }

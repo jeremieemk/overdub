@@ -2,9 +2,13 @@ import PageTitle from "./PageTitle";
 import HelloText from "./text/HelloText";
 import LinkBox from "./LinkBox";
 
-function Hello() {
+function Hello(props) {
+  console.log(props.fireAnimation);
+  const helloContainerClassName = props.fireAnimation
+    ? "hello-container animate"
+    : "hello-container";
   return (
-    <div className="hello-container">
+    <div className={helloContainerClassName}>
       <PageTitle title="Hey, Hi" />
       <div className="under-the-title">
         <HelloText />
@@ -25,8 +29,10 @@ function Hello() {
 const style = (
   <style jsx>{`
     .hello-container {
-      margin-bottom: 5rem;
-      animation: fadeIn 2s;
+      margin-bottom: 2rem;
+    }
+    .animate {
+      animation: fadeIn 2.5s;
       animation-fill-mode: forwards;
     }
 

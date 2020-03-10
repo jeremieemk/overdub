@@ -1,30 +1,20 @@
-import { useEffect, useState } from "react";
+import { useRef } from "react";
 import Layout from "../components/Layout";
 import Hello from "../components/Hello";
 
 function Index() {
-  const [hasScrolled, sethasScrolled] = useState(false);
-  const handleScroll = () => {
-    if (window.scrollY > 150) {
-      sethasScrolled(true);
-    } else {
-      sethasScrolled(false);
-    }
-  };
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+  let helloSection = useRef();
+  function srollDownToHelloSection() {
+    console.log("arrow clicked");
+    helloSection.current.scrollIntoView({ behavior: "smooth" });
+  }
 
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
   return (
     <div>
       <Layout>
         <div
-          className={
-            hasScrolled
-              ? "landing-page-container logo-fades"
-              : "landing-page-container"
-          }
+          className="landing-page-container"
+          onClick={srollDownToHelloSection}
         >
           <div className="landing-logo-container">
             <div className="landing-logo-wrapper">
@@ -39,11 +29,7 @@ function Index() {
             <img className="arrow" src="/img/arrow.png" alt="arrow" />
           </div>
         </div>
-        <div
-          className={
-            hasScrolled ? "hello-section-jumps-up" : "hello-section-pre-scroll"
-          }
-        >
+        <div className="hello-section" ref={helloSection}>
           <Hello />
         </div>
       </Layout>
@@ -56,11 +42,9 @@ function Index() {
 const style = (
   <style jsx>{`
     .landing-page-container {
-      visibility: visible;
-      opacity: 1;
-      transition: visibility 3s, opacity 2s linear;
-      position: relative;
-      z-index: -1;
+      animation: fadeIn 2s;
+      animation-fill-mode: forwards;
+      cursor: pointer;
     }
     .landing-logo-container {
       height: 100vh;
@@ -68,15 +52,11 @@ const style = (
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      position: relative;
-      z-index: -1;
     }
     .avatar {
       width: 5.5rem;
       height: auto;
       margin-left: -0.5rem;
-      position: relative;
-      z-index: -1;
     }
 
     .over {
@@ -85,23 +65,17 @@ const style = (
       font-size: 3.5rem;
 
       margin-top: -1rem;
-      position: relative;
-      z-index: -1;
     }
     .dub {
       color: var(--color2);
       font-family: var(--font2);
       font-size: 6rem;
       margin-top: -1.6rem;
-      position: relative;
-      z-index: -1;
     }
     h1,
     h2 {
       margin-block-start: 0;
       margin-block-end: 0;
-      position: relative;
-      z-index: -1;
     }
     hr {
       margin-block-start: 0;
@@ -112,8 +86,6 @@ const style = (
       margin-inline-start: 5rem;
       margin-top: -1.3rem;
       margin-inline-end: 0;
-      position: relative;
-      z-index: -1;
     }
     .web {
       font-family: var(--font3);
@@ -121,8 +93,6 @@ const style = (
       font-size: 1.15rem;
       margin-left: 5.2rem;
       margin-top: 0.1rem;
-      position: relative;
-      z-index: -1;
     }
     .arrow-container {
       display: flex;
@@ -130,19 +100,8 @@ const style = (
       align-items: flex-end;
       margin-bottom: 10rem;
       transform: translateY(-4rem);
-      position: relative;
-      z-index: -1;
     }
-    .logo-fades {
-      visibility: hidden;
-      opacity: 0;
-      position: relative;
-      z-index: -1;
-    }
-    .hello-section-pre-scroll {
-      opacity: 0;
-    }
-    .hello-section-jumps-up {
+    .hello-section {
       margin-top: -5rem;
       position: relative;
       opacity: 1;

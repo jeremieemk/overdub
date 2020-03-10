@@ -2,29 +2,32 @@ import PageTitle from "./PageTitle";
 import HelloText from "./text/HelloText";
 import LinkBox from "./LinkBox";
 
-const Hello = () => (
-  <div className="hello-container">
-    <PageTitle title="Hey, Hi" />
-    <div className="under-the-title">
-      <HelloText />
-      <LinkBox link={"/about"} name="about me" showArrow="true" />
-      <LinkBox link={"/portfolio"} name="portfolio" showArrow="true" />
-      <LinkBox link={"/skills"} name="skills" showArrow="true" />
-      <LinkBox
-        externalLink={"/img/cv2020.pdf"}
-        target={"_blank"}
-        name="cv"
-        showArrow="true"
-      />
+function Hello() {
+  return (
+    <div className="hello-container">
+      <PageTitle title="Hey, Hi" />
+      <div className="under-the-title">
+        <HelloText />
+        <LinkBox link={"/about"} name="about me" showArrow="true" />
+        <LinkBox link={"/portfolio"} name="portfolio" showArrow="true" />
+        <LinkBox link={"/skills"} name="skills" showArrow="true" />
+        <LinkBox
+          externalLink={"/img/cv2020.pdf"}
+          target={"_blank"}
+          name="cv"
+          showArrow="true"
+        />
+      </div>
+      {style}
     </div>
-    {style}
-  </div>
-);
-
+  );
+}
 const style = (
   <style jsx>{`
     .hello-container {
       margin-bottom: 5rem;
+      animation: fadeIn 2s;
+      animation-fill-mode: forwards;
     }
 
     .under-the-title {
@@ -43,5 +46,4 @@ const style = (
     }
   `}</style>
 );
-
 export default Hello;

@@ -1,4 +1,15 @@
-const ProjectDetails = {
+webpackHotUpdate("static/development/pages/portfolio.js",{
+
+/***/ "./components/text/ProjectDetails.js":
+/*!*******************************************!*\
+  !*** ./components/text/ProjectDetails.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var ProjectDetails = {
   elis: {
     name: "elis-records.com",
     company: "Elis Records (Paris, France)",
@@ -11,8 +22,7 @@ const ProjectDetails = {
     name: "escuta.pt",
     company: "Largo Residencias (Lisbon, Portugal)",
     role: "Front End developer.",
-    tools:
-      "React, React-router, Google-map-react, React-switch-lang, Strapi, Material UI",
+    tools: "React, React-router, Google-map-react, React-switch-lang, Strapi, Material UI",
     img: "/img/escutaScreen.png",
     link: "http://www.escuta.pt/radio"
   },
@@ -33,5 +43,12 @@ const ProjectDetails = {
     link: "http://www.izem.me/"
   }
 };
+/* harmony default export */ __webpack_exports__["default"] = (ProjectDetails);
 
-export default ProjectDetails;
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js":
+false
+
+})
+//# sourceMappingURL=portfolio.js.30aef2242c64f62f0181.hot-update.js.map

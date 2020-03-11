@@ -1371,7 +1371,7 @@ const style = __jsx("style", {
       margin-bottom: 1rem;
       width: 100%;
       height: auto;
-      border: 8px solid white;
+      border: 10px solid white;
       border-radius: 5px;
     }
     .separation-line {
@@ -1538,6 +1538,14 @@ const style = __jsx("style", {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 const ProjectDetails = {
+  elis: {
+    name: "elis-records.com",
+    company: "Elis Records (Paris, France)",
+    role: "Full Stack Developer.",
+    tools: "React, Next.js, Prismic.io",
+    img: "/img/elis-records.png",
+    link: "http://www.elis-records.com"
+  },
   escuta: {
     name: "escuta.pt",
     company: "Largo Residencias (Lisbon, Portugal)",
@@ -3454,22 +3462,28 @@ function Portfolio() {
       lineNumber: 11
     },
     __self: this
-  }, __jsx(_components_ProjectItem__WEBPACK_IMPORTED_MODULE_4__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _components_text_ProjectDetails__WEBPACK_IMPORTED_MODULE_5__["default"].escuta, {
+  }, __jsx(_components_ProjectItem__WEBPACK_IMPORTED_MODULE_4__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _components_text_ProjectDetails__WEBPACK_IMPORTED_MODULE_5__["default"].elis, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
     },
     __self: this
-  })), __jsx(_components_ProjectItem__WEBPACK_IMPORTED_MODULE_4__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _components_text_ProjectDetails__WEBPACK_IMPORTED_MODULE_5__["default"].raum404, {
+  })), __jsx(_components_ProjectItem__WEBPACK_IMPORTED_MODULE_4__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _components_text_ProjectDetails__WEBPACK_IMPORTED_MODULE_5__["default"].escuta, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 13
     },
     __self: this
-  })), __jsx(_components_ProjectItem__WEBPACK_IMPORTED_MODULE_4__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _components_text_ProjectDetails__WEBPACK_IMPORTED_MODULE_5__["default"].izem, {
+  })), __jsx(_components_ProjectItem__WEBPACK_IMPORTED_MODULE_4__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _components_text_ProjectDetails__WEBPACK_IMPORTED_MODULE_5__["default"].raum404, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 14
+    },
+    __self: this
+  })), __jsx(_components_ProjectItem__WEBPACK_IMPORTED_MODULE_4__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _components_text_ProjectDetails__WEBPACK_IMPORTED_MODULE_5__["default"].izem, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
     },
     __self: this
   }))), style));
@@ -3479,7 +3493,7 @@ const style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 24
+    lineNumber: 25
   },
   __self: undefined
 }, `

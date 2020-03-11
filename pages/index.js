@@ -4,16 +4,21 @@ import Hello from "../components/Hello";
 
 function Index() {
   const [fireAnimation, setFireAnimation] = useState(false);
+
   let helloSection = useRef();
+
   function srollDownToHelloSection() {
     helloSection.current.scrollIntoView({ behavior: "smooth" });
   }
+
+  function fireAnimationWhenScrollingDown() {
+    setFireAnimation(window.scrollY > 365);
+  }
+
   useEffect(() => {
-    window.addEventListener("scroll", function() {
-      console.log(window.scrollY);
-      setFireAnimation(window.scrollY > 365);
-    });
+    window.addEventListener("scroll", fireAnimationWhenScrollingDown);
   }, []);
+
   return (
     <div>
       <Layout>

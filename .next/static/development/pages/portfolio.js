@@ -31,7 +31,7 @@ var menuItems = [{
   link: "/skills"
 }];
 
-var renderMenuItems = function renderMenuItems() {
+function renderMenuItems() {
   return menuItems.map(function (item) {
     return __jsx("div", {
       className: "title-plus-line-container",
@@ -63,21 +63,21 @@ var renderMenuItems = function renderMenuItems() {
       __self: this
     }));
   });
-};
+}
 
-var DesktopNav = function DesktopNav() {
+function DesktopNav() {
   return __jsx("div", {
     className: "desktop-nav-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 23
     },
     __self: this
   }, renderMenuItems(), __jsx("div", {
     className: "title-plus-line-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 25
     },
     __self: this
   }, __jsx("a", {
@@ -86,24 +86,24 @@ var DesktopNav = function DesktopNav() {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 26
     },
     __self: this
   }, "CV"), __jsx("div", {
     className: "bottom-line",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 29
     },
     __self: this
   })), style);
-};
+}
 
 var style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 35
+    lineNumber: 38
   },
   __self: undefined
 }, "\n    .desktop-nav-container > * {\n      padding: 2.3rem;\n    }\n\n    .bottom-line {\n      padding-top: 0.5rem;\n      width: 1.2rem;\n      border-bottom: 0.2rem solid white;\n      margin-left: 0.5rem;\n      visibility: hidden;\n      opacity: 0;\n      transition: visibility 0s, opacity 0.3s linear;\n      position: absolute;\n    }\n    .menu-item-name:hover + .bottom-line {\n      visibility: visible;\n      opacity: 1;\n    }\n\n    @media (max-width: 801px) {\n      .desktop-nav-container {\n        display: none;\n      }\n    }\n  ");
@@ -366,48 +366,48 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-var Header = function Header() {
+function Header() {
   return __jsx("div", {
     className: "header-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 8
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 9
     },
     __self: this
   }, __jsx(_Logo_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 10
     },
     __self: this
   })), __jsx(_DesktopNav_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
     className: "desktop-nav",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 12
     },
     __self: this
   }), __jsx(_Hamburger_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 13
     },
     __self: this
   }), style);
-};
+}
 
 var style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 18
+    lineNumber: 20
   },
   __self: undefined
 }, "\n    .header-container {\n      height: 5rem;\n      display: flex;\n      justify-content: space-between;\n      position: fixed;\n      top: 0;\n      width: 100%;\n      z-index: 400;\n    }\n  ");
@@ -440,17 +440,17 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-var Layout = function Layout(props) {
+function Layout(props) {
   return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 8
     },
     __self: this
   }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 9
     },
     __self: this
   }, __jsx("link", {
@@ -458,7 +458,7 @@ var Layout = function Layout(props) {
     href: "/static/favicon.ico",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 10
     },
     __self: this
   }), __jsx("link", {
@@ -466,34 +466,34 @@ var Layout = function Layout(props) {
     href: "/css/priority.css",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 11
     },
     __self: this
   })), __jsx("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 14
     },
     __self: this
   }, __jsx(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 15
     },
     __self: this
   }), props.children, __jsx("div", {
     className: "footer",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 17
     },
     __self: this
   }, __jsx("div", {
     className: "open-source",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 18
     },
     __self: this
   }, "(Built with react.js and open-sourced on", " ", __jsx("a", {
@@ -502,131 +502,28 @@ var Layout = function Layout(props) {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 20
     },
     __self: this
   }, "GitHub"), ")"), __jsx(_SocialIcons__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 29
     },
     __self: this
   }))), _style_GlobalStyles__WEBPACK_IMPORTED_MODULE_3__["default"], style);
-};
-
-var style = __jsx("style", {
-  jsx: true,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 37
-  },
-  __self: undefined
-}, "\n    .container {\n      position: relative;\n      width: 100%;\n    }\n    .footer {\n      width: 100%;\n      position: absolute;\n      bottom: -2;\n      margin-bottom: 1rem;\n      margin-top: 2rem;\n      text-align: center;\n      color: white;\n      font-family: var(--font4);\n      font-size: 0.8rem;\n    }\n    .github-link {\n      color: var(--color2);\n    }\n    .open-source {\n      margin-bottom: 0.5rem;\n    }\n  ");
-
-/* harmony default export */ __webpack_exports__["default"] = (Layout);
-
-/***/ }),
-
-/***/ "./components/LinkBox.js":
-/*!*******************************!*\
-  !*** ./components/LinkBox.js ***!
-  \*******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/jeremie/web/28_portfolio/components/LinkBox.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-function LinkBox(props) {
-  return __jsx("div", {
-    className: "linkbox-container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: props.link,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }, __jsx("div", {
-    className: "text-box-container",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, __jsx("div", {
-    className: "text-box",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, __jsx("a", {
-    href: props.externalLink,
-    target: props.target,
-    className: "text",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }, props.name)), props.showArrow ? __jsx("div", {
-    className: "arrow-box",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }, __jsx("img", {
-    className: "arrow",
-    src: "/img/whitearrow3.png",
-    alt: "arrow",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
-  })) : null))), style, !props.showArrow ? centeredTitle : null);
 }
 
 var style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 33
+    lineNumber: 39
   },
   __self: undefined
-}, "\n    .linkbox-container {\n      position: relative;\n      z-index: 10;\n    }\n    .text-box-container {\n      margin-top: 1rem;\n      display: flex;\n      cursor: \"pointer\";\n    }\n    .text-box {\n      color: white;\n      font-family: var(--font3);\n      border: var(--line-width) solid white;\n      font-size: 1.3rem;\n      width: 11rem;\n      height: 3rem;\n      display: flex;\n      align-items: center;\n    }\n    .arrow-box {\n      border-width: var(--line-width) var(--line-width) var(--line-width) 0;\n      width: 5rem;\n      border-style: solid;\n      border-color: white;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n    }\n    .text {\n      padding-left: 2rem;\n    }\n    .arrow {\n      width: 2rem;\n      height: auto;\n    }\n    @media (min-width: 801px) {\n      .text-box-container {\n        margin-top: 1rem;\n      }\n      .text-box {\n        width: 11rem;\n        height: 3rem;\n        font-size: 1.4rem;\n      }\n      .text {\n        padding-left: 2rem;\n      }\n    }\n  ");
+}, "\n    .container {\n      position: relative;\n      width: 100%;\n    }\n    .footer {\n      width: 100%;\n      position: absolute;\n      bottom: -2;\n      margin-bottom: 1rem;\n      margin-top: 2rem;\n      text-align: center;\n      color: white;\n      font-family: var(--font4);\n      font-size: 0.8rem;\n    }\n    .github-link {\n      color: var(--color2);\n    }\n    .open-source {\n      margin-bottom: 0.5rem;\n    }\n  ");
 
-var centeredTitle = __jsx("style", {
-  jsx: true,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 86
-  },
-  __self: undefined
-}, "\n    .text-box {\n      justify-content: center;\n      width: 80vw;\n    }\n    .text {\n      padding-left: 0;\n      font-size: 1.2rem;\n    }\n    @media (min-width: 801px) {\n      .text-box-container {\n        margin-left: var(--desktop-padding);\n        margin-right: var(--desktop-padding);\n      }\n    }\n  ");
-
-/* harmony default export */ __webpack_exports__["default"] = (LinkBox);
+/* harmony default export */ __webpack_exports__["default"] = (Layout);
 
 /***/ }),
 
@@ -648,11 +545,11 @@ var _jsxFileName = "/Users/jeremie/web/28_portfolio/components/Logo.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-var Logo = function Logo() {
+function Logo() {
   return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
+      lineNumber: 5
     },
     __self: this
   }, __jsx("div", {
@@ -662,31 +559,31 @@ var Logo = function Logo() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 6
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 7
     },
     __self: this
   }, __jsx("a", {
     className: "logo-letter",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 8
     },
     __self: this
   }, "O"))), style);
-};
+}
 
 var style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 15
+    lineNumber: 17
   },
   __self: undefined
 }, "\n    .logo-letter {\n      color: var(--color2);\n    }\n    .logo {\n      z-index: 200;\n      font-size: 3rem;\n      color: var(--color2);\n      margin-left: var(--global-margin);\n      margin-top: 1rem;\n      position: relative;\n      width: 10rem;\n    }\n    @media (min-width: 801px) {\n      .logo {\n        font-size: 3rem;\n        margin-top: 2.3rem;\n      }\n    }\n  ");
@@ -812,12 +709,10 @@ var style = __jsx("style", {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _LinkBox__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LinkBox */ "./components/LinkBox.js");
-/* harmony import */ var _ProjectDescriptionTitle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ProjectDescriptionTitle */ "./components/ProjectDescriptionTitle.js");
+/* harmony import */ var _ProjectDescriptionTitle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ProjectDescriptionTitle */ "./components/ProjectDescriptionTitle.js");
 var _jsxFileName = "/Users/jeremie/web/28_portfolio/components/ProjectItem.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
 
 
 function ProjectItem(props) {
@@ -825,27 +720,27 @@ function ProjectItem(props) {
     className: "project-item-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 5
     },
     __self: this
   }, __jsx("div", {
     className: "project-info-section",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 6
     },
     __self: this
   }, __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 7
     },
     __self: this
-  }, __jsx(_ProjectDescriptionTitle__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, __jsx(_ProjectDescriptionTitle__WEBPACK_IMPORTED_MODULE_1__["default"], {
     title: "WEBSITE",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 8
     },
     __self: this
   }), __jsx("a", {
@@ -854,20 +749,20 @@ function ProjectItem(props) {
     className: "link-and-arrow-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 9
     },
     __self: this
   }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 14
     },
     __self: this
   }, props.name), __jsx("div", {
     className: "link-arrow-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 15
     },
     __self: this
   }, __jsx("img", {
@@ -876,64 +771,64 @@ function ProjectItem(props) {
     alt: "arrow",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 16
     },
     __self: this
   })))), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, __jsx(_ProjectDescriptionTitle__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    title: "COMPANY",
+    __source: {
+      fileName: _jsxFileName,
       lineNumber: 25
     },
     __self: this
-  }, __jsx(_ProjectDescriptionTitle__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    title: "COMPANY",
+  }), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 26
     },
     __self: this
-  }), __jsx("p", {
+  }, props.company)), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 28
     },
     __self: this
-  }, props.company)), __jsx("div", {
+  }, __jsx(_ProjectDescriptionTitle__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    title: "ROLE",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 29
     },
     __self: this
-  }, __jsx(_ProjectDescriptionTitle__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    title: "ROLE",
+  }), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 30
     },
     __self: this
-  }), __jsx("p", {
+  }, props.role)), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 32
     },
     __self: this
-  }, props.role)), __jsx("div", {
+  }, __jsx(_ProjectDescriptionTitle__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    title: "TOOLS",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 33
     },
     __self: this
-  }, __jsx(_ProjectDescriptionTitle__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    title: "TOOLS",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34
-    },
-    __self: this
   }), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 34
     },
     __self: this
   }, props.tools))), __jsx("a", {
@@ -941,7 +836,7 @@ function ProjectItem(props) {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 38
     },
     __self: this
   }, __jsx("img", {
@@ -950,14 +845,14 @@ function ProjectItem(props) {
     alt: "screenshot",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 39
     },
     __self: this
   })), __jsx("div", {
     className: "arrow-container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 41
     },
     __self: this
   }, __jsx("img", {
@@ -966,7 +861,7 @@ function ProjectItem(props) {
     alt: "arrow",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 42
     },
     __self: this
   })), style);
@@ -976,7 +871,7 @@ var style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 51
+    lineNumber: 50
   },
   __self: undefined
 }, "\n    .project-item-container {\n      padding-right: var(--global-margin);\n      padding-left: var(--global-margin);\n      margin-top: 2rem;\n    }\n    .link-and-arrow-container {\n      display: flex;\n    }\n    .item-title-container {\n      width: 100%;\n      display: flex;\n      justify-content: center;\n    }\n    .link-arrow {\n      width: 1rem;\n      transform: translateY(0.35rem);\n      padding-left: 0.4rem;\n      position: relative;\n      z-index: -1;\n    }\n    p {\n      font-size: 1.1rem;\n      color: white;\n      font-family: var(--font4);\n      margin-block-start: 0.2rem;\n      margin-block-end: 0;\n    }\n    .screenshot {\n      margin-top: 1.7rem;\n      margin-bottom: 1rem;\n      width: 100%;\n      height: auto;\n      border: 10px solid white;\n      border-radius: 5px;\n    }\n    .separation-line {\n      margin-bottom: 0.5rem;\n      width: 100%;\n      float: right;\n      border-bottom: 0.2rem solid white;\n    }\n    .arrow-container {\n      display: flex;\n      justify-content: center;\n      align-items: flex-end;\n      margin-top: 4rem;\n      margin-bottom: -5rem;\n      transform: translateY(-4rem);\n      position: relative;\n      z-index: -1;\n    }\n    .arrow {\n      width: 2rem;\n      opacity: 0.8;\n    }\n    @media (min-width: 801px) {\n      p {\n        font-size: 1rem;\n        margin-block-end: 0.5rem;\n      }\n      .project-info-section {\n        display: grid;\n        grid-template-columns: 50% 50%;\n      }\n      .link-arrow {\n        width: 1rem;\n        transform: translateY(0.4rem);\n        padding-left: 0.7rem;\n      }\n      .arrow {\n        width: 3rem;\n        opacity: 0.8;\n        z-index: -10;\n      }\n      .arrow-container {\n        margin-bottom: -3rem;\n      }\n      .screenshot {\n        margin-top: 2rem;\n      }\n    }\n  ");
@@ -1000,12 +895,12 @@ var _jsxFileName = "/Users/jeremie/web/28_portfolio/components/SocialIcons.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-var SocialIcons = function SocialIcons() {
+function SocialIcons() {
   return __jsx("div", {
     className: "social-icons",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 2
+      lineNumber: 3
     },
     __self: this
   }, __jsx("a", {
@@ -1013,7 +908,7 @@ var SocialIcons = function SocialIcons() {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 3
+      lineNumber: 4
     },
     __self: this
   }, __jsx("img", {
@@ -1022,7 +917,7 @@ var SocialIcons = function SocialIcons() {
     alt: "fb",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
+      lineNumber: 5
     },
     __self: this
   })), __jsx("a", {
@@ -1030,7 +925,7 @@ var SocialIcons = function SocialIcons() {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 7
     },
     __self: this
   }, __jsx("img", {
@@ -1039,7 +934,7 @@ var SocialIcons = function SocialIcons() {
     alt: "linkedin",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 11
     },
     __self: this
   })), __jsx("a", {
@@ -1047,7 +942,7 @@ var SocialIcons = function SocialIcons() {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 17
     },
     __self: this
   }, __jsx("img", {
@@ -1056,17 +951,17 @@ var SocialIcons = function SocialIcons() {
     alt: "mail",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 18
     },
     __self: this
   })), style);
-};
+}
 
 var style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 20
+    lineNumber: 26
   },
   __self: undefined
 }, "\n    .social-icons {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n    }\n    .social-icon-pic {\n      width: 1.5rem;\n      padding: 1rem;\n    }\n    .mail,\n    .fb {\n      width: 1.3rem;\n    }\n  ");

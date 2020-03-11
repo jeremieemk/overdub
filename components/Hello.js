@@ -3,7 +3,6 @@ import HelloText from "./text/HelloText";
 import LinkBox from "./LinkBox";
 
 function Hello(props) {
-  console.log(props.fireAnimation);
   const helloContainerClassName = props.fireAnimation
     ? "hello-container animate"
     : "hello-container";

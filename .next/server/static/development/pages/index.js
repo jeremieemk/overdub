@@ -124,73 +124,77 @@ const menuItems = [{
   link: "/skills"
 }];
 
-const renderMenuItems = () => menuItems.map(item => __jsx("div", {
-  className: "title-plus-line-container",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 12
-  },
-  __self: undefined
-}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  href: item.link,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 13
-  },
-  __self: undefined
-}, __jsx("a", {
-  className: "menu-item-name",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 14
-  },
-  __self: undefined
-}, item.name)), __jsx("div", {
-  className: "bottom-line",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 16
-  },
-  __self: undefined
-})));
+function renderMenuItems() {
+  return menuItems.map(item => __jsx("div", {
+    className: "title-plus-line-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: item.link,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, __jsx("a", {
+    className: "menu-item-name",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, item.name)), __jsx("div", {
+    className: "bottom-line",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  })));
+}
 
-const DesktopNav = () => __jsx("div", {
-  className: "desktop-nav-container",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 21
-  },
-  __self: undefined
-}, renderMenuItems(), __jsx("div", {
-  className: "title-plus-line-container",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 23
-  },
-  __self: undefined
-}, __jsx("a", {
-  className: "menu-item-name",
-  href: "/img/cv2020.pdf",
-  target: "_blank",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 24
-  },
-  __self: undefined
-}, "CV"), __jsx("div", {
-  className: "bottom-line",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 27
-  },
-  __self: undefined
-})), style);
+function DesktopNav() {
+  return __jsx("div", {
+    className: "desktop-nav-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: this
+  }, renderMenuItems(), __jsx("div", {
+    className: "title-plus-line-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }, __jsx("a", {
+    className: "menu-item-name",
+    href: "/img/cv2020.pdf",
+    target: "_blank",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }, "CV"), __jsx("div", {
+    className: "bottom-line",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  })), style);
+}
 
 const style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 35
+    lineNumber: 38
   },
   __self: undefined
 }, `
@@ -560,46 +564,48 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const Header = () => __jsx("div", {
-  className: "header-container",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 7
-  },
-  __self: undefined
-}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  href: "/",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 8
-  },
-  __self: undefined
-}, __jsx(_Logo_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 9
-  },
-  __self: undefined
-})), __jsx(_DesktopNav_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
-  className: "desktop-nav",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 11
-  },
-  __self: undefined
-}), __jsx(_Hamburger_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 12
-  },
-  __self: undefined
-}), style);
+function Header() {
+  return __jsx("div", {
+    className: "header-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, __jsx(_Logo_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  })), __jsx(_DesktopNav_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    className: "desktop-nav",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }), __jsx(_Hamburger_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }), style);
+}
 
 const style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 18
+    lineNumber: 20
   },
   __self: undefined
 }, `
@@ -640,33 +646,32 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 function Hello(props) {
-  console.log(props.fireAnimation);
   const helloContainerClassName = props.fireAnimation ? "hello-container animate" : "hello-container";
   return __jsx("div", {
     className: helloContainerClassName,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 10
     },
     __self: this
   }, __jsx(_PageTitle__WEBPACK_IMPORTED_MODULE_1__["default"], {
     title: "Hey, Hi",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 11
     },
     __self: this
   }), __jsx("div", {
     className: "under-the-title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 12
     },
     __self: this
   }, __jsx(_text_HelloText__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 13
     },
     __self: this
   }), __jsx(_LinkBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -675,7 +680,7 @@ function Hello(props) {
     showArrow: "true",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 14
     },
     __self: this
   }), __jsx(_LinkBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -684,7 +689,7 @@ function Hello(props) {
     showArrow: "true",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 15
     },
     __self: this
   }), __jsx(_LinkBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -693,7 +698,7 @@ function Hello(props) {
     showArrow: "true",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 16
     },
     __self: this
   }), __jsx(_LinkBox__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -703,7 +708,7 @@ function Hello(props) {
     showArrow: "true",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 17
     },
     __self: this
   })), style);
@@ -713,7 +718,7 @@ const style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 30
+    lineNumber: 29
   },
   __self: undefined
 }, `
@@ -770,83 +775,85 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const Layout = props => __jsx("div", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 7
-  },
-  __self: undefined
-}, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 8
-  },
-  __self: undefined
-}, __jsx("link", {
-  rel: "shortcut icon",
-  href: "/static/favicon.ico",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 9
-  },
-  __self: undefined
-}), __jsx("link", {
-  rel: "stylesheet",
-  href: "/css/priority.css",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 10
-  },
-  __self: undefined
-})), __jsx("div", {
-  className: "container",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 13
-  },
-  __self: undefined
-}, __jsx(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 14
-  },
-  __self: undefined
-}), props.children, __jsx("div", {
-  className: "footer",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 16
-  },
-  __self: undefined
-}, __jsx("div", {
-  className: "open-source",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 17
-  },
-  __self: undefined
-}, "(Built with react.js and open-sourced on", " ", __jsx("a", {
-  className: "github-link",
-  href: "https://github.com/jeremieemk/overdub/",
-  target: "_blank",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 19
-  },
-  __self: undefined
-}, "GitHub"), ")"), __jsx(_SocialIcons__WEBPACK_IMPORTED_MODULE_4__["default"], {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 28
-  },
-  __self: undefined
-}))), _style_GlobalStyles__WEBPACK_IMPORTED_MODULE_3__["default"], style);
+function Layout(props) {
+  return __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, __jsx("link", {
+    rel: "shortcut icon",
+    href: "/static/favicon.ico",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }), __jsx("link", {
+    rel: "stylesheet",
+    href: "/css/priority.css",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  })), __jsx("div", {
+    className: "container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, __jsx(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }), props.children, __jsx("div", {
+    className: "footer",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "open-source",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, "(Built with react.js and open-sourced on", " ", __jsx("a", {
+    className: "github-link",
+    href: "https://github.com/jeremieemk/overdub/",
+    target: "_blank",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }, "GitHub"), ")"), __jsx(_SocialIcons__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }))), _style_GlobalStyles__WEBPACK_IMPORTED_MODULE_3__["default"], style);
+}
 
 const style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 37
+    lineNumber: 39
   },
   __self: undefined
 }, `
@@ -1062,43 +1069,45 @@ var _jsxFileName = "/Users/jeremie/web/28_portfolio/components/Logo.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-const Logo = () => __jsx("div", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 4
-  },
-  __self: undefined
-}, __jsx("div", {
-  className: "logo",
-  style: {
-    fontFamily: "Sectra"
-  },
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5
-  },
-  __self: undefined
-}, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  href: "/",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6
-  },
-  __self: undefined
-}, __jsx("a", {
-  className: "logo-letter",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 7
-  },
-  __self: undefined
-}, "O"))), style);
+function Logo() {
+  return __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "logo",
+    style: {
+      fontFamily: "Sectra"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, __jsx("a", {
+    className: "logo-letter",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, "O"))), style);
+}
 
 const style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 15
+    lineNumber: 17
   },
   __self: undefined
 }, `
@@ -1221,71 +1230,73 @@ var _jsxFileName = "/Users/jeremie/web/28_portfolio/components/SocialIcons.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-const SocialIcons = () => __jsx("div", {
-  className: "social-icons",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 2
-  },
-  __self: undefined
-}, __jsx("a", {
-  href: "https://www.facebook.com/jeremieemk",
-  target: "_blank",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 3
-  },
-  __self: undefined
-}, __jsx("img", {
-  className: "social-icon-pic fb",
-  src: "/img/fb.png",
-  alt: "fb",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 4
-  },
-  __self: undefined
-})), __jsx("a", {
-  href: "https://www.linkedin.com/in/jeremiemoussaidkerouanton/",
-  target: "_blank",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6
-  },
-  __self: undefined
-}, __jsx("img", {
-  className: "social-icon-pic",
-  src: "/img/linkedin.png",
-  alt: "linkedin",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 10
-  },
-  __self: undefined
-})), __jsx("a", {
-  href: "mailto:jeremieemk@gmail.com",
-  target: "_blank",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 12
-  },
-  __self: undefined
-}, __jsx("img", {
-  className: "social-icon-pic mail",
-  src: "/img/mail.png",
-  alt: "mail",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 13
-  },
-  __self: undefined
-})), style);
+function SocialIcons() {
+  return __jsx("div", {
+    className: "social-icons",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 3
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "https://www.facebook.com/jeremieemk",
+    target: "_blank",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, __jsx("img", {
+    className: "social-icon-pic fb",
+    src: "/img/fb.png",
+    alt: "fb",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  })), __jsx("a", {
+    href: "https://www.linkedin.com/in/jeremiemoussaidkerouanton/",
+    target: "_blank",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, __jsx("img", {
+    className: "social-icon-pic",
+    src: "/img/linkedin.png",
+    alt: "linkedin",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  })), __jsx("a", {
+    href: "mailto:jeremieemk@gmail.com",
+    target: "_blank",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }, __jsx("img", {
+    className: "social-icon-pic mail",
+    src: "/img/mail.png",
+    alt: "mail",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  })), style);
+}
 
 const style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 20
+    lineNumber: 26
   },
   __self: undefined
 }, `
@@ -1323,70 +1334,72 @@ var _jsxFileName = "/Users/jeremie/web/28_portfolio/components/text/HelloText.js
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-const HelloText = () => __jsx("div", {
-  className: "hello-text",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 2
-  },
-  __self: undefined
-}, __jsx("p", {
-  className: "upper-text",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 3
-  },
-  __self: undefined
-}, "I\u2019m J\xE9r\xE9mie. I am a ", __jsx("span", {
-  className: "yellow",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 4
-  },
-  __self: undefined
-}, "coder"), " , a music producer ", __jsx("span", {
-  className: "",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 5
-  },
-  __self: undefined
-}, "and a bearded polyglot. "), __jsx("br", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 6
-  },
-  __self: undefined
-}), __jsx("p", {
-  className: "smaller2",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 7
-  },
-  __self: undefined
-}, "I was born in France and I am currently based in Lisbon, Portugal."), __jsx("div", {
-  className: "img-container",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 10
-  },
-  __self: undefined
-}, __jsx("img", {
-  className: "sardine",
-  src: "/img/car.png",
-  alt: "car",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 11
-  },
-  __self: undefined
-}))), style);
+function HelloText() {
+  return __jsx("div", {
+    className: "hello-text",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 3
+    },
+    __self: this
+  }, __jsx("p", {
+    className: "upper-text",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, "I\u2019m J\xE9r\xE9mie. I am a ", __jsx("span", {
+    className: "yellow",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }, "coder"), " , a music producer ", __jsx("span", {
+    className: "",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, "and a bearded polyglot. "), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }), __jsx("p", {
+    className: "smaller2",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, "I was born in France and I am currently based in Lisbon, Portugal."), __jsx("div", {
+    className: "img-container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, __jsx("img", {
+    className: "sardine",
+    src: "/img/car.png",
+    alt: "car",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }))), style);
+}
 
 const style = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 19
+    lineNumber: 21
   },
   __self: undefined
 }, `

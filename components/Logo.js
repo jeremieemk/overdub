@@ -1,15 +1,17 @@
 import Link from "next/link";
 
-const Logo = () => (
-  <div>
-    <div className="logo" style={{ fontFamily: "Sectra" }}>
-      <Link href="/">
-        <a className="logo-letter">O</a>
-      </Link>
+function Logo() {
+  return (
+    <div>
+      <div className="logo" style={{ fontFamily: "Sectra" }}>
+        <Link href="/">
+          <a className="logo-letter">O</a>
+        </Link>
+      </div>
+      {style}
     </div>
-    {style}
-  </div>
-);
+  );
+}
 
 const style = (
   <style jsx>{`

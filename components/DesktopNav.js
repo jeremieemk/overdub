@@ -7,8 +7,8 @@ const menuItems = [
   { name: "SKILLS", link: "/skills" }
 ];
 
-const renderMenuItems = () =>
-  menuItems.map(item => (
+function renderMenuItems() {
+  return menuItems.map(item => (
     <div className="title-plus-line-container">
       <Link href={item.link}>
         <a className="menu-item-name">{item.name}</a>
@@ -16,20 +16,23 @@ const renderMenuItems = () =>
       <div className="bottom-line"></div>
     </div>
   ));
+}
 
-const DesktopNav = () => (
-  <div className="desktop-nav-container">
-    {renderMenuItems()}
-    <div className="title-plus-line-container">
-      <a className="menu-item-name" href="/img/cv2020.pdf" target="_blank">
-        CV
-      </a>
-      <div className="bottom-line"></div>
+function DesktopNav() {
+  return (
+    <div className="desktop-nav-container">
+      {renderMenuItems()}
+      <div className="title-plus-line-container">
+        <a className="menu-item-name" href="/img/cv2020.pdf" target="_blank">
+          CV
+        </a>
+        <div className="bottom-line"></div>
+      </div>
+
+      {style}
     </div>
-
-    {style}
-  </div>
-);
+  );
+}
 
 const style = (
   <style jsx>{`

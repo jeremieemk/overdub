@@ -2,20 +2,22 @@ import Layout from "../components/Layout";
 import PageTitle from "../components/PageTitle";
 import AboutText from "../components/text/AboutText";
 
-const About = () => (
-  <Layout>
-    <PageTitle title="about Me" />
-    <div className="under-the-title">
-      <img
-        className="dancing-avatar"
-        src="/img/shower.png"
-        alt="dancing-avatar"
-      />
-      <AboutText />
-    </div>
-    {style}
-  </Layout>
-);
+function About() {
+  return (
+    <Layout>
+      <PageTitle title="about Me" />
+      <div className="under-the-title">
+        <img
+          className="dancing-avatar"
+          src="/img/shower.png"
+          alt="dancing-avatar"
+        />
+        <AboutText />
+      </div>
+      {style}
+    </Layout>
+  );
+}
 
 const style = (
   <style jsx>{`

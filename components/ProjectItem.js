@@ -1,4 +1,3 @@
-import LinkBox from "./LinkBox";
 import ProjectDescriptionTitle from "./ProjectDescriptionTitle";
 
 function ProjectItem(props) {

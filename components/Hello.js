@@ -29,10 +29,11 @@ function Hello(props) {
 const style = (
   <style jsx>{`
     .hello-container {
+      opacity: 0;
       margin-bottom: 2rem;
     }
     .animate {
-      animation: fadeIn 2.5s;
+      animation: fadeIn 2s;
       animation-fill-mode: forwards;
     }
 

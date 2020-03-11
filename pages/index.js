@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import Layout from "../components/Layout";
 import Hello from "../components/Hello";
 
@@ -6,11 +6,14 @@ function Index() {
   const [fireAnimation, setFireAnimation] = useState(false);
   let helloSection = useRef();
   function srollDownToHelloSection() {
-    console.log("arrow clicked");
     helloSection.current.scrollIntoView({ behavior: "smooth" });
-    setFireAnimation(true);
   }
-
+  useEffect(() => {
+    window.addEventListener("scroll", function() {
+      console.log(window.scrollY);
+      setFireAnimation(window.scrollY > 365);
+    });
+  }, []);
   return (
     <div>
       <Layout>

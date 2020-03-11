@@ -3,20 +3,22 @@ import PageTitle from "../components/PageTitle";
 import ProjectItem from "../components/ProjectItem";
 import ProjectDetails from "../components/text/ProjectDetails";
 
-const Portfolio = () => (
-  <Layout>
-    <div className="portfolio-container">
-      <PageTitle title="my Portfolio" />
-      <div className="projects-section">
-        <ProjectItem {...ProjectDetails.escuta} />
-        <ProjectItem {...ProjectDetails.raum404} />
-        <ProjectItem {...ProjectDetails.izem} />
-      </div>
+function Portfolio() {
+  return (
+    <Layout>
+      <div className="portfolio-container">
+        <PageTitle title="my Portfolio" />
+        <div className="projects-section">
+          <ProjectItem {...ProjectDetails.escuta} />
+          <ProjectItem {...ProjectDetails.raum404} />
+          <ProjectItem {...ProjectDetails.izem} />
+        </div>
 
-      {style}
-    </div>
-  </Layout>
-);
+        {style}
+      </div>
+    </Layout>
+  );
+}
 
 const style = (
   <style jsx>{`

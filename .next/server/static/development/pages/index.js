@@ -722,7 +722,7 @@ const style = __jsx("style", {
       margin-bottom: 2rem;
     }
     .animate {
-      animation: fadeIn 2s;
+      animation: fadeIn 1.5s;
       animation-fill-mode: forwards;
     }
 

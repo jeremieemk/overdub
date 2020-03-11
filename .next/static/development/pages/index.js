@@ -514,7 +514,7 @@ var style = __jsx("style", {
     lineNumber: 30
   },
   __self: undefined
-}, "\n    .hello-container {\n      opacity: 0;\n      margin-bottom: 2rem;\n    }\n    .animate {\n      animation: fadeIn 2s;\n      animation-fill-mode: forwards;\n    }\n\n    .under-the-title {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n    }\n    @media (min-width: 801px) {\n      .hello-container {\n        padding-left: var(--desktop-padding);\n        padding-right: var(--desktop-padding);\n      }\n      .under-the-title {\n        margin-bottom: 3rem;\n      }\n    }\n  ");
+}, "\n    .hello-container {\n      opacity: 0;\n      margin-bottom: 2rem;\n    }\n    .animate {\n      animation: fadeIn 1.5s;\n      animation-fill-mode: forwards;\n    }\n\n    .under-the-title {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n    }\n    @media (min-width: 801px) {\n      .hello-container {\n        padding-left: var(--desktop-padding);\n        padding-right: var(--desktop-padding);\n      }\n      .under-the-title {\n        margin-bottom: 3rem;\n      }\n    }\n  ");
 
 /* harmony default export */ __webpack_exports__["default"] = (Hello);
 

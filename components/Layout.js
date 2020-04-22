@@ -10,16 +10,19 @@ function Layout(props) {
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/css/priority.css"></link>
         <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-115969774-2"
+        ></script>
+        <script
           dangerouslySetInnerHTML={{
-            __html: `<!-- Global site tag (gtag.js) - Google Analytics -->
-                    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115969774-2"></script>
-                      <script>
+            __html: `
+           
                         window.dataLayer = window.dataLayer || [];
                         function gtag(){dataLayer.push(arguments);}
                         gtag('js', new Date());
 
                         gtag('config', 'UA-115969774-2');
-                      </script>`,
+                    `,
           }}
         />
       </Head>

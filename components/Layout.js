@@ -9,8 +9,20 @@ function Layout(props) {
       <Head>
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="stylesheet" href="/css/priority.css"></link>
-      </Head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `<!-- Global site tag (gtag.js) - Google Analytics -->
+                    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115969774-2"></script>
+                      <script>
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
 
+                        gtag('config', 'UA-115969774-2');
+                      </script>`,
+          }}
+        />
+      </Head>
       <div className="container">
         <Header />
         {props.children}

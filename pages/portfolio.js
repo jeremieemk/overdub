@@ -9,6 +9,7 @@ function Portfolio() {
       <div className="portfolio-container">
         <PageTitle title="my Portfolio" />
         <div className="projects-section">
+          <ProjectItem {...ProjectDetails.palette} />
           <ProjectItem {...ProjectDetails.elis} />
           <ProjectItem {...ProjectDetails.escuta} />
           <ProjectItem {...ProjectDetails.raum404} />

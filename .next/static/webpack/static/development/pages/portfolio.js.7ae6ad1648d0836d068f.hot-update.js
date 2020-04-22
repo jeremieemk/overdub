@@ -1,11 +1,22 @@
-const ProjectDetails = {
+webpackHotUpdate("static/development/pages/portfolio.js",{
+
+/***/ "./components/text/ProjectDetails.js":
+/*!*******************************************!*\
+  !*** ./components/text/ProjectDetails.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var ProjectDetails = {
   palette: {
     name: "Palette List",
     company: "Uplabs",
     role: "Frontend Developer.",
     tools: "React",
     img: "/img/palette.png",
-    link: "https://www.palettelist.com/.com",
+    link: "https://www.palettelist.com/.com"
   },
   elis: {
     name: "elis-records.com",
@@ -13,16 +24,15 @@ const ProjectDetails = {
     role: "Full Stack Developer.",
     tools: "React, Next.js, Prismic.io",
     img: "/img/elis-records.png",
-    link: "http://www.elis-records.com",
+    link: "http://www.elis-records.com"
   },
   escuta: {
     name: "escuta.pt",
     company: "Largo Residencias (Lisbon, Portugal)",
     role: "Front End developer.",
-    tools:
-      "React, React-router, Google-map-react, React-switch-lang, Strapi, Material UI",
+    tools: "React, React-router, Google-map-react, React-switch-lang, Strapi, Material UI",
     img: "/img/escutaScreen.png",
-    link: "http://www.escuta.pt/radio",
+    link: "http://www.escuta.pt/radio"
   },
   raum404: {
     name: "raum404.ch",
@@ -30,7 +40,7 @@ const ProjectDetails = {
     role: "Fullstack Developer",
     tools: "CSS, jQuery, Vapid",
     img: "/img/raum404Screen.png",
-    link: "https://www.raum404.ch/",
+    link: "https://www.raum404.ch/"
   },
   izem: {
     name: "izem.me",
@@ -38,8 +48,12 @@ const ProjectDetails = {
     role: "FullStack Developer, Designer",
     tools: "Python Flask, Javascript, CSS",
     img: "/img/izemScreen.png",
-    link: "http://www.izem.me/",
-  },
+    link: "http://www.izem.me/"
+  }
 };
+/* harmony default export */ __webpack_exports__["default"] = (ProjectDetails);
 
-export default ProjectDetails;
+/***/ })
+
+})
+//# sourceMappingURL=portfolio.js.7ae6ad1648d0836d068f.hot-update.js.map

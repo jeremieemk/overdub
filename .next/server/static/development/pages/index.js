@@ -790,7 +790,7 @@ function Layout(props) {
     __self: this
   }, __jsx("link", {
     rel: "shortcut icon",
-    href: "/static/favicon.ico",
+    href: "/favicon.ico",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
@@ -991,7 +991,13 @@ const style = __jsx("style", {
       height: 3rem;
       display: flex;
       align-items: center;
+      text-decoration: none;
+      transition: all 300ms ease-in-out;
     }
+    .text-box:hover {
+      text-decoration: underline;
+    }
+
     .arrow-box {
       border-width: var(--line-width) var(--line-width) var(--line-width) 0;
       width: 5rem;
@@ -1027,7 +1033,7 @@ const centeredTitle = __jsx("style", {
   jsx: true,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 86
+    lineNumber: 92
   },
   __self: undefined
 }, `

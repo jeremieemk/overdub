@@ -49,7 +49,13 @@ const style = (
       height: 3rem;
       display: flex;
       align-items: center;
+      text-decoration: none;
+      transition: all 300ms ease-in-out;
     }
+    .text-box:hover {
+      text-decoration: underline;
+    }
+
     .arrow-box {
       border-width: var(--line-width) var(--line-width) var(--line-width) 0;
       width: 5rem;
